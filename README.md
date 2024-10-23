@@ -82,7 +82,7 @@ To set up the project locally, follow these steps:
 
 2. **Navigate to the project directory**:
     ```bash
-    cd PetStore-RestAssured-Framework
+    cd RestAssured-API-Automation-Framework
     ```
 
 3. **Install project dependencies**:
