@@ -77,7 +77,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/MUSTAPHA-QA/PetStore-RestAssured-Framework.git
+    git clone https://github.com/KrushnaPatare/RestAssured-API-Automation-Framework.git
     ```
 
 2. **Navigate to the project directory**:
@@ -184,7 +184,7 @@ The framework generates a comprehensive **Extent Report** that visually presents
 
 ![Extent Report Screenshot](https://github.com/KrushnaPatare/RestAssured-API-Automation-Framework/blob/main/screenshots/Screenshot%202024-10-23%20190024.png)
 
-For additional reports and logs, please check the `screenshots` folder.
+For additional reports and logs, please check the `logs` and `reports` folder.
 
 ---
 
