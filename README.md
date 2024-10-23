@@ -149,9 +149,11 @@ To ensure a clear and organized project structure, we've adopted the following c
   All project packages are located within the `src/test/java` folder, adhering to Maven's standard test code directory structure.
 
 - **External Resources:**  
-  The `src/test/resources` folder serves as a repository for external files essential for testing, such as:
+  The `testData` folder serves as a repository for external files essential for testing, such as:
   - **Schema Files:** Used for JSON schema validation
-  - **Configuration Files:** Includes files like `log4j2.xml` for logging configuration
+  - **Excel Files:** Used for Data Driven Testing
+  - **Json Files:** Used as Payload of request
+
 
 ---
 
