@@ -1,0 +1,749 @@
+13:44:32.493  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:32.514  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:32.515  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:32.516  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:32.517  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:32.537  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:32.538  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:32.540  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:32.541  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:32.556  [main] INFO  api.test.PetTest - ********************************************
+13:44:32.556  [main] INFO  api.test.PetTest - ***** Starting testUpdateExistingPetPutResponse *****
+13:44:32.556  [main] INFO  api.test.PetTest - Test Input Data: Pet ID: 10, Category ID: 123, Category Name: Bird555, Pet Name: Sona, Photo URLs: [www.google.com, www.facebook.com], Tag ID: 11, Tag Name: Red, Pet Status: available
+13:44:32.556  [main] INFO  api.test.PetTest - Pet object created with updated data
+13:44:32.557  [main] INFO  api.test.PetTest - Sending PUT request to update the existing pet.
+13:44:33.913  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:33.913  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:33 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:33.915  [main] INFO  api.test.PetTest - JSON response body: {
+    "id": 10,
+    "category": {
+        "id": 123,
+        "name": "Bird555"
+    },
+    "name": "Sona",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 11,
+            "name": "Red"
+        }
+    ],
+    "status": "available"
+}
+13:44:33.924  [main] INFO  api.test.PetTest - Response mapped to Pet object
+13:44:33.924  [main] INFO  api.test.PetTest - Asserting response status, headers, and time
+13:44:33.924  [main] INFO  api.test.PetTest - Asserting updated pet data between request and response
+13:44:33.925  [main] INFO  api.test.PetTest - Asserting pet tags
+13:44:33.925  [main] INFO  api.test.PetTest - Asserting pet status
+13:44:33.925  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:33.925  [main] INFO  api.test.PetTest - ********************************************
+13:44:33.927  [main] INFO  api.test.PetTest - ********************************************
+13:44:33.927  [main] INFO  api.test.PetTest - ***** Starting testUpdateExistingPetPutResponse *****
+13:44:33.928  [main] INFO  api.test.PetTest - Test Input Data: Pet ID: 20, Category ID: 234, Category Name: Animal555, Pet Name: Lucky, Photo URLs: [www.google.com, www.facebook.com], Tag ID: 22, Tag Name: Black, Pet Status: pending
+13:44:33.928  [main] INFO  api.test.PetTest - Pet object created with updated data
+13:44:33.928  [main] INFO  api.test.PetTest - Sending PUT request to update the existing pet.
+13:44:35.308  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:35.308  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:34 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:35.308  [main] INFO  api.test.PetTest - JSON response body: {
+    "id": 20,
+    "category": {
+        "id": 234,
+        "name": "Animal555"
+    },
+    "name": "Lucky",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 22,
+            "name": "Black"
+        }
+    ],
+    "status": "pending"
+}
+13:44:35.313  [main] INFO  api.test.PetTest - Response mapped to Pet object
+13:44:35.313  [main] INFO  api.test.PetTest - Asserting response status, headers, and time
+13:44:35.313  [main] INFO  api.test.PetTest - Asserting updated pet data between request and response
+13:44:35.313  [main] INFO  api.test.PetTest - Asserting pet tags
+13:44:35.313  [main] INFO  api.test.PetTest - Asserting pet status
+13:44:35.314  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:35.314  [main] INFO  api.test.PetTest - ********************************************
+13:44:35.316  [main] INFO  api.test.PetTest - ********************************************
+13:44:35.316  [main] INFO  api.test.PetTest - ***** Starting testUpdateExistingPetPutResponse *****
+13:44:35.316  [main] INFO  api.test.PetTest - Test Input Data: Pet ID: 30, Category ID: 345, Category Name: Fish555, Pet Name: Goldy, Photo URLs: [www.google.com, www.facebook.com], Tag ID: 33, Tag Name: Golden, Pet Status: sold
+13:44:35.316  [main] INFO  api.test.PetTest - Pet object created with updated data
+13:44:35.317  [main] INFO  api.test.PetTest - Sending PUT request to update the existing pet.
+13:44:36.926  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:36.927  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:36 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:36.927  [main] INFO  api.test.PetTest - JSON response body: {
+    "id": 30,
+    "category": {
+        "id": 345,
+        "name": "Fish555"
+    },
+    "name": "Goldy",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 33,
+            "name": "Golden"
+        }
+    ],
+    "status": "sold"
+}
+13:44:36.929  [main] INFO  api.test.PetTest - Response mapped to Pet object
+13:44:36.930  [main] INFO  api.test.PetTest - Asserting response status, headers, and time
+13:44:36.930  [main] INFO  api.test.PetTest - Asserting updated pet data between request and response
+13:44:36.930  [main] INFO  api.test.PetTest - Asserting pet tags
+13:44:36.930  [main] INFO  api.test.PetTest - Asserting pet status
+13:44:36.930  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:36.930  [main] INFO  api.test.PetTest - ********************************************
+13:44:36.933  [main] INFO  api.test.PetTest - ********************************************
+13:44:36.933  [main] INFO  api.test.PetTest - ***** Starting testFindPetByStatusGetResponse *****
+13:44:36.933  [main] INFO  api.test.PetTest - Sending GET request to find pets with status: pending
+13:44:38.116  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:38.116  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:37 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:38.116  [main] INFO  api.test.PetTest - JSON response body: [
+    {
+        "id": 575,
+        "category": {
+            "id": 99,
+            "name": "up"
+        },
+        "name": "George Martinez",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            {
+                "id": 91,
+                "name": "official"
+            }
+        ],
+        "status": "pending"
+    },
+    {
+        "id": 9223372016900020935,
+        "category": {
+            "id": -77945860,
+            "name": "mollit"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "minim cillum officia veli",
+            "consectetur"
+        ],
+        "tags": [
+            {
+                "id": 16059288,
+                "name": "aute adipisicing anim"
+            },
+            {
+                "id": -3200776,
+                "name": "reprehenderit Duis Lorem quis"
+            }
+        ],
+        "status": "pending"
+    },
+    {
+        "id": 9223372016900020958,
+        "category": {
+            "id": -62035720,
+            "name": "sunt adipisicing aute"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "adipisicing aliqua nostrud",
+            "minim aute sint et"
+        ],
+        "tags": [
+            {
+                "id": -50034940,
+                "name": "aute anim"
+            },
+            {
+                "id": -55324364,
+                "name": "dolore cillum ut minim"
+            }
+        ],
+        "status": "pending"
+    },
+    {
+        "id": 82901748,
+        "category": {
+            "id": 7962040,
+            "name": "culpa fugiat consequat"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "elit proident non",
+            "Excepteur ex in incididunt enim"
+        ],
+        "tags": [
+            {
+                "id": -75108271,
+                "name": "sit anim"
+            },
+            {
+                "id": -85364496,
+                "name": "ipsum"
+            }
+        ],
+        "status": "pending"
+    },
+    {
+        "id": 20,
+        "category": {
+            "id": 234,
+            "name": "Animal555"
+        },
+        "name": "Lucky",
+        "photoUrls": [
+            "www.google.com",
+            "www.facebook.com"
+        ],
+        "tags": [
+            {
+                "id": 22,
+                "name": "Black"
+            }
+        ],
+        "status": "pending"
+    }
+]
+13:44:38.126  [main] INFO  api.test.PetTest - Checking for pet with name 'Lucky' and status 'pending'
+13:44:38.126  [main] INFO  api.test.PetTest - Asserting response status, headers, and time
+13:44:38.127  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:38.127  [main] INFO  api.test.PetTest - ********************************************
+13:44:38.134  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.135  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.136  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.137  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.161  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.162  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.163  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.164  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.190  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.191  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.192  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.193  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.211  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.212  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.213  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.214  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.228  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.229  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.230  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.231  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.252  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.253  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.254  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.255  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.276  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.278  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.279  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.279  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.296  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.296  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.297  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.298  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.317  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.318  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.319  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.319  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.335  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.335  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.336  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.336  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.356  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.357  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.358  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.359  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.381  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.383  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.384  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.385  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.408  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.409  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.411  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.414  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.430  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.434  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.436  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.437  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.457  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.458  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.458  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.459  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.477  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.478  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.479  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.479  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.494  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.495  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.496  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.496  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.515  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.515  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.516  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.516  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.530  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.530  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.531  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.532  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.546  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.546  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.547  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.548  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.561  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.561  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.562  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.562  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.581  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.581  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.582  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.583  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.598  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.599  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.599  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.600  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.614  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.615  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.616  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.616  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.630  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.631  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.631  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.632  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.649  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.649  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.650  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.651  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.668  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.668  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.669  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.670  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.689  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.689  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.690  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.691  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.715  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+13:44:38.716  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet1.xml.rels
+13:44:38.716  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/worksheets/_rels/sheet2.xml.rels
+13:44:38.717  [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+13:44:38.741  [main] INFO  api.test.PetTest - ********************************************
+13:44:38.741  [main] INFO  api.test.PetTest - ***** Starting testFindPetByPetIDGetResponse *****
+13:44:38.742  [main] INFO  api.test.PetTest - Sending GET request to find pet with ID: 10
+13:44:40.090  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:40.090  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:39 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:40.090  [main] INFO  api.test.PetTest - JSON response body: {
+    "id": 10,
+    "category": {
+        "id": 123,
+        "name": "Bird555"
+    },
+    "name": "Sona",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 11,
+            "name": "Red"
+        }
+    ],
+    "status": "available"
+}
+13:44:40.090  [main] INFO  api.test.PetTest - Asserting response data for pet ID: 10
+13:44:40.962  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:40.963  [main] INFO  api.test.PetTest - ********************************************
+13:44:40.968  [main] INFO  api.test.PetTest - ********************************************
+13:44:40.969  [main] INFO  api.test.PetTest - ***** Starting testFindPetByPetIDGetResponse *****
+13:44:40.969  [main] INFO  api.test.PetTest - Sending GET request to find pet with ID: 20
+13:44:42.291  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:42.291  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:41 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:42.291  [main] INFO  api.test.PetTest - JSON response body: {
+    "id": 20,
+    "category": {
+        "id": 234,
+        "name": "Animal555"
+    },
+    "name": "Lucky",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 22,
+            "name": "Black"
+        }
+    ],
+    "status": "pending"
+}
+13:44:42.292  [main] INFO  api.test.PetTest - Asserting response data for pet ID: 20
+13:44:42.307  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:42.307  [main] INFO  api.test.PetTest - ********************************************
+13:44:42.309  [main] INFO  api.test.PetTest - ********************************************
+13:44:42.309  [main] INFO  api.test.PetTest - ***** Starting testFindPetByPetIDGetResponse *****
+13:44:42.309  [main] INFO  api.test.PetTest - Sending GET request to find pet with ID: 30
+13:44:43.560  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:43.561  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:43 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:43.561  [main] INFO  api.test.PetTest - JSON response body: {
+    "id": 30,
+    "category": {
+        "id": 345,
+        "name": "Fish555"
+    },
+    "name": "Goldy",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 33,
+            "name": "Golden"
+        }
+    ],
+    "status": "sold"
+}
+13:44:43.561  [main] INFO  api.test.PetTest - Asserting response data for pet ID: 30
+13:44:43.578  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:43.578  [main] INFO  api.test.PetTest - ********************************************
+13:44:43.581  [main] INFO  api.test.PetTest - ********************************************
+13:44:43.581  [main] INFO  api.test.PetTest - ***** Starting testUpdatePetPostResponse *****
+13:44:43.588  [main] INFO  api.test.PetTest - Sending POST request to update pet with ID: 30 to name: Luna and status: {}
+13:44:44.868  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:44.869  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:44 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:44.869  [main] INFO  api.test.PetTest - JSON response body: {
+    "code": 200,
+    "type": "unknown",
+    "message": "30"
+}
+13:44:44.869  [main] INFO  api.test.PetTest - Asserting response details for pet ID: 30
+13:44:46.205  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:46.205  [main] INFO  api.test.PetTest - ********************************************
+13:44:46.207  [main] INFO  api.test.PetTest - ********************************************
+13:44:46.208  [main] INFO  api.test.PetTest - ***** Starting testUploadPetImagePostResponse *****
+13:44:46.208  [main] INFO  api.test.PetTest - Sending POST request to upload image for pet ID: 30 with metadata: Tiger Image
+13:44:49.831  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:49.831  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:49 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:49.831  [main] INFO  api.test.PetTest - JSON response body: {
+    "code": 200,
+    "type": "unknown",
+    "message": "additionalMetadata: Tiger Image\nFile uploaded to ./2....jpg, 601779 bytes"
+}
+13:44:49.831  [main] INFO  api.test.PetTest - Asserting response details for uploaded image of pet ID: 30
+13:44:49.846  [main] INFO  api.test.PetTest - ***** Finished testUpdateExistingPetPutResponse *****
+13:44:49.846  [main] INFO  api.test.PetTest - ********************************************
+13:44:49.849  [main] INFO  api.test.PetTest - ********************************************
+13:44:49.849  [main] INFO  api.test.PetTest - ***** Starting testDeletePetDeleteResponse *****
+13:44:49.849  [main] INFO  api.test.PetTest - Sending DELETE request to remove pet with ID: 20
+13:44:51.162  [main] INFO  api.test.PetTest - StatusCode: 200
+13:44:51.163  [main] INFO  api.test.PetTest - Headers: Date=Mon, 21 Oct 2024 08:14:50 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:44:51.163  [main] INFO  api.test.PetTest - JSON response body: {
+    "code": 200,
+    "type": "unknown",
+    "message": "20"
+}
+13:44:51.163  [main] INFO  api.test.PetTest - Asserting response status, time, and headers
+13:44:51.182  [main] INFO  api.test.PetTest - Verifying that the pet has been deleted.
+13:44:52.404  [main] INFO  api.test.PetTest - ***** Finished testDeletePetDeleteResponse *****
+13:44:52.404  [main] INFO  api.test.PetTest - ********************************************
+13:44:52.469  [main] INFO  api.test.StoreTest - ********************************************
+13:44:52.471  [main] INFO  api.test.StoreTest - ***** Starting testPostStoreResponse *****
+13:44:52.471  [main] INFO  api.test.StoreTest - Test Input Data: Store ID: 4, Pet ID: 2004, Quantity: 21, Ship Date: 2023-12-12T16:35:59.906+0000, Status: placed, Complete: true
+13:44:52.472  [main] INFO  api.test.StoreTest - Sending POST request to place an order for the pet.
+13:45:14.705  [main] INFO  api.test.StoreTest - StatusCode: 200
+13:45:14.706  [main] INFO  api.test.StoreTest - Headers: Date=Mon, 21 Oct 2024 08:15:14 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:45:14.706  [main] INFO  api.test.StoreTest - JSON response body: {
+    "id": 4,
+    "petId": 2004,
+    "quantity": 21,
+    "shipDate": "2023-12-12T16:35:59.906+0000",
+    "status": "placed",
+    "complete": true
+}
+13:45:14.706  [main] INFO  api.test.StoreTest - Asserting response status, headers, and time
+13:45:14.723  [main] ERROR api.test.StoreTest - Test assertion failed: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+13:45:14.724  [main] DEBUG api.test.StoreTest - Assertion failure details
+java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.Assert.failNotEquals(Assert.java:1578) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.8.0.jar:7.8.0]
+	at api.test.StoreTest.testPostStoreResponse(StoreTest.java:93) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.0.jar:3.5.0]
+13:45:14.737  [main] INFO  api.test.StoreTest - ***** Finished testPostStoreResponse *****
+13:45:14.737  [main] INFO  api.test.StoreTest - ********************************************
+13:45:14.743  [main] INFO  api.test.StoreTest - ********************************************
+13:45:14.743  [main] INFO  api.test.StoreTest - ***** Starting testGetStoreOrderResponse *****
+13:45:14.743  [main] INFO  api.test.StoreTest - Retrieving store order with ID: 4
+13:45:14.743  [main] INFO  api.test.StoreTest - Sending GET request to retrieve the store order.
+13:45:16.108  [main] INFO  api.test.StoreTest - StatusCode: 200
+13:45:16.108  [main] INFO  api.test.StoreTest - Headers: Date=Mon, 21 Oct 2024 08:15:15 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:45:16.109  [main] INFO  api.test.StoreTest - JSON response body: {
+    "id": 4,
+    "petId": 2004,
+    "quantity": 21,
+    "shipDate": "2023-12-12T16:35:59.906+0000",
+    "status": "placed",
+    "complete": true
+}
+13:45:16.109  [main] INFO  api.test.StoreTest - Asserting response status, headers, and time
+13:45:16.241  [main] INFO  api.test.StoreTest - Asserting order data between request and response
+13:45:16.824  [main] INFO  api.test.StoreTest - Response matches JSON schema
+13:45:16.824  [main] INFO  api.test.StoreTest - Testing with invalid order ID: 101
+13:45:18.027  [main] INFO  api.test.StoreTest - Asserting response status for invalid order ID
+13:45:18.027  [main] INFO  api.test.StoreTest - ***** Finished testGetStoreOrderResponse *****
+13:45:18.028  [main] INFO  api.test.StoreTest - ********************************************
+13:45:18.030  [main] INFO  api.test.StoreTest - ********************************************
+13:45:18.030  [main] INFO  api.test.StoreTest - ***** Starting testGetStoreInventoriesResponse *****
+13:45:18.030  [main] INFO  api.test.StoreTest - Sending GET request to retrieve store inventories.
+13:45:19.391  [main] INFO  api.test.StoreTest - StatusCode: 200
+13:45:19.392  [main] INFO  api.test.StoreTest - Headers: Date=Mon, 21 Oct 2024 08:15:19 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+13:45:19.392  [main] INFO  api.test.StoreTest - JSON response body: {
+    "sold": 4,
+    "{{PetStatus-Updated}}": 1,
+    "string": 565,
+    "pending": 5,
+    "available": 152,
+    "status": 22
+}
+13:45:19.393  [main] INFO  api.test.StoreTest - Asserting response status code and content type
+13:45:19.393  [main] INFO  api.test.StoreTest - Extracting 'sold', 'pending', and 'available' quantities from the response.
+13:45:19.449  [main] INFO  api.test.StoreTest - Asserting 'sold', 'pending', and 'available' quantities
+13:45:19.450  [main] INFO  api.test.StoreTest - Validating response against the JSON schema located at: F:\WorkSpace\RestAssuredPetStoreAutomation-main\testData\jsonSchemaFiles\getStoreInventories.json
+13:45:19.540  [main] ERROR api.test.StoreTest - Test assertion failed: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: ["pending","{{PetStatus-Updated}}"]
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "additionalProperties"
+    unwanted: ["pending","{{PetStatus-Updated}}"]
+error: object has missing required properties (["placed","ratvelleg"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["available","placed","ratvelleg","sold","status","string"]
+    missing: ["placed","ratvelleg"]
+
+  Actual: {"sold":4,"{{PetStatus-Updated}}":1,"string":565,"pending":5,"available":152,"status":22}
+
+13:45:19.540  [main] DEBUG api.test.StoreTest - Assertion failure details
+java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: ["pending","{{PetStatus-Updated}}"]
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "additionalProperties"
+    unwanted: ["pending","{{PetStatus-Updated}}"]
+error: object has missing required properties (["placed","ratvelleg"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["available","placed","ratvelleg","sold","status","string"]
+    missing: ["placed","ratvelleg"]
+
+  Actual: {"sold":4,"{{PetStatus-Updated}}":1,"string":565,"pending":5,"available":152,"status":22}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.11.jar:4.0.11]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.3.1.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.3.1.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.3.1.jar:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.11.jar:4.0.11]
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107) ~[rest-assured-5.3.1.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238) ~[rest-assured-5.3.1.jar:?]
+	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:293) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.0.jar:3.5.0]

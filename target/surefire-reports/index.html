@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">57 methods, 6 failed,  2 skipped,  49 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="deleberatlyFailTest">deleberatlyFailTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.StoreTest" class="method navigator-link" hash-for-method="testGetStoreInventoriesResponse">testGetStoreInventoriesResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testUploadPetImagePostResponse">testUploadPetImagePostResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="updateUser_shouldMatchJsonSchema">updateUser_shouldMatchJsonSchema</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="updateUser_shouldReturnCorrectFieldValues">updateUser_shouldReturnCorrectFieldValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="updateUser_shouldReturnValidResponseFieldTypes">updateUser_shouldReturnValidResponseFieldTypes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="deleberatlySkippedTest1">deleberatlySkippedTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="deleberatlySkippedTest2">deleberatlySkippedTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="createUser_shouldMatchJsonSchema">createUser_shouldMatchJsonSchema</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="createUser_shouldRespondWithinExpectedTime">createUser_shouldRespondWithinExpectedTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="createUser_shouldReturn200StatusCode">createUser_shouldReturn200StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="createUser_shouldReturnCorrectContentTypeHeader">createUser_shouldReturnCorrectContentTypeHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="createUser_shouldReturnCorrectFieldValues">createUser_shouldReturnCorrectFieldValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="createUser_shouldReturnValidResponseFieldTypes">createUser_shouldReturnValidResponseFieldTypes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="createUsersInBulk_shouldReturn200StatusCode">createUsersInBulk_shouldReturn200StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="deleteUser_shouldMatchJsonSchema">deleteUser_shouldMatchJsonSchema</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="deleteUser_shouldRespondWithinExpectedTime">deleteUser_shouldRespondWithinExpectedTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="deleteUser_shouldReturn200StatusCode">deleteUser_shouldReturn200StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="deleteUser_shouldReturnCorrectFieldValues">deleteUser_shouldReturnCorrectFieldValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="deleteUser_shouldReturnValidResponseFieldTypes">deleteUser_shouldReturnValidResponseFieldTypes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="deletedUser_shouldNotBeFetched_shouldReturn404Error">deletedUser_shouldNotBeFetched_shouldReturn404Error</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="getUser_shouldRespondWithinExpectedTime">getUser_shouldRespondWithinExpectedTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="getUser_shouldReturn200StatusCode">getUser_shouldReturn200StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="getUser_shouldReturnCorrectContentTypeHeader">getUser_shouldReturnCorrectContentTypeHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="getUser_shouldReturnCorrectFieldValues">getUser_shouldReturnCorrectFieldValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="getUser_shouldReturnValidResponseFieldTypes">getUser_shouldReturnValidResponseFieldTypes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="loginUser_shouldMatchJsonSchema">loginUser_shouldMatchJsonSchema</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="loginUser_shouldRespondWithinExpectedTime">loginUser_shouldRespondWithinExpectedTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="loginUser_shouldReturn200StatusCode">loginUser_shouldReturn200StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="loginUser_shouldReturnCorrectContentTypeHeader">loginUser_shouldReturnCorrectContentTypeHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="loginUser_shouldReturnCorrectFieldValues">loginUser_shouldReturnCorrectFieldValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="loginUser_shouldReturnValidResponseFieldTypes">loginUser_shouldReturnValidResponseFieldTypes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="logoutUser_shouldMatchJsonSchema">logoutUser_shouldMatchJsonSchema</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="logoutUser_shouldRespondWithinExpectedTime">logoutUser_shouldRespondWithinExpectedTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="logoutUser_shouldReturn200StatusCode">logoutUser_shouldReturn200StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="logoutUser_shouldReturnCorrectContentTypeHeader">logoutUser_shouldReturnCorrectContentTypeHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="logoutUser_shouldReturnCorrectFieldValues">logoutUser_shouldReturnCorrectFieldValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="logoutUser_shouldReturnValidResponseFieldTypes">logoutUser_shouldReturnValidResponseFieldTypes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testAddNewPetPostResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)">testAddNewPetPostResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testAddNewPetPostResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)">testAddNewPetPostResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testAddNewPetPostResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)">testAddNewPetPostResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testDeletePetDeleteResponse">testDeletePetDeleteResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.StoreTest" class="method navigator-link" hash-for-method="testDeleteStoreOrderResponse">testDeleteStoreOrderResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testFindPetByPetIDGetResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)">testFindPetByPetIDGetResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testFindPetByPetIDGetResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)">testFindPetByPetIDGetResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testFindPetByPetIDGetResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)">testFindPetByPetIDGetResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testFindPetByStatusGetResponse">testFindPetByStatusGetResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.StoreTest" class="method navigator-link" hash-for-method="testGetStoreOrderResponse">testGetStoreOrderResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.StoreTest" class="method navigator-link" hash-for-method="testPostStoreResponse">testPostStoreResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testUpdateExistingPetPutResponse(10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available)">testUpdateExistingPetPutResponse(10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testUpdateExistingPetPutResponse(30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold)">testUpdateExistingPetPutResponse(30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testUpdateExistingPetPutResponse(20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending)">testUpdateExistingPetPutResponse(20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.PetTest" class="method navigator-link" hash-for-method="testUpdatePetPostResponse">testUpdatePetPostResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="updateUser_shouldRespondWithinExpectedTime">updateUser_shouldRespondWithinExpectedTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="updateUser_shouldReturn200StatusCode">updateUser_shouldReturn200StatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="updateUser_shouldReturnCorrectContentTypeHeader">updateUser_shouldReturnCorrectContentTypeHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="api.test.UserTest" class="method navigator-link" hash-for-method="updateUser_withInvalidUsername_shouldHandleGracefully">updateUser_withInvalidUsername_shouldHandleGracefully</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.StoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetStoreInventoriesResponse">
+                  </a> <!-- testGetStoreInventoriesResponse -->
+                  <span class="method-name">testGetStoreInventoriesResponse</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: [&quot;AVAILABLE&quot;,&quot;Available&quot;,&quot;none&quot;,&quot;pending&quot;,&quot;peric&quot;,&quot;{{PetStatus-Updated}}&quot;]
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
+    instance: {&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;additionalProperties&quot;
+    unwanted: [&quot;AVAILABLE&quot;,&quot;Available&quot;,&quot;none&quot;,&quot;pending&quot;,&quot;peric&quot;,&quot;{{PetStatus-Updated}}&quot;]
+error: object has missing required properties ([&quot;placed&quot;,&quot;ratvelleg&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
+    instance: {&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;available&quot;,&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;sold&quot;,&quot;status&quot;,&quot;string&quot;]
+    missing: [&quot;placed&quot;,&quot;ratvelleg&quot;]
+
+  Actual: {&quot;AVAILABLE&quot;:2,&quot;sold&quot;:2,&quot;{{PetStatus-Updated}}&quot;:1,&quot;string&quot;:529,&quot;pending&quot;:7,&quot;available&quot;:196,&quot;Available&quot;:1,&quot;none&quot;:1,&quot;peric&quot;:2,&quot;status&quot;:18}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:293)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies the Get Store Inventories response returned by statuswise and validates the data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.UserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_shouldMatchJsonSchema">
+                  </a> <!-- updateUser_shouldMatchJsonSchema -->
+                  <span class="method-name">updateUser_shouldMatchJsonSchema</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}
+    instance: {&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;additionalProperties&quot;
+    unwanted: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]
+error: object has missing required properties ([&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}
+    instance: {&quot;pointer&quot;:&quot;&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]
+    missing: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]
+
+  Actual: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;1583772475&quot;}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at api.test.UserTest.updateUser_shouldMatchJsonSchema(UserTest.java:697)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that the update user response matches the expected JSON schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_shouldReturnCorrectFieldValues">
+                  </a> <!-- updateUser_shouldReturnCorrectFieldValues -->
+                  <span class="method-name">updateUser_shouldReturnCorrectFieldValues</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;io.restassured.response.ExtractableResponse.path(String, String[])&quot; is null
+	at api.test.UserTest.updateUser_shouldReturnCorrectFieldValues(UserTest.java:658)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies that the field values returned in the update user response are correct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_shouldReturnValidResponseFieldTypes">
+                  </a> <!-- updateUser_shouldReturnValidResponseFieldTypes -->
+                  <span class="method-name">updateUser_shouldReturnValidResponseFieldTypes</span>
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;id&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:570)
+	at api.test.UserTest.updateUser_shouldReturnValidResponseFieldTypes(UserTest.java:619)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies the types of fields in the update user response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.PetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleberatlyFailTest">
+                  </a> <!-- deleberatlyFailTest -->
+                  <span class="method-name">deleberatlyFailTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at api.test.PetTest.deleberatlyFailTest(PetTest.java:625)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUploadPetImagePostResponse">
+                  </a> <!-- testUploadPetImagePostResponse -->
+                  <span class="method-name">testUploadPetImagePostResponse</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at api.test.PetTest.testUploadPetImagePostResponse(PetTest.java:534)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(This test verifies the POST response for uploading an image for an existing pet.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">api.test.PetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleberatlySkippedTest1">
+                  </a> <!-- deleberatlySkippedTest1 -->
+                  <span class="method-name">deleberatlySkippedTest1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@27eedb64 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@27eedb64]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleberatlySkippedTest2">
+                  </a> <!-- deleberatlySkippedTest2 -->
+                  <span class="method-name">deleberatlySkippedTest2</span>
+                  <div class="stack-trace">java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@27eedb64 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@27eedb64]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.StoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteStoreOrderResponse">
+                  </a> <!-- testDeleteStoreOrderResponse -->
+                  <span class="method-name">testDeleteStoreOrderResponse</span>
+                  <em>
+(This test verifies the Delete Store Order DELETE response and validates the data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetStoreOrderResponse">
+                  </a> <!-- testGetStoreOrderResponse -->
+                  <span class="method-name">testGetStoreOrderResponse</span>
+                  <em>
+(This test verifies the Get Store Order response for finding purchanse order by id and validates the data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPostStoreResponse">
+                  </a> <!-- testPostStoreResponse -->
+                  <span class="method-name">testPostStoreResponse</span>
+                  <em>
+(This test verifies the Post Store response for placing order of pet and validates the data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.UserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser_shouldMatchJsonSchema">
+                  </a> <!-- createUser_shouldMatchJsonSchema -->
+                  <span class="method-name">createUser_shouldMatchJsonSchema</span>
+                  <em>
+(This test validates the Create User response against a JSON schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser_shouldRespondWithinExpectedTime">
+                  </a> <!-- createUser_shouldRespondWithinExpectedTime -->
+                  <span class="method-name">createUser_shouldRespondWithinExpectedTime</span>
+                  <em>
+(This test verifies the Create User response time)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser_shouldReturn200StatusCode">
+                  </a> <!-- createUser_shouldReturn200StatusCode -->
+                  <span class="method-name">createUser_shouldReturn200StatusCode</span>
+                  <em>
+(This test verifies the Create User POST response status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser_shouldReturnCorrectContentTypeHeader">
+                  </a> <!-- createUser_shouldReturnCorrectContentTypeHeader -->
+                  <span class="method-name">createUser_shouldReturnCorrectContentTypeHeader</span>
+                  <em>
+(This test verifies the Content-Type header of the Create User response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser_shouldReturnCorrectFieldValues">
+                  </a> <!-- createUser_shouldReturnCorrectFieldValues -->
+                  <span class="method-name">createUser_shouldReturnCorrectFieldValues</span>
+                  <em>
+(This test verifies the field values of the Create User response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser_shouldReturnValidResponseFieldTypes">
+                  </a> <!-- createUser_shouldReturnValidResponseFieldTypes -->
+                  <span class="method-name">createUser_shouldReturnValidResponseFieldTypes</span>
+                  <em>
+(This test verifies the field types of the Create User response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUsersInBulk_shouldReturn200StatusCode">
+                  </a> <!-- createUsersInBulk_shouldReturn200StatusCode -->
+                  <span class="method-name">createUsersInBulk_shouldReturn200StatusCode</span>
+                  <em>
+(This test verifies that the bulk user creation returns a 200 status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser_shouldMatchJsonSchema">
+                  </a> <!-- deleteUser_shouldMatchJsonSchema -->
+                  <span class="method-name">deleteUser_shouldMatchJsonSchema</span>
+                  <em>
+(This test verifies the DELETE request response matches the expected JSON schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser_shouldRespondWithinExpectedTime">
+                  </a> <!-- deleteUser_shouldRespondWithinExpectedTime -->
+                  <span class="method-name">deleteUser_shouldRespondWithinExpectedTime</span>
+                  <em>
+(This test verifies that the DELETE request response is within the expected time)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser_shouldReturn200StatusCode">
+                  </a> <!-- deleteUser_shouldReturn200StatusCode -->
+                  <span class="method-name">deleteUser_shouldReturn200StatusCode</span>
+                  <em>
+(This test verifies that the DELETE request for a user returns a 200 status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser_shouldReturnCorrectFieldValues">
+                  </a> <!-- deleteUser_shouldReturnCorrectFieldValues -->
+                  <span class="method-name">deleteUser_shouldReturnCorrectFieldValues</span>
+                  <em>
+(This test verifies the field values in the DELETE request response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser_shouldReturnValidResponseFieldTypes">
+                  </a> <!-- deleteUser_shouldReturnValidResponseFieldTypes -->
+                  <span class="method-name">deleteUser_shouldReturnValidResponseFieldTypes</span>
+                  <em>
+(This test verifies the field types in the DELETE request response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletedUser_shouldNotBeFetched_shouldReturn404Error">
+                  </a> <!-- deletedUser_shouldNotBeFetched_shouldReturn404Error -->
+                  <span class="method-name">deletedUser_shouldNotBeFetched_shouldReturn404Error</span>
+                  <em>
+(This test verifies that a deleted user cannot be fetched and returns a 404 error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUser_shouldRespondWithinExpectedTime">
+                  </a> <!-- getUser_shouldRespondWithinExpectedTime -->
+                  <span class="method-name">getUser_shouldRespondWithinExpectedTime</span>
+                  <em>
+(This test verifies that GET user response time is within the expected range)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUser_shouldReturn200StatusCode">
+                  </a> <!-- getUser_shouldReturn200StatusCode -->
+                  <span class="method-name">getUser_shouldReturn200StatusCode</span>
+                  <em>
+(This test verifies that GET user returns 200 status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUser_shouldReturnCorrectContentTypeHeader">
+                  </a> <!-- getUser_shouldReturnCorrectContentTypeHeader -->
+                  <span class="method-name">getUser_shouldReturnCorrectContentTypeHeader</span>
+                  <em>
+(This test verifies that the GET user response contains the correct Content-Type header)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUser_shouldReturnCorrectFieldValues">
+                  </a> <!-- getUser_shouldReturnCorrectFieldValues -->
+                  <span class="method-name">getUser_shouldReturnCorrectFieldValues</span>
+                  <em>
+(This test verifies that the GET user response contains correct field values)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUser_shouldReturnValidResponseFieldTypes">
+                  </a> <!-- getUser_shouldReturnValidResponseFieldTypes -->
+                  <span class="method-name">getUser_shouldReturnValidResponseFieldTypes</span>
+                  <em>
+(This test verifies that the GET user response has valid field types)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser_shouldMatchJsonSchema">
+                  </a> <!-- loginUser_shouldMatchJsonSchema -->
+                  <span class="method-name">loginUser_shouldMatchJsonSchema</span>
+                  <em>
+(This test validates the login response against a predefined JSON schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser_shouldRespondWithinExpectedTime">
+                  </a> <!-- loginUser_shouldRespondWithinExpectedTime -->
+                  <span class="method-name">loginUser_shouldRespondWithinExpectedTime</span>
+                  <em>
+(This test verifies that login user response is within the expected time range)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser_shouldReturn200StatusCode">
+                  </a> <!-- loginUser_shouldReturn200StatusCode -->
+                  <span class="method-name">loginUser_shouldReturn200StatusCode</span>
+                  <em>
+(This test verifies that logging in a user returns a 200 status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser_shouldReturnCorrectContentTypeHeader">
+                  </a> <!-- loginUser_shouldReturnCorrectContentTypeHeader -->
+                  <span class="method-name">loginUser_shouldReturnCorrectContentTypeHeader</span>
+                  <em>
+(This test verifies that the login response has the correct Content-Type header)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser_shouldReturnCorrectFieldValues">
+                  </a> <!-- loginUser_shouldReturnCorrectFieldValues -->
+                  <span class="method-name">loginUser_shouldReturnCorrectFieldValues</span>
+                  <em>
+(This test verifies that the login response fields contain the correct values)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginUser_shouldReturnValidResponseFieldTypes">
+                  </a> <!-- loginUser_shouldReturnValidResponseFieldTypes -->
+                  <span class="method-name">loginUser_shouldReturnValidResponseFieldTypes</span>
+                  <em>
+(This test verifies that the login response fields have the correct types)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser_shouldMatchJsonSchema">
+                  </a> <!-- logoutUser_shouldMatchJsonSchema -->
+                  <span class="method-name">logoutUser_shouldMatchJsonSchema</span>
+                  <em>
+(This test verifies the logout response against a JSON schema)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser_shouldRespondWithinExpectedTime">
+                  </a> <!-- logoutUser_shouldRespondWithinExpectedTime -->
+                  <span class="method-name">logoutUser_shouldRespondWithinExpectedTime</span>
+                  <em>
+(This test verifies the response time for user logout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser_shouldReturn200StatusCode">
+                  </a> <!-- logoutUser_shouldReturn200StatusCode -->
+                  <span class="method-name">logoutUser_shouldReturn200StatusCode</span>
+                  <em>
+(This test verifies that the logout response returns a 200 status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser_shouldReturnCorrectContentTypeHeader">
+                  </a> <!-- logoutUser_shouldReturnCorrectContentTypeHeader -->
+                  <span class="method-name">logoutUser_shouldReturnCorrectContentTypeHeader</span>
+                  <em>
+(This test verifies the content type of the logout response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser_shouldReturnCorrectFieldValues">
+                  </a> <!-- logoutUser_shouldReturnCorrectFieldValues -->
+                  <span class="method-name">logoutUser_shouldReturnCorrectFieldValues</span>
+                  <em>
+(This test verifies the field values in the logout response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutUser_shouldReturnValidResponseFieldTypes">
+                  </a> <!-- logoutUser_shouldReturnValidResponseFieldTypes -->
+                  <span class="method-name">logoutUser_shouldReturnValidResponseFieldTypes</span>
+                  <em>
+(This test verifies the field types in the logout response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_shouldRespondWithinExpectedTime">
+                  </a> <!-- updateUser_shouldRespondWithinExpectedTime -->
+                  <span class="method-name">updateUser_shouldRespondWithinExpectedTime</span>
+                  <em>
+(This test verifies that the update user request responds within the expected time frame)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_shouldReturn200StatusCode">
+                  </a> <!-- updateUser_shouldReturn200StatusCode -->
+                  <span class="method-name">updateUser_shouldReturn200StatusCode</span>
+                  <em>
+(This test verifies the successful update of a user and returns 200 status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_shouldReturnCorrectContentTypeHeader">
+                  </a> <!-- updateUser_shouldReturnCorrectContentTypeHeader -->
+                  <span class="method-name">updateUser_shouldReturnCorrectContentTypeHeader</span>
+                  <em>
+(This test verifies the Content-Type header in the update user response)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_withInvalidUsername_shouldHandleGracefully">
+                  </a> <!-- updateUser_withInvalidUsername_shouldHandleGracefully -->
+                  <span class="method-name">updateUser_withInvalidUsername_shouldHandleGracefully</span>
+                  <em>
+(This test verifies how the system handles an update request with an invalid username)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.PetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNewPetPostResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)">
+                  </a> <!-- testAddNewPetPostResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available) -->
+                  <span class="method-name">testAddNewPetPostResponse</span>
+                  <span class="parameters">(10,123,Bird,Sona,www.google.com,www.facebook.com,10,Red,available)</span>
+                  <em>
+(This test verifies the Add New Pet POST response and validates the data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNewPetPostResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)">
+                  </a> <!-- testAddNewPetPostResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold) -->
+                  <span class="method-name">testAddNewPetPostResponse</span>
+                  <span class="parameters">(30,345,Fish,Goldy,www.google.com,www.facebook.com,30,Golden,sold)</span>
+                  <em>
+(This test verifies the Add New Pet POST response and validates the data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddNewPetPostResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)">
+                  </a> <!-- testAddNewPetPostResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending) -->
+                  <span class="method-name">testAddNewPetPostResponse</span>
+                  <span class="parameters">(20,234,Animal,Lucky,www.google.com,www.facebook.com,20,Black,pending)</span>
+                  <em>
+(This test verifies the Add New Pet POST response and validates the data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeletePetDeleteResponse">
+                  </a> <!-- testDeletePetDeleteResponse -->
+                  <span class="method-name">testDeletePetDeleteResponse</span>
+                  <em>
+(This test verifies the DELETE response for removing a pet and checks the status after deletion.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindPetByPetIDGetResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)">
+                  </a> <!-- testFindPetByPetIDGetResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending) -->
+                  <span class="method-name">testFindPetByPetIDGetResponse</span>
+                  <span class="parameters">(20,234,Animal,Lucky,www.google.com,www.facebook.com,20,Black,pending)</span>
+                  <em>
+(This test verifies the GET response for finding a pet by its ID.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindPetByPetIDGetResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)">
+                  </a> <!-- testFindPetByPetIDGetResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold) -->
+                  <span class="method-name">testFindPetByPetIDGetResponse</span>
+                  <span class="parameters">(30,345,Fish,Goldy,www.google.com,www.facebook.com,30,Golden,sold)</span>
+                  <em>
+(This test verifies the GET response for finding a pet by its ID.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindPetByPetIDGetResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)">
+                  </a> <!-- testFindPetByPetIDGetResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available) -->
+                  <span class="method-name">testFindPetByPetIDGetResponse</span>
+                  <span class="parameters">(10,123,Bird,Sona,www.google.com,www.facebook.com,10,Red,available)</span>
+                  <em>
+(This test verifies the GET response for finding a pet by its ID.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFindPetByStatusGetResponse">
+                  </a> <!-- testFindPetByStatusGetResponse -->
+                  <span class="method-name">testFindPetByStatusGetResponse</span>
+                  <em>
+(This test verifies the Get Pet by Status response and checks for the presence of pet with name 'Lucky' and status 'pending')                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateExistingPetPutResponse(10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available)">
+                  </a> <!-- testUpdateExistingPetPutResponse(10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available) -->
+                  <span class="method-name">testUpdateExistingPetPutResponse</span>
+                  <span class="parameters">(10,123,Bird555,Sona,www.google.com,www.facebook.com,11,Red,available)</span>
+                  <em>
+(This test verifies the Update Existing Pet PUT response and validates the updated data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateExistingPetPutResponse(30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold)">
+                  </a> <!-- testUpdateExistingPetPutResponse(30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold) -->
+                  <span class="method-name">testUpdateExistingPetPutResponse</span>
+                  <span class="parameters">(30,345,Fish555,Goldy,www.google.com,www.facebook.com,33,Golden,sold)</span>
+                  <em>
+(This test verifies the Update Existing Pet PUT response and validates the updated data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateExistingPetPutResponse(20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending)">
+                  </a> <!-- testUpdateExistingPetPutResponse(20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending) -->
+                  <span class="method-name">testUpdateExistingPetPutResponse</span>
+                  <span class="parameters">(20,234,Animal555,Lucky,www.google.com,www.facebook.com,22,Black,pending)</span>
+                  <em>
+(This test verifies the Update Existing Pet PUT response and validates the updated data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdatePetPostResponse">
+                  </a> <!-- testUpdatePetPostResponse -->
+                  <span class="method-name">testUpdatePetPostResponse</span>
+                  <em>
+(This test verifies the POST response for updating an existing pet.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;api.test.PetTest&quot;/&gt;
+      &lt;class name=&quot;api.test.StoreTest&quot;/&gt;
+      &lt;class name=&quot;api.test.UserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testAddNewPetPostResponse</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(57);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testUploadPetImagePostResponse')
+data.setCell(0, 2, 'api.test.PetTest')
+data.setCell(0, 3, 18458);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testAddNewPetPostResponse')
+data.setCell(1, 2, 'api.test.PetTest')
+data.setCell(1, 3, 6185);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDeleteStoreOrderResponse')
+data.setCell(2, 2, 'api.test.StoreTest')
+data.setCell(2, 3, 2980);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testUpdatePetPostResponse')
+data.setCell(3, 2, 'api.test.PetTest')
+data.setCell(3, 3, 2957);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDeletePetDeleteResponse')
+data.setCell(4, 2, 'api.test.PetTest')
+data.setCell(4, 3, 2955);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGetStoreOrderResponse')
+data.setCell(5, 2, 'api.test.StoreTest')
+data.setCell(5, 3, 2893);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testFindPetByPetIDGetResponse')
+data.setCell(6, 2, 'api.test.PetTest')
+data.setCell(6, 3, 2857);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGetStoreInventoriesResponse')
+data.setCell(7, 2, 'api.test.StoreTest')
+data.setCell(7, 3, 1647);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testPostStoreResponse')
+data.setCell(8, 2, 'api.test.StoreTest')
+data.setCell(8, 3, 1584);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createUsersInBulk_shouldReturn200StatusCode')
+data.setCell(9, 2, 'api.test.UserTest')
+data.setCell(9, 3, 1487);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testAddNewPetPostResponse')
+data.setCell(10, 2, 'api.test.PetTest')
+data.setCell(10, 3, 1474);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'updateUser_shouldReturn200StatusCode')
+data.setCell(11, 2, 'api.test.UserTest')
+data.setCell(11, 3, 1469);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testFindPetByPetIDGetResponse')
+data.setCell(12, 2, 'api.test.PetTest')
+data.setCell(12, 3, 1465);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createUser_shouldReturn200StatusCode')
+data.setCell(13, 2, 'api.test.UserTest')
+data.setCell(13, 3, 1449);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testFindPetByStatusGetResponse')
+data.setCell(14, 2, 'api.test.PetTest')
+data.setCell(14, 3, 1446);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testUpdateExistingPetPutResponse')
+data.setCell(15, 2, 'api.test.PetTest')
+data.setCell(15, 3, 1434);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'updateUser_withInvalidUsername_shouldHandleGracefully')
+data.setCell(16, 2, 'api.test.UserTest')
+data.setCell(16, 3, 1414);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testUpdateExistingPetPutResponse')
+data.setCell(17, 2, 'api.test.PetTest')
+data.setCell(17, 3, 1401);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testAddNewPetPostResponse')
+data.setCell(18, 2, 'api.test.PetTest')
+data.setCell(18, 3, 1399);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testUpdateExistingPetPutResponse')
+data.setCell(19, 2, 'api.test.PetTest')
+data.setCell(19, 3, 1397);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'loginUser_shouldReturn200StatusCode')
+data.setCell(20, 2, 'api.test.UserTest')
+data.setCell(20, 3, 1382);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testFindPetByPetIDGetResponse')
+data.setCell(21, 2, 'api.test.PetTest')
+data.setCell(21, 3, 1381);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'deleteUser_shouldReturn200StatusCode')
+data.setCell(22, 2, 'api.test.UserTest')
+data.setCell(22, 3, 1377);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'logoutUser_shouldReturn200StatusCode')
+data.setCell(23, 2, 'api.test.UserTest')
+data.setCell(23, 3, 1377);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'deletedUser_shouldNotBeFetched_shouldReturn404Error')
+data.setCell(24, 2, 'api.test.UserTest')
+data.setCell(24, 3, 1361);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'getUser_shouldReturn200StatusCode')
+data.setCell(25, 2, 'api.test.UserTest')
+data.setCell(25, 3, 1352);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'getUser_shouldReturnCorrectFieldValues')
+data.setCell(26, 2, 'api.test.UserTest')
+data.setCell(26, 3, 513);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'deleteUser_shouldMatchJsonSchema')
+data.setCell(27, 2, 'api.test.UserTest')
+data.setCell(27, 3, 86);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'updateUser_shouldReturnCorrectFieldValues')
+data.setCell(28, 2, 'api.test.UserTest')
+data.setCell(28, 3, 78);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'createUser_shouldReturnCorrectFieldValues')
+data.setCell(29, 2, 'api.test.UserTest')
+data.setCell(29, 3, 39);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'deleteUser_shouldReturnCorrectFieldValues')
+data.setCell(30, 2, 'api.test.UserTest')
+data.setCell(30, 3, 39);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'loginUser_shouldReturnCorrectFieldValues')
+data.setCell(31, 2, 'api.test.UserTest')
+data.setCell(31, 3, 38);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'logoutUser_shouldReturnCorrectFieldValues')
+data.setCell(32, 2, 'api.test.UserTest')
+data.setCell(32, 3, 36);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'createUser_shouldMatchJsonSchema')
+data.setCell(33, 2, 'api.test.UserTest')
+data.setCell(33, 3, 24);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'updateUser_shouldMatchJsonSchema')
+data.setCell(34, 2, 'api.test.UserTest')
+data.setCell(34, 3, 24);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'loginUser_shouldMatchJsonSchema')
+data.setCell(35, 2, 'api.test.UserTest')
+data.setCell(35, 3, 21);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'logoutUser_shouldMatchJsonSchema')
+data.setCell(36, 2, 'api.test.UserTest')
+data.setCell(36, 3, 16);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'updateUser_shouldRespondWithinExpectedTime')
+data.setCell(37, 2, 'api.test.UserTest')
+data.setCell(37, 3, 4);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'deleteUser_shouldRespondWithinExpectedTime')
+data.setCell(38, 2, 'api.test.UserTest')
+data.setCell(38, 3, 3);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'getUser_shouldReturnValidResponseFieldTypes')
+data.setCell(39, 2, 'api.test.UserTest')
+data.setCell(39, 3, 3);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'getUser_shouldRespondWithinExpectedTime')
+data.setCell(40, 2, 'api.test.UserTest')
+data.setCell(40, 3, 2);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'loginUser_shouldReturnValidResponseFieldTypes')
+data.setCell(41, 2, 'api.test.UserTest')
+data.setCell(41, 3, 2);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'deleteUser_shouldReturnValidResponseFieldTypes')
+data.setCell(42, 2, 'api.test.UserTest')
+data.setCell(42, 3, 2);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'createUser_shouldReturnCorrectContentTypeHeader')
+data.setCell(43, 2, 'api.test.UserTest')
+data.setCell(43, 3, 2);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'createUser_shouldRespondWithinExpectedTime')
+data.setCell(44, 2, 'api.test.UserTest')
+data.setCell(44, 3, 2);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'logoutUser_shouldReturnCorrectContentTypeHeader')
+data.setCell(45, 2, 'api.test.UserTest')
+data.setCell(45, 3, 2);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'createUser_shouldReturnValidResponseFieldTypes')
+data.setCell(46, 2, 'api.test.UserTest')
+data.setCell(46, 3, 2);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'loginUser_shouldRespondWithinExpectedTime')
+data.setCell(47, 2, 'api.test.UserTest')
+data.setCell(47, 3, 2);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'logoutUser_shouldRespondWithinExpectedTime')
+data.setCell(48, 2, 'api.test.UserTest')
+data.setCell(48, 3, 2);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'logoutUser_shouldReturnValidResponseFieldTypes')
+data.setCell(49, 2, 'api.test.UserTest')
+data.setCell(49, 3, 2);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'loginUser_shouldReturnCorrectContentTypeHeader')
+data.setCell(50, 2, 'api.test.UserTest')
+data.setCell(50, 3, 2);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'updateUser_shouldReturnCorrectContentTypeHeader')
+data.setCell(51, 2, 'api.test.UserTest')
+data.setCell(51, 3, 2);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'getUser_shouldReturnCorrectContentTypeHeader')
+data.setCell(52, 2, 'api.test.UserTest')
+data.setCell(52, 3, 2);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'updateUser_shouldReturnValidResponseFieldTypes')
+data.setCell(53, 2, 'api.test.UserTest')
+data.setCell(53, 3, 2);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'deleberatlyFailTest')
+data.setCell(54, 2, 'api.test.PetTest')
+data.setCell(54, 3, 1);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'deleberatlySkippedTest2')
+data.setCell(55, 2, 'api.test.PetTest')
+data.setCell(55, 3, 0);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'deleberatlySkippedTest1')
+data.setCell(56, 2, 'api.test.PetTest')
+data.setCell(56, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.PetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAddNewPetPostResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)</span>
+                <span class="method-start">3321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddNewPetPostResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)</span>
+                <span class="method-start">9518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddNewPetPostResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)</span>
+                <span class="method-start">10920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateExistingPetPutResponse(10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available)</span>
+                <span class="method-start">13588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateExistingPetPutResponse(20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending)</span>
+                <span class="method-start">15023 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateExistingPetPutResponse(30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold)</span>
+                <span class="method-start">16425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFindPetByStatusGetResponse</span>
+                <span class="method-start">17823 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFindPetByPetIDGetResponse(10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available)</span>
+                <span class="method-start">20181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFindPetByPetIDGetResponse(20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending)</span>
+                <span class="method-start">23066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testFindPetByPetIDGetResponse(30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold)</span>
+                <span class="method-start">24532 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdatePetPostResponse</span>
+                <span class="method-start">25914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUploadPetImagePostResponse</span>
+                <span class="method-start">28872 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeletePetDeleteResponse</span>
+                <span class="method-start">47338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleberatlyFailTest</span>
+                <span class="method-start">50294 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.StoreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpData</span>
+                <span class="method-start">50308 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testPostStoreResponse</span>
+                <span class="method-start">50379 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetStoreOrderResponse</span>
+                <span class="method-start">51965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetStoreInventoriesResponse</span>
+                <span class="method-start">54859 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteStoreOrderResponse</span>
+                <span class="method-start">56511 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.UserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpData</span>
+                <span class="method-start">59493 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">createUser_shouldReturn200StatusCode</span>
+                <span class="method-start">59891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUser_shouldRespondWithinExpectedTime</span>
+                <span class="method-start">61341 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUser_shouldReturnCorrectContentTypeHeader</span>
+                <span class="method-start">61345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUser_shouldReturnValidResponseFieldTypes</span>
+                <span class="method-start">61351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUser_shouldReturnCorrectFieldValues</span>
+                <span class="method-start">61354 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUser_shouldMatchJsonSchema</span>
+                <span class="method-start">61396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUser_shouldReturn200StatusCode</span>
+                <span class="method-start">61422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUser_shouldRespondWithinExpectedTime</span>
+                <span class="method-start">62776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUser_shouldReturnCorrectContentTypeHeader</span>
+                <span class="method-start">62779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUser_shouldReturnValidResponseFieldTypes</span>
+                <span class="method-start">62782 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUser_shouldReturnCorrectFieldValues</span>
+                <span class="method-start">62787 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateUser_shouldReturn200StatusCode</span>
+                <span class="method-start">63304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateUser_shouldRespondWithinExpectedTime</span>
+                <span class="method-start">64774 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateUser_shouldReturnCorrectContentTypeHeader</span>
+                <span class="method-start">64779 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateUser_shouldReturnValidResponseFieldTypes</span>
+                <span class="method-start">64784 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateUser_shouldReturnCorrectFieldValues</span>
+                <span class="method-start">64789 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">updateUser_shouldMatchJsonSchema</span>
+                <span class="method-start">64870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateUser_withInvalidUsername_shouldHandleGracefully</span>
+                <span class="method-start">64897 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser_shouldReturn200StatusCode</span>
+                <span class="method-start">66312 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser_shouldRespondWithinExpectedTime</span>
+                <span class="method-start">67695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser_shouldReturnCorrectContentTypeHeader</span>
+                <span class="method-start">67698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser_shouldReturnValidResponseFieldTypes</span>
+                <span class="method-start">67701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser_shouldReturnCorrectFieldValues</span>
+                <span class="method-start">67705 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">loginUser_shouldMatchJsonSchema</span>
+                <span class="method-start">67744 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutUser_shouldReturn200StatusCode</span>
+                <span class="method-start">67767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutUser_shouldRespondWithinExpectedTime</span>
+                <span class="method-start">69146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutUser_shouldReturnCorrectContentTypeHeader</span>
+                <span class="method-start">69149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutUser_shouldReturnValidResponseFieldTypes</span>
+                <span class="method-start">69152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutUser_shouldReturnCorrectFieldValues</span>
+                <span class="method-start">69155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">logoutUser_shouldMatchJsonSchema</span>
+                <span class="method-start">69192 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser_shouldReturn200StatusCode</span>
+                <span class="method-start">69209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser_shouldRespondWithinExpectedTime</span>
+                <span class="method-start">70587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser_shouldReturnValidResponseFieldTypes</span>
+                <span class="method-start">70591 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser_shouldReturnCorrectFieldValues</span>
+                <span class="method-start">70596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser_shouldMatchJsonSchema</span>
+                <span class="method-start">70636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletedUser_shouldNotBeFetched_shouldReturn404Error</span>
+                <span class="method-start">70723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUsersInBulk_shouldReturn200StatusCode</span>
+                <span class="method-start">72086 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

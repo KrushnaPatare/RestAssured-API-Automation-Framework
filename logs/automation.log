@@ -1,0 +1,331 @@
+17:58:42.630  [main] INFO  api.test.StoreTest - Extracting 'sold', 'pending', and 'available' quantities from the response.
+17:58:42.688  [main] INFO  api.test.StoreTest - Asserting 'sold', 'pending', and 'available' quantities
+17:58:42.688  [main] INFO  api.test.StoreTest - Validating response against the JSON schema located at: F:\WorkSpace\RestAssuredPetStoreAutomation-main\testData\jsonSchemaFiles\getStoreInventories.json
+17:58:42.785  [main] ERROR api.test.StoreTest - Test assertion failed: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: ["AVAILABLE","Available","none","pending","peric","{{PetStatus-Updated}}"]
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "additionalProperties"
+    unwanted: ["AVAILABLE","Available","none","pending","peric","{{PetStatus-Updated}}"]
+error: object has missing required properties (["placed","ratvelleg"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["available","placed","ratvelleg","sold","status","string"]
+    missing: ["placed","ratvelleg"]
+
+  Actual: {"AVAILABLE":2,"sold":2,"{{PetStatus-Updated}}":1,"string":529,"pending":7,"available":196,"Available":1,"none":1,"peric":2,"status":18}
+
+17:58:42.798  [main] DEBUG api.test.StoreTest - Assertion failure details
+java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: ["AVAILABLE","Available","none","pending","peric","{{PetStatus-Updated}}"]
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "additionalProperties"
+    unwanted: ["AVAILABLE","Available","none","pending","peric","{{PetStatus-Updated}}"]
+error: object has missing required properties (["placed","ratvelleg"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["available","placed","ratvelleg","sold","status","string"]
+    missing: ["placed","ratvelleg"]
+
+  Actual: {"AVAILABLE":2,"sold":2,"{{PetStatus-Updated}}":1,"string":529,"pending":7,"available":196,"Available":1,"none":1,"peric":2,"status":18}
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277) ~[groovy-4.0.11.jar:4.0.11]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512) ~[rest-assured-5.3.1.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) ~[?:?]
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696) ~[rest-assured-5.3.1.jar:?]
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy) ~[rest-assured-5.3.1.jar:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62) ~[groovy-4.0.11.jar:4.0.11]
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185) ~[groovy-4.0.11.jar:4.0.11]
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107) ~[rest-assured-5.3.1.jar:?]
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238) ~[rest-assured-5.3.1.jar:?]
+	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:293) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.8.0.jar:7.8.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.8.0.jar:7.8.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:848) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestRunner.run(TestRunner.java:621) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.8.0.jar:7.8.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1114) [testng-7.8.0.jar:7.8.0]
+	at org.testng.TestNG.run(TestNG.java:1082) [testng-7.8.0.jar:7.8.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.5.0.jar:3.5.0]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.5.0.jar:3.5.0]
+17:58:42.801  [main] INFO  api.test.StoreTest - ***** Finished testGetStoreInventoriesResponse *****
+17:58:42.801  [main] INFO  api.test.StoreTest - ********************************************
+17:58:42.812  [main] INFO  api.test.StoreTest - ********************************************
+17:58:42.812  [main] INFO  api.test.StoreTest - ***** Starting testDeleteStoreOrderResponse *****
+17:58:42.812  [main] INFO  api.test.StoreTest - Sending DELETE request to remove the store order with ID: 4
+17:58:44.230  [main] INFO  api.test.StoreTest - StatusCode: 200
+17:58:44.230  [main] INFO  api.test.StoreTest - Headers: Date=Wed, 23 Oct 2024 12:28:42 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+17:58:44.230  [main] INFO  api.test.StoreTest - JSON response body: {
+    "code": 200,
+    "type": "unknown",
+    "message": "4"
+}
+17:58:44.283  [main] INFO  api.test.StoreTest - Asserting response data for code, type, and message
+17:58:44.283  [main] INFO  api.test.StoreTest - Sending GET request to find the deleted store order with ID: 4
+17:58:45.749  [main] INFO  api.test.StoreTest - StatusCode: 404
+17:58:45.749  [main] INFO  api.test.StoreTest - Headers: Date=Wed, 23 Oct 2024 12:28:44 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+17:58:45.749  [main] INFO  api.test.StoreTest - JSON response body: {
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+17:58:45.787  [main] INFO  api.test.StoreTest - Asserting order data between request and response
+17:58:45.787  [main] INFO  api.test.StoreTest - ***** Finished testDeleteStoreOrderResponse *****
+17:58:45.787  [main] INFO  api.test.StoreTest - ********************************************
+17:58:46.189  [main] INFO  api.test.UserTest - ********************************************
+17:58:46.189  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturn200StatusCode *****
+17:58:46.189  [main] INFO  api.test.UserTest - Sending POST request to create a new user
+17:58:47.635  [main] INFO  api.test.UserTest - StatusCode: 200
+17:58:47.636  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturn200StatusCode *****
+17:58:47.636  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.638  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.638  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldRespondWithinExpectedTime *****
+17:58:47.639  [main] INFO  api.test.UserTest - Response Time: 1423
+17:58:47.639  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldRespondWithinExpectedTime *****
+17:58:47.639  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.641  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.641  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnCorrectContentTypeHeader *****
+17:58:47.642  [main] INFO  api.test.UserTest - Content-Type Header: application/json
+17:58:47.642  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnCorrectContentTypeHeader *****
+17:58:47.643  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.648  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.648  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnValidResponseFieldTypes *****
+17:58:47.649  [main] INFO  api.test.UserTest - Asserting response field types
+17:58:47.649  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnValidResponseFieldTypes *****
+17:58:47.649  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.652  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.652  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnCorrectFieldValues *****
+17:58:47.688  [main] INFO  api.test.UserTest - Code: 200, Type: unknown
+17:58:47.688  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnCorrectFieldValues *****
+17:58:47.688  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.693  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.693  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldMatchJsonSchema *****
+17:58:47.716  [main] INFO  api.test.UserTest - JSON schema validation passed
+17:58:47.716  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldMatchJsonSchema *****
+17:58:47.716  [main] INFO  api.test.UserTest - ********************************************
+17:58:47.720  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturn200StatusCode *****
+17:58:49.069  [main] INFO  api.test.UserTest - GET response logged
+17:58:49.069  [main] INFO  api.test.UserTest - StatusCode: 200
+17:58:49.070  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturn200StatusCode *****
+17:58:49.072  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldRespondWithinExpectedTime *****
+17:58:49.073  [main] INFO  api.test.UserTest - Response time: 1333 ms
+17:58:49.074  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldRespondWithinExpectedTime *****
+17:58:49.076  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturnCorrectContentTypeHeader *****
+17:58:49.077  [main] INFO  api.test.UserTest - Content-Type: application/json
+17:58:49.077  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturnCorrectContentTypeHeader *****
+17:58:49.080  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturnValidResponseFieldTypes *****
+17:58:49.081  [main] INFO  api.test.UserTest - Asserting field types in the response body
+17:58:49.081  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturnValidResponseFieldTypes *****
+17:58:49.084  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturnCorrectFieldValues *****
+17:58:49.595  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturnCorrectFieldValues *****
+17:58:49.608  [main] INFO  api.test.UserTest - ********************************************
+17:58:49.608  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturn200StatusCode *****
+17:58:49.609  [main] INFO  api.test.UserTest - Sending PUT request to update user.
+17:58:51.069  [main] INFO  api.test.UserTest - StatusCode: 200
+17:58:51.069  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturn200StatusCode *****
+17:58:51.069  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.072  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.072  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldRespondWithinExpectedTime *****
+17:58:51.073  [main] INFO  api.test.UserTest - Response Time: 1438
+17:58:51.073  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldRespondWithinExpectedTime *****
+17:58:51.074  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.076  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.076  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturnCorrectContentTypeHeader *****
+17:58:51.077  [main] INFO  api.test.UserTest - Content-Type: application/json
+17:58:51.077  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturnCorrectContentTypeHeader *****
+17:58:51.077  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.081  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.081  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturnValidResponseFieldTypes *****
+17:58:51.082  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturnValidResponseFieldTypes *****
+17:58:51.082  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.086  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.086  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturnCorrectFieldValues *****
+17:58:51.162  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturnCorrectFieldValues *****
+17:58:51.163  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.167  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.167  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldMatchJsonSchema *****
+17:58:51.190  [main] ERROR api.test.UserTest - Test assertion failed: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: ["code","message","type"]
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "additionalProperties"
+    unwanted: ["code","message","type"]
+error: object has missing required properties (["email","firstName","id","lastName","password","phone","userStatus","username"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["email","firstName","id","lastName","password","phone","userStatus","username"]
+    missing: ["email","firstName","id","lastName","password","phone","userStatus","username"]
+
+  Actual: {"code":200,"type":"unknown","message":"1583772475"}
+
+17:58:51.190  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldMatchJsonSchema *****
+17:58:51.190  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.197  [main] INFO  api.test.UserTest - ********************************************
+17:58:51.197  [main] INFO  api.test.UserTest - ***** Starting updateUser_withInvalidUsername_shouldHandleGracefully *****
+17:58:51.201  [main] INFO  api.test.UserTest - Using invalid username: wrongUsername
+17:58:52.607  [main] INFO  api.test.UserTest - ***** Finished updateUser_withInvalidUsername_shouldHandleGracefully *****
+17:58:52.607  [main] INFO  api.test.UserTest - ********************************************
+17:58:52.609  [main] INFO  api.test.UserTest - ********************************************
+17:58:52.609  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturn200StatusCode *****
+17:58:52.609  [main] INFO  api.test.UserTest - Sending login request for user: masako.mclaughlin
+17:58:53.990  [main] INFO  api.test.UserTest - Asserting that the status code is 200
+17:58:53.990  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturn200StatusCode *****
+17:58:53.990  [main] INFO  api.test.UserTest - ********************************************
+17:58:53.992  [main] INFO  api.test.UserTest - ********************************************
+17:58:53.992  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldRespondWithinExpectedTime *****
+17:58:53.993  [main] INFO  api.test.UserTest - Response time: 1368 ms
+17:58:53.993  [main] INFO  api.test.UserTest - Asserting that the response time is between 200ms and 1500ms
+17:58:53.993  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldRespondWithinExpectedTime *****
+17:58:53.993  [main] INFO  api.test.UserTest - ********************************************
+17:58:53.995  [main] INFO  api.test.UserTest - ********************************************
+17:58:53.995  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturnCorrectContentTypeHeader *****
+17:58:53.996  [main] INFO  api.test.UserTest - Asserting that the Content-Type is application/json
+17:58:53.996  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturnCorrectContentTypeHeader *****
+17:58:53.996  [main] INFO  api.test.UserTest - ********************************************
+17:58:53.998  [main] INFO  api.test.UserTest - ********************************************
+17:58:53.998  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturnValidResponseFieldTypes *****
+17:58:53.999  [main] INFO  api.test.UserTest - Asserting that 'code' is an Integer, 'type' is a String, and 'message' is a String
+17:58:53.999  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturnValidResponseFieldTypes *****
+17:58:53.999  [main] INFO  api.test.UserTest - ********************************************
+17:58:54.001  [main] INFO  api.test.UserTest - ********************************************
+17:58:54.001  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturnCorrectFieldValues *****
+17:58:54.039  [main] INFO  api.test.UserTest - Asserting that 'code' is 200, 'type' is 'unknown', and 'message' contains 'logged in'
+17:58:54.039  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturnCorrectFieldValues *****
+17:58:54.039  [main] INFO  api.test.UserTest - ********************************************
+17:58:54.041  [main] INFO  api.test.UserTest - ********************************************
+17:58:54.041  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldMatchJsonSchema *****
+17:58:54.042  [main] INFO  api.test.UserTest - Asserting that the response matches the JSON schema from F:\WorkSpace\RestAssuredPetStoreAutomation-main\testData\jsonSchemaFiles\getUserLoginSchema.json
+17:58:54.061  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldMatchJsonSchema *****
+17:58:54.061  [main] INFO  api.test.UserTest - ********************************************
+17:58:54.065  [main] INFO  api.test.UserTest - ********************************************
+17:58:54.065  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturn200StatusCode *****
+17:58:55.439  [main] INFO  api.test.UserTest - Sending logout request
+17:58:55.440  [main] INFO  api.test.UserTest - Logging response data
+17:58:55.440  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturn200StatusCode *****
+17:58:55.440  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.442  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.442  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldRespondWithinExpectedTime *****
+17:58:55.443  [main] INFO  api.test.UserTest - Response time: 1371
+17:58:55.444  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldRespondWithinExpectedTime *****
+17:58:55.444  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.446  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.446  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnCorrectContentTypeHeader *****
+17:58:55.447  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnCorrectContentTypeHeader *****
+17:58:55.447  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.449  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.449  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnValidResponseFieldTypes *****
+17:58:55.450  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnValidResponseFieldTypes *****
+17:58:55.450  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.452  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.452  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnCorrectFieldValues *****
+17:58:55.487  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnCorrectFieldValues *****
+17:58:55.487  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.489  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.489  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldMatchJsonSchema *****
+17:58:55.504  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldMatchJsonSchema *****
+17:58:55.504  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.507  [main] INFO  api.test.UserTest - ********************************************
+17:58:55.507  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturn200StatusCode *****
+17:58:56.882  [main] INFO  api.test.UserTest - Status Code: 200
+17:58:56.882  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturn200StatusCode *****
+17:58:56.882  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.884  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.884  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldRespondWithinExpectedTime *****
+17:58:56.885  [main] INFO  api.test.UserTest - Response Time: 1366
+17:58:56.885  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldRespondWithinExpectedTime *****
+17:58:56.885  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.887  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.888  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturnValidResponseFieldTypes *****
+17:58:56.889  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturnValidResponseFieldTypes *****
+17:58:56.889  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.892  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.893  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturnCorrectFieldValues *****
+17:58:56.931  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturnCorrectFieldValues *****
+17:58:56.931  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.933  [main] INFO  api.test.UserTest - ********************************************
+17:58:56.933  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldMatchJsonSchema *****
+17:58:57.018  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldMatchJsonSchema *****
+17:58:57.018  [main] INFO  api.test.UserTest - ********************************************
+17:58:57.020  [main] INFO  api.test.UserTest - ********************************************
+17:58:57.020  [main] INFO  api.test.UserTest - ***** Starting deletedUser_shouldNotBeFetched_shouldReturn404Error *****
+17:58:58.380  [main] INFO  api.test.UserTest - ***** Finished deletedUser_shouldNotBeFetched_shouldReturn404Error *****
+17:58:58.380  [main] INFO  api.test.UserTest - ********************************************
+17:58:58.382  [main] INFO  api.test.UserTest - ********************************************
+17:58:58.382  [main] INFO  api.test.UserTest - ***** Starting createUsersInBulk_shouldReturn200StatusCode *****
+17:58:59.869  [main] INFO  api.test.UserTest - ***** Finished createUsersInBulk_shouldReturn200StatusCode *****
+17:58:59.869  [main] INFO  api.test.UserTest - ********************************************

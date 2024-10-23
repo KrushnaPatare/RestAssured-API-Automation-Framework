@@ -1,0 +1,215 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 02 21:11:46 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>50 seconds (50138 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.UserTest.testGetUser()'><b>testGetUser</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>2</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.PetTest.testUpdateExistingPet()'><b>testUpdateExistingPet</b><br>Test class: api.test.PetTest<br>Parameters: null, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testFindPetByTags()'><b>testFindPetByTags</b><br>Test class: api.test.PetTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testFindPet()'><b>testFindPet</b><br>Test class: api.test.PetTest<br>Parameters: 3, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold</td>
+<td></td>
+<td>2</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.UserTest.testLogoutUser()'><b>testLogoutUser</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.StoreTest.testDeleteStore()'><b>testDeleteStore</b><br>Test class: api.test.StoreTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.StoreTest@7dcf94f8</td></tr>
+<tr>
+<td title='api.test.StoreTest.testGetStoreInventories()'><b>testGetStoreInventories</b><br>Test class: api.test.StoreTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.StoreTest@7dcf94f8</td></tr>
+<tr>
+<td title='api.test.UserTest.testLogoutUserTime()'><b>testLogoutUserTime</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.PetTest.testAddNewPet()'><b>testAddNewPet</b><br>Test class: api.test.PetTest<br>Parameters: 3, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testUploadPetImage()'><b>testUploadPetImage</b><br>Test class: api.test.PetTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testUpdateExistingPet()'><b>testUpdateExistingPet</b><br>Test class: api.test.PetTest<br>Parameters: null, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testFindPet()'><b>testFindPet</b><br>Test class: api.test.PetTest<br>Parameters: 2, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending</td>
+<td></td>
+<td>2</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testDeletePet()'><b>testDeletePet</b><br>Test class: api.test.PetTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.UserTest.testDeleteUser()'><b>testDeleteUser</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.UserTest.testLoginUser()'><b>testLoginUser</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.UserTest.testPutUser()'><b>testPutUser</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.StoreTest.testGetStore()'><b>testGetStore</b><br>Test class: api.test.StoreTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.StoreTest@7dcf94f8</td></tr>
+<tr>
+<td title='api.test.UserTest.testLoginUserTime()'><b>testLoginUserTime</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.StoreTest.testPostStore()'><b>testPostStore</b><br>Test class: api.test.StoreTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.StoreTest@7dcf94f8</td></tr>
+<tr>
+<td title='api.test.PetTest.testFindPetByStatus()'><b>testFindPetByStatus</b><br>Test class: api.test.PetTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.UserTest.testPostUser()'><b>testPostUser</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.UserTest.testCreateUsers()'><b>testCreateUsers</b><br>Test class: api.test.UserTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@217ed35e</td></tr>
+<tr>
+<td title='api.test.PetTest.testFindPet()'><b>testFindPet</b><br>Test class: api.test.PetTest<br>Parameters: 1, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available</td>
+<td></td>
+<td>2</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testAddNewPet()'><b>testAddNewPet</b><br>Test class: api.test.PetTest<br>Parameters: 1, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available</td>
+<td></td>
+<td>4</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testUpdatePet()'><b>testUpdatePet</b><br>Test class: api.test.PetTest</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testAddNewPet()'><b>testAddNewPet</b><br>Test class: api.test.PetTest<br>Parameters: 2, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+<tr>
+<td title='api.test.PetTest.testUpdateExistingPet()'><b>testUpdateExistingPet</b><br>Test class: api.test.PetTest<br>Parameters: null, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@3fc2959f</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+[
+	{
+		"id": 0,
+		"username": "KrushnaMane",
+		"password": "krushna@123",
+		"firstName": "Krushna",
+		"lastName": "Mane",
+		"email": "rosalind.schulist@example.com",
+		"phone": "jenee.graham@example.com",
+		"userStatus": 0
+	},
+	{
+		"id": 1,
+		"username": "KrushnaMane",
+		"password": "sasuke@123",
+		"firstName": "Krushna",
+		"lastName": "Mane",
+		"email": "shaina.murazik@example.com",
+		"phone": "349-754-5733",
+		"userStatus": 0
+	},
+	{
+		"id": 2,
+		"username": "sainathKolhe",
+		"password": "sainath@123",
+		"firstName": "sainath",
+		"lastName": "Kolhe",
+		"email": "enola.turner@example.com",
+		"phone": "1-096-938-0223",
+		"userStatus": 0
+	}
+]
