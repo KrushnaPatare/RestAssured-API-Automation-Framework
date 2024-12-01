@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="78.689" tests="57" errors="0" skipped="2" failures="6">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="100.955" tests="57" errors="0" skipped="2" failures="16">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="sun.awt.enableExtraMouseButtons" value="true"/>
-    <property name="java.class.path" value="F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\test-classes;F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\classes;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.3.1\rest-assured-5.3.1.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.3.1\xml-path-5.3.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.3.1\json-path-5.3.1.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.3.1\rest-assured-common-5.3.1.jar;C:\Users\Admin\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-schema-validator\5.3.1\json-schema-validator-5.3.1.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Admin\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Admin\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.24.1\log4j-slf4j-impl-2.24.1.jar;"/>
+    <property name="java.class.path" value="F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\test-classes;F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\classes;C:\Users\Admin\.m2\repository\com\github\dzieciou\testing\curl-logger\2.0.1\curl-logger-2.0.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.8.0-beta2\slf4j-api-1.8.0-beta2.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\Admin\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Admin\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.24.1\log4j-slf4j-impl-2.24.1.jar;C:\Users\Admin\.m2\repository\org\json\json\20240303\json-20240303.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire14901912445663441\surefirebooter-20241023175743068_3.jar C:\Users\Admin\AppData\Local\Temp\surefire14901912445663441 2024-10-23T17-57-42_727-jvmRun1 surefire-20241023175743068_1tmp surefire_0-20241023175743068_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire608430767724825211\surefirebooter-20241130192803258_3.jar C:\Users\Admin\AppData\Local\Temp\surefire608430767724825211 2024-11-30T19-28-02_860-jvmRun1 surefire-20241130192803258_1tmp surefire_0-20241130192803258_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\test-classes;F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\classes;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.3.1\rest-assured-5.3.1.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.11\groovy-4.0.11.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.11\groovy-xml-4.0.11.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.3.1\xml-path-5.3.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.3.1\json-path-5.3.1.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.11\groovy-json-4.0.11.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.3.1\rest-assured-common-5.3.1.jar;C:\Users\Admin\.m2\repository\org\json\json\20230618\json-20230618.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-schema-validator\5.3.1\json-schema-validator-5.3.1.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Admin\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\Admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\Admin\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.24.1\log4j-slf4j-impl-2.24.1.jar;"/>
+    <property name="surefire.test.class.path" value="F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\test-classes;F:\WorkSpace\RestAssuredPetStoreAutomation-main\target\classes;C:\Users\Admin\.m2\repository\com\github\dzieciou\testing\curl-logger\2.0.1\curl-logger-2.0.1.jar;C:\Users\Admin\.m2\repository\org\slf4j\slf4j-api\1.8.0-beta2\slf4j-api-1.8.0-beta2.jar;C:\Users\Admin\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Admin\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\Admin\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\Admin\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\Admin\.m2\repository\io\rest-assured\json-schema-validator\5.5.0\json-schema-validator-5.5.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\Admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\Admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\Admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\Admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\Admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\Admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\Admin\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\Admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Admin\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Admin\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\Admin\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Admin\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;C:\Users\Admin\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.24.1\log4j-slf4j-impl-2.24.1.jar;C:\Users\Admin\.m2\repository\org\json\json\20240303\json-20240303.jar;C:\Users\Admin\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\Admin\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\Admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\Admin\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Admin\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Admin"/>
     <property name="user.language" value="en"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire14901912445663441\surefirebooter-20241023175743068_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire608430767724825211\surefirebooter-20241130192803258_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
@@ -58,110 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAddNewPetPostResponse[10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available](1)" classname="api.test.PetTest" time="6.156">
-    <system-out><![CDATA[************************************
-************************************
-
-
-testAddNewPetPostResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testAddNewPetPostResponse[20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending](2)" classname="api.test.PetTest" time="1.396">
-    <system-out><![CDATA[testAddNewPetPostResponse got successfully executed.
-************************************
-************************************
-
-
-testAddNewPetPostResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testAddNewPetPostResponse[30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold](3)" classname="api.test.PetTest" time="1.469">
-    <system-out><![CDATA[testAddNewPetPostResponse got successfully executed.
-************************************
-************************************
-
-
-testAddNewPetPostResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testUpdateExistingPetPutResponse[10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available](1)" classname="api.test.PetTest" time="1.419">
-    <system-out><![CDATA[testAddNewPetPostResponse got successfully executed.
-************************************
-************************************
-
-
-testUpdateExistingPetPutResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testUpdateExistingPetPutResponse[20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending](2)" classname="api.test.PetTest" time="1.393">
-    <system-out><![CDATA[testUpdateExistingPetPutResponse got successfully executed.
-************************************
-************************************
-
-
-testUpdateExistingPetPutResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testUpdateExistingPetPutResponse[30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold](3)" classname="api.test.PetTest" time="1.393">
-    <system-out><![CDATA[testUpdateExistingPetPutResponse got successfully executed.
-************************************
-************************************
-
-
-testUpdateExistingPetPutResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testFindPetByStatusGetResponse" classname="api.test.PetTest" time="1.44">
-    <system-out><![CDATA[testUpdateExistingPetPutResponse got successfully executed.
-************************************
-************************************
-
-
-testFindPetByStatusGetResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testFindPetByPetIDGetResponse[10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available](1)" classname="api.test.PetTest" time="2.878">
-    <system-out><![CDATA[testFindPetByStatusGetResponse got successfully executed.
-************************************
-************************************
-
-
-testFindPetByPetIDGetResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testFindPetByPetIDGetResponse[20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending](2)" classname="api.test.PetTest" time="1.457">
-    <system-out><![CDATA[testFindPetByPetIDGetResponse got successfully executed.
-************************************
-************************************
-
-
-testFindPetByPetIDGetResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testFindPetByPetIDGetResponse[30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold](3)" classname="api.test.PetTest" time="1.374">
-    <system-out><![CDATA[testFindPetByPetIDGetResponse got successfully executed.
-************************************
-************************************
-
-
-testFindPetByPetIDGetResponse started executing.
-]]></system-out>
-  </testcase>
-  <testcase name="testUpdatePetPostResponse" classname="api.test.PetTest" time="2.955">
-    <system-out><![CDATA[testFindPetByPetIDGetResponse got successfully executed.
-************************************
-************************************
-
-
-testUpdatePetPostResponse started executing.
-2024-10-23T12:28:12.215910200Z main WARN found 3 argument placeholders, but provided 2 for pattern `Sending POST request to update pet with ID: {} to name: {} and status: {}`
-]]></system-out>
-  </testcase>
-  <testcase name="testUploadPetImagePostResponse" classname="api.test.PetTest" time="18.459">
-    <failure message="null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: null
+  <testcase name="testAddNewPetPostResponse[10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available](1)" classname="api.test.PetTest" time="5.051">
+    <failure message="Response time is outside the expected range (200-3000ms). expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-3000ms). expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at api.test.PetTest.testUploadPetImagePostResponse(PetTest.java:534)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.PetTest.testAddNewPetPostResponse(PetTest.java:119)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -196,28 +98,832 @@ testUpdatePetPostResponse started executing.
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[testUpdatePetPostResponse got successfully executed.
+    <system-out><![CDATA[RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testAddNewPetPostResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/pet' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":"10","category":{"id":"123","name":"Bird"},"name":"Sona","photoUrls":["www.google.com","www.facebook.com"],"tags":[{"id":"10","name":"Red"}],"status":"available"}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 10,
+    "category": {
+        "id": 123,
+        "name": "Bird"
+    },
+    "name": "Sona",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 10,
+            "name": "Red"
+        }
+    ],
+    "status": "available"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:14 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions prior to 1.8.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/Admin/.m2/repository/org/apache/logging/log4j/log4j-slf4j-impl/2.24.1/log4j-slf4j-impl-2.24.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+]]></system-err>
+  </testcase>
+  <testcase name="testAddNewPetPostResponse[20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending](2)" classname="api.test.PetTest" time="2.074">
+    <system-out><![CDATA[testAddNewPetPostResponse got failed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testAddNewPetPostResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/pet' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":"20","category":{"id":"234","name":"Animal"},"name":"Lucky","photoUrls":["www.google.com","www.facebook.com"],"tags":[{"id":"20","name":"Black"}],"status":"pending"}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 20,
+    "category": {
+        "id": 234,
+        "name": "Animal"
+    },
+    "name": "Lucky",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 20,
+            "name": "Black"
+        }
+    ],
+    "status": "pending"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:16 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testAddNewPetPostResponse[30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold](3)" classname="api.test.PetTest" time="1.512">
+    <system-out><![CDATA[testAddNewPetPostResponse got successfully executed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testAddNewPetPostResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/pet' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":"30","category":{"id":"345","name":"Fish"},"name":"Goldy","photoUrls":["www.google.com","www.facebook.com"],"tags":[{"id":"30","name":"Golden"}],"status":"sold"}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 30,
+    "category": {
+        "id": 345,
+        "name": "Fish"
+    },
+    "name": "Goldy",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 30,
+            "name": "Golden"
+        }
+    ],
+    "status": "sold"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:18 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateExistingPetPutResponse[10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available](1)" classname="api.test.PetTest" time="1.472">
+    <system-out><![CDATA[testAddNewPetPostResponse got successfully executed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testUpdateExistingPetPutResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X PUT 'https://petstore.swagger.io/v2/pet' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":"10","category":{"id":"123","name":"Bird555"},"name":"Sona","photoUrls":["www.google.com","www.facebook.com"],"tags":[{"id":"11","name":"Red"}],"status":"available"}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 10,
+    "category": {
+        "id": 123,
+        "name": "Bird555"
+    },
+    "name": "Sona",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 11,
+            "name": "Red"
+        }
+    ],
+    "status": "available"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:20 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateExistingPetPutResponse[20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending](2)" classname="api.test.PetTest" time="1.385">
+    <system-out><![CDATA[testUpdateExistingPetPutResponse got successfully executed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testUpdateExistingPetPutResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X PUT 'https://petstore.swagger.io/v2/pet' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":"20","category":{"id":"234","name":"Animal555"},"name":"Lucky","photoUrls":["www.google.com","www.facebook.com"],"tags":[{"id":"22","name":"Black"}],"status":"pending"}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 20,
+    "category": {
+        "id": 234,
+        "name": "Animal555"
+    },
+    "name": "Lucky",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 22,
+            "name": "Black"
+        }
+    ],
+    "status": "pending"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:22 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateExistingPetPutResponse[30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold](3)" classname="api.test.PetTest" time="1.406">
+    <system-out><![CDATA[testUpdateExistingPetPutResponse got successfully executed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testUpdateExistingPetPutResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X PUT 'https://petstore.swagger.io/v2/pet' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":"30","category":{"id":"345","name":"Fish555"},"name":"Goldy","photoUrls":["www.google.com","www.facebook.com"],"tags":[{"id":"33","name":"Golden"}],"status":"sold"}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 30,
+    "category": {
+        "id": 345,
+        "name": "Fish555"
+    },
+    "name": "Goldy",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 33,
+            "name": "Golden"
+        }
+    ],
+    "status": "sold"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:23 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testFindPetByStatusGetResponse" classname="api.test.PetTest" time="1.52">
+    <failure message="JSONObject[&quot;name&quot;] not found." type="org.json.JSONException"><![CDATA[org.json.JSONException: JSONObject["name"] not found.
+	at org.json.JSONObject.get(JSONObject.java:596)
+	at api.test.PetTest.testFindPetByStatusGetResponse(PetTest.java:285)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[testUpdateExistingPetPutResponse got successfully executed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testFindPetByStatusGetResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/pet/findByStatus?status=pending' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+[
+    {
+        "id": 235,
+        "category": {
+            "id": 484,
+            "name": "port"
+        },
+        "photoUrls": [
+            "capacitor"
+        ],
+        "tags": [
+            {
+                "id": 764,
+                "name": "protocol"
+            }
+        ],
+        "status": "pending"
+    },
+    {
+        "id": 922337203685477590,
+        "name": "chedder-89811222",
+        "photoUrls": [
+            "arkansas_frozen_website.nsf "
+        ],
+        "tags": [
+            
+        ],
+        "status": "pending"
+    },
+    {
+        "id": 111,
+        "category": {
+            "id": 2,
+            "name": "dogs"
+        },
+        "name": "Sharik",
+        "photoUrls": [
+            "stepik.org"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "cute"
+            }
+        ],
+        "status": "pending"
+    },
+    {
+        "id": 20,
+        "category": {
+            "id": 234,
+            "name": "Animal555"
+        },
+        "name": "Lucky",
+        "photoUrls": [
+            "www.google.com",
+            "www.facebook.com"
+        ],
+        "tags": [
+            {
+                "id": 22,
+                "name": "Black"
+            }
+        ],
+        "status": "pending"
+    }
+]
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:25 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testFindPetByPetIDGetResponse[10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available](1)" classname="api.test.PetTest" time="3.442">
+    <system-out><![CDATA[testFindPetByStatusGetResponse got failed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testFindPetByPetIDGetResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/pet/10' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 10,
+    "category": {
+        "id": 123,
+        "name": "Bird555"
+    },
+    "name": "Sona",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 11,
+            "name": "Red"
+        }
+    ],
+    "status": "available"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:27 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testFindPetByPetIDGetResponse[20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending](2)" classname="api.test.PetTest" time="1.52">
+    <system-out><![CDATA[testFindPetByPetIDGetResponse got successfully executed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testFindPetByPetIDGetResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/pet/20' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 20,
+    "category": {
+        "id": 234,
+        "name": "Animal555"
+    },
+    "name": "Lucky",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 22,
+            "name": "Black"
+        }
+    ],
+    "status": "pending"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:31 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testFindPetByPetIDGetResponse[30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold](3)" classname="api.test.PetTest" time="4.203">
+    <failure message="null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at api.test.PetTest.testFindPetByPetIDGetResponse(PetTest.java:390)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[testFindPetByPetIDGetResponse got successfully executed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testFindPetByPetIDGetResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/pet/30' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 30,
+    "category": {
+        "id": 345,
+        "name": "Fish555"
+    },
+    "name": "Goldy",
+    "photoUrls": [
+        "www.google.com",
+        "www.facebook.com"
+    ],
+    "tags": [
+        {
+            "id": 33,
+            "name": "Golden"
+        }
+    ],
+    "status": "sold"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:35 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdatePetPostResponse" classname="api.test.PetTest" time="2.922">
+    <failure message="Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.response.ExtractableResponse.path(String, String[])&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.response.ExtractableResponse.path(String, String[])" is null
+	at api.test.PetTest.testUpdatePetPostResponse(PetTest.java:430)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[testFindPetByPetIDGetResponse got failed.
+RequestResponseFilter instantiated...
+************************************
+************************************
+
+
+testUpdatePetPostResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/pet/30' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 415 Unsupported Media Type
+Response Body: 
+{
+    "code": 415,
+    "type": "unknown"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:38 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+]]></system-out>
+  </testcase>
+  <testcase name="testUploadPetImagePostResponse" classname="api.test.PetTest" time="15.651">
+    <failure message="null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at api.test.PetTest.testUploadPetImagePostResponse(PetTest.java:498)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[testUpdatePetPostResponse got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 testUploadPetImagePostResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/pet/30/uploadImage' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: multipart/form-data'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "additionalMetadata: Tiger Image\nFile uploaded to ./2....jpg, 601779 bytes"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:58:53 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 ]]></system-out>
   </testcase>
-  <testcase name="testDeletePetDeleteResponse" classname="api.test.PetTest" time="2.951">
+  <testcase name="testDeletePetDeleteResponse" classname="api.test.PetTest" time="6.483">
+    <failure message="null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at api.test.PetTest.testDeletePetDeleteResponse(PetTest.java:556)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
     <system-out><![CDATA[testUploadPetImagePostResponse got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 testDeletePetDeleteResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X DELETE 'https://petstore.swagger.io/v2/pet/20' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'api_key: special-key' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "20"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:00 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 ]]></system-out>
   </testcase>
   <testcase name="deleberatlyFailTest" classname="api.test.PetTest" time="0.0">
     <failure message="null" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.fail(Assert.java:116)
-	at api.test.PetTest.deleberatlyFailTest(PetTest.java:625)
+	at api.test.PetTest.deleberatlyFailTest(PetTest.java:578)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -252,7 +958,8 @@ testDeletePetDeleteResponse started executing.
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[testDeletePetDeleteResponse got successfully executed.
+    <system-out><![CDATA[testDeletePetDeleteResponse got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
@@ -261,7 +968,7 @@ deleberatlyFailTest started executing.
 ]]></system-out>
   </testcase>
   <testcase name="deleberatlySkippedTest1" classname="api.test.PetTest" time="0.0">
-    <skipped message="Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@27eedb64 depends on not successfully finished methods &#10;[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@27eedb64]"/>
+    <skipped message="Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods &#10;[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]"/>
     <system-out><![CDATA[deleberatlyFailTest got failed.
 ************************************
 ************************************
@@ -271,7 +978,7 @@ deleberatlySkippedTest1 started executing.
 ]]></system-out>
   </testcase>
   <testcase name="deleberatlySkippedTest2" classname="api.test.PetTest" time="0.0">
-    <skipped message="Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@27eedb64 depends on not successfully finished methods &#10;[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@27eedb64]"/>
+    <skipped message="Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods &#10;[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]"/>
     <system-out><![CDATA[deleberatlySkippedTest1 got skipped.
 ************************************
 ************************************
@@ -280,46 +987,141 @@ deleberatlySkippedTest1 started executing.
 deleberatlySkippedTest2 started executing.
 ]]></system-out>
   </testcase>
-  <testcase name="testPostStoreResponse" classname="api.test.StoreTest" time="1.576">
+  <testcase name="testPostStoreResponse" classname="api.test.StoreTest" time="6.658">
     <system-out><![CDATA[deleberatlySkippedTest2 got skipped.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 testPostStoreResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/store/order' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":8,"petId":2000,"quantity":40,"shipDate":"2023-12-12T16:35:59.906+0000","status":"placed","complete":true}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 8,
+    "petId": 2000,
+    "quantity": 40,
+    "shipDate": "2023-12-12T16:35:59.906+0000",
+    "status": "placed",
+    "complete": true
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:06 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 ]]></system-out>
   </testcase>
-  <testcase name="testGetStoreOrderResponse" classname="api.test.StoreTest" time="2.89">
+  <testcase name="testGetStoreOrderResponse" classname="api.test.StoreTest" time="6.403">
+    <failure message="Response time is outside the expected range (200-2000ms). expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.StoreTest.testGetStoreOrderResponse(StoreTest.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
     <system-out><![CDATA[testPostStoreResponse got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 testGetStoreOrderResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/store/order/8' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 8,
+    "petId": 2000,
+    "quantity": 40,
+    "shipDate": "2023-12-12T16:35:59.906+0000",
+    "status": "placed",
+    "complete": true
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:13 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 ]]></system-out>
   </testcase>
-  <testcase name="testGetStoreInventoriesResponse" classname="api.test.StoreTest" time="1.655">
-    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;error: object instance has properties which are not allowed by the schema: [&quot;AVAILABLE&quot;,&quot;Available&quot;,&quot;none&quot;,&quot;pending&quot;,&quot;peric&quot;,&quot;{{PetStatus-Updated}}&quot;]&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;additionalProperties&quot;&#10;    unwanted: [&quot;AVAILABLE&quot;,&quot;Available&quot;,&quot;none&quot;,&quot;pending&quot;,&quot;peric&quot;,&quot;{{PetStatus-Updated}}&quot;]&#10;error: object has missing required properties ([&quot;placed&quot;,&quot;ratvelleg&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;available&quot;,&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;sold&quot;,&quot;status&quot;,&quot;string&quot;]&#10;    missing: [&quot;placed&quot;,&quot;ratvelleg&quot;]&#10;&#10;  Actual: {&quot;AVAILABLE&quot;:2,&quot;sold&quot;:2,&quot;{{PetStatus-Updated}}&quot;:1,&quot;string&quot;:529,&quot;pending&quot;:7,&quot;available&quot;:196,&quot;Available&quot;:1,&quot;none&quot;:1,&quot;peric&quot;:2,&quot;status&quot;:18}&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+  <testcase name="testGetStoreInventoriesResponse" classname="api.test.StoreTest" time="1.95">
+    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;error: object instance has properties which are not allowed by the schema: [&quot;array&quot;,&quot;capacitor&quot;,&quot;driver&quot;,&quot;feed&quot;,&quot;hard drive&quot;,&quot;not available&quot;,&quot;pending&quot;,&quot;program&quot;,&quot;send&quot;,&quot;transmitter&quot;,&quot;unavailable&quot;]&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;additionalProperties&quot;&#10;    unwanted: [&quot;array&quot;,&quot;capacitor&quot;,&quot;driver&quot;,&quot;feed&quot;,&quot;hard drive&quot;,&quot;not available&quot;,&quot;pending&quot;,&quot;program&quot;,&quot;send&quot;,&quot;transmitter&quot;,&quot;unavailable&quot;]&#10;error: object has missing required properties ([&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;available&quot;,&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;sold&quot;,&quot;status&quot;,&quot;string&quot;]&#10;    missing: [&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;]&#10;&#10;  Actual: {&quot;sold&quot;:7,&quot;string&quot;:733,&quot;unavailable&quot;:2,&quot;pending&quot;:3,&quot;available&quot;:195,&quot;program&quot;:1,&quot;capacitor&quot;:3,&quot;feed&quot;:2,&quot;driver&quot;:1,&quot;array&quot;:1,&quot;not available&quot;:1,&quot;send&quot;:4,&quot;transmitter&quot;:1,&quot;hard drive&quot;:1}&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Response body doesn't match expectation.
 Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: ["AVAILABLE","Available","none","pending","peric","{{PetStatus-Updated}}"]
+error: object instance has properties which are not allowed by the schema: ["array","capacitor","driver","feed","hard drive","not available","pending","program","send","transmitter","unavailable"]
     level: "error"
     schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
     instance: {"pointer":""}
     domain: "validation"
     keyword: "additionalProperties"
-    unwanted: ["AVAILABLE","Available","none","pending","peric","{{PetStatus-Updated}}"]
-error: object has missing required properties (["placed","ratvelleg"])
+    unwanted: ["array","capacitor","driver","feed","hard drive","not available","pending","program","send","transmitter","unavailable"]
+error: object has missing required properties (["placed","ratvelleg","status"])
     level: "error"
     schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
     instance: {"pointer":""}
     domain: "validation"
     keyword: "required"
     required: ["available","placed","ratvelleg","sold","status","string"]
-    missing: ["placed","ratvelleg"]
+    missing: ["placed","ratvelleg","status"]
 
-  Actual: {"AVAILABLE":2,"sold":2,"{{PetStatus-Updated}}":1,"string":529,"pending":7,"available":196,"Available":1,"none":1,"peric":2,"status":18}
+  Actual: {"sold":7,"string":733,"unavailable":2,"pending":3,"available":195,"program":1,"capacitor":3,"feed":2,"driver":1,"array":1,"not available":1,"send":4,"transmitter":1,"hard drive":1}
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -345,7 +1147,7 @@ error: object has missing required properties (["placed","ratvelleg"])
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:293)
+	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:278)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -380,32 +1182,184 @@ error: object has missing required properties (["placed","ratvelleg"])
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
-    <system-out><![CDATA[testGetStoreOrderResponse got successfully executed.
+    <system-out><![CDATA[testGetStoreOrderResponse got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 testGetStoreInventoriesResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/store/inventory?api_key=special-key' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "sold": 7,
+    "string": 733,
+    "unavailable": 2,
+    "pending": 3,
+    "available": 195,
+    "program": 1,
+    "capacitor": 3,
+    "feed": 2,
+    "driver": 1,
+    "array": 1,
+    "not available": 1,
+    "send": 4,
+    "transmitter": 1,
+    "hard drive": 1
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:15 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteStoreOrderResponse" classname="api.test.StoreTest" time="2.971">
+  <testcase name="testDeleteStoreOrderResponse" classname="api.test.StoreTest" time="2.841">
+    <failure message="Expected status code is 200. expected [200] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Expected status code is 200. expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at api.test.StoreTest.testDeleteStoreOrderResponse(StoreTest.java:365)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
     <system-out><![CDATA[testGetStoreInventoriesResponse got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 testDeleteStoreOrderResponse started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X DELETE 'https://petstore.swagger.io/v2/store/order/8' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "8"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:16 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/store/order/8' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 404 Not Found
+Response Body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:18 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 ]]></system-out>
   </testcase>
-  <testcase name="createUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.445">
-    <system-out><![CDATA[testDeleteStoreOrderResponse got successfully executed.
+  <testcase name="createUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.454">
+    <system-out><![CDATA[testDeleteStoreOrderResponse got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 createUser_shouldReturn200StatusCode started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/user' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":1777178337,"username":"emanuel.roberts","firstName":"Zula","lastName":"Spinka","email":"aretha.stiedemann@example.com","password":"7rt12ktczcerb","phone":"1-854-939-1165","userStatus":0}'
+***************************************************************
+Response Status line: 
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1777178337"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:20 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+HTTP/1.1 200 OK
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -417,19 +1371,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
   <testcase name="createUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[createUser_shouldReturn200StatusCode got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 createUser_shouldRespondWithinExpectedTime started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -441,19 +1396,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
   <testcase name="createUser_shouldReturnCorrectContentTypeHeader" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[createUser_shouldRespondWithinExpectedTime got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 createUser_shouldReturnCorrectContentTypeHeader started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -465,19 +1421,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="createUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.0">
+  <testcase name="createUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.015">
     <system-out><![CDATA[createUser_shouldReturnCorrectContentTypeHeader got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 createUser_shouldReturnValidResponseFieldTypes started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -489,19 +1446,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="createUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.022">
+  <testcase name="createUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.05">
     <system-out><![CDATA[createUser_shouldReturnValidResponseFieldTypes got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 createUser_shouldReturnCorrectFieldValues started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -513,19 +1471,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="createUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.023">
+  <testcase name="createUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.08">
     <system-out><![CDATA[createUser_shouldReturnCorrectFieldValues got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 createUser_shouldMatchJsonSchema started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -537,28 +1496,98 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="getUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.347">
+  <testcase name="getUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.986">
     <system-out><![CDATA[createUser_shouldMatchJsonSchema got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 getUser_shouldReturn200StatusCode started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/emanuel.roberts' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "id": 1777178337,
+    "username": "emanuel.roberts",
+    "firstName": "Zula",
+    "lastName": "Spinka",
+    "email": "aretha.stiedemann@example.com",
+    "password": "7rt12ktczcerb",
+    "phone": "1-854-939-1165",
+    "userStatus": 0
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:22 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 ]]></system-out>
   </testcase>
   <testcase name="getUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.0">
+    <failure message="Response time is outside the expected range. expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response time is outside the expected range. expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.UserTest.getUser_shouldRespondWithinExpectedTime(UserTest.java:367)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
     <system-out><![CDATA[getUser_shouldReturn200StatusCode got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 getUser_shouldRespondWithinExpectedTime started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:47 GMT
+Date: Sat, 30 Nov 2024 13:59:22 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -568,26 +1597,27 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 1583772475,
-    "username": "masako.mclaughlin",
-    "firstName": "Gary",
-    "lastName": "Feest",
-    "email": "dan.zieme@example.com",
-    "password": "rz341bent",
-    "phone": "513.640.1280",
+    "id": 1777178337,
+    "username": "emanuel.roberts",
+    "firstName": "Zula",
+    "lastName": "Spinka",
+    "email": "aretha.stiedemann@example.com",
+    "password": "7rt12ktczcerb",
+    "phone": "1-854-939-1165",
     "userStatus": 0
 }
 ]]></system-out>
   </testcase>
   <testcase name="getUser_shouldReturnCorrectContentTypeHeader" classname="api.test.UserTest" time="0.0">
-    <system-out><![CDATA[getUser_shouldRespondWithinExpectedTime got successfully executed.
+    <system-out><![CDATA[getUser_shouldRespondWithinExpectedTime got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 getUser_shouldReturnCorrectContentTypeHeader started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:47 GMT
+Date: Sat, 30 Nov 2024 13:59:22 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -597,26 +1627,27 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 1583772475,
-    "username": "masako.mclaughlin",
-    "firstName": "Gary",
-    "lastName": "Feest",
-    "email": "dan.zieme@example.com",
-    "password": "rz341bent",
-    "phone": "513.640.1280",
+    "id": 1777178337,
+    "username": "emanuel.roberts",
+    "firstName": "Zula",
+    "lastName": "Spinka",
+    "email": "aretha.stiedemann@example.com",
+    "password": "7rt12ktczcerb",
+    "phone": "1-854-939-1165",
     "userStatus": 0
 }
 ]]></system-out>
   </testcase>
-  <testcase name="getUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.002">
+  <testcase name="getUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[getUser_shouldReturnCorrectContentTypeHeader got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 getUser_shouldReturnValidResponseFieldTypes started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:47 GMT
+Date: Sat, 30 Nov 2024 13:59:22 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -626,26 +1657,27 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 1583772475,
-    "username": "masako.mclaughlin",
-    "firstName": "Gary",
-    "lastName": "Feest",
-    "email": "dan.zieme@example.com",
-    "password": "rz341bent",
-    "phone": "513.640.1280",
+    "id": 1777178337,
+    "username": "emanuel.roberts",
+    "firstName": "Zula",
+    "lastName": "Spinka",
+    "email": "aretha.stiedemann@example.com",
+    "password": "7rt12ktczcerb",
+    "phone": "1-854-939-1165",
     "userStatus": 0
 }
 ]]></system-out>
   </testcase>
-  <testcase name="getUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.47">
+  <testcase name="getUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.126">
     <system-out><![CDATA[getUser_shouldReturnValidResponseFieldTypes got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 getUser_shouldReturnCorrectFieldValues started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:47 GMT
+Date: Sat, 30 Nov 2024 13:59:22 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -655,26 +1687,51 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 1583772475,
-    "username": "masako.mclaughlin",
-    "firstName": "Gary",
-    "lastName": "Feest",
-    "email": "dan.zieme@example.com",
-    "password": "rz341bent",
-    "phone": "513.640.1280",
+    "id": 1777178337,
+    "username": "emanuel.roberts",
+    "firstName": "Zula",
+    "lastName": "Spinka",
+    "email": "aretha.stiedemann@example.com",
+    "password": "7rt12ktczcerb",
+    "phone": "1-854-939-1165",
     "userStatus": 0
 }
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.433">
+  <testcase name="updateUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="6.435">
     <system-out><![CDATA[getUser_shouldReturnCorrectFieldValues got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 updateUser_shouldReturn200StatusCode started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X PUT 'https://petstore.swagger.io/v2/user/emanuel.roberts' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":1777178337,"username":"emanuel.roberts","firstName":"Freddie","lastName":"Raynor","email":"taryn.dare@example.com","password":"7rt12ktczcerb","phone":"1-854-939-1165","userStatus":0}'
+***************************************************************
+Response Status line: 
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:49 GMT
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1777178337"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:28 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+HTTP/1.1 200 OK
+Date: Sat, 30 Nov 2024 13:59:28 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -686,19 +1743,59 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.0">
+  <testcase name="updateUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.001">
+    <failure message="Response time is outside the expected range (200-2000ms). expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.UserTest.updateUser_shouldRespondWithinExpectedTime(UserTest.java:593)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
     <system-out><![CDATA[updateUser_shouldReturn200StatusCode got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 updateUser_shouldRespondWithinExpectedTime started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:49 GMT
+Date: Sat, 30 Nov 2024 13:59:28 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -710,19 +1807,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
   <testcase name="updateUser_shouldReturnCorrectContentTypeHeader" classname="api.test.UserTest" time="0.0">
-    <system-out><![CDATA[updateUser_shouldRespondWithinExpectedTime got successfully executed.
+    <system-out><![CDATA[updateUser_shouldRespondWithinExpectedTime got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 updateUser_shouldReturnCorrectContentTypeHeader started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:49 GMT
+Date: Sat, 30 Nov 2024 13:59:28 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -734,14 +1832,14 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
   <testcase name="updateUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.0">
     <failure message="JSONObject[&quot;id&quot;] not found." type="org.json.JSONException"><![CDATA[org.json.JSONException: JSONObject["id"] not found.
-	at org.json.JSONObject.get(JSONObject.java:570)
-	at api.test.UserTest.updateUser_shouldReturnValidResponseFieldTypes(UserTest.java:619)
+	at org.json.JSONObject.get(JSONObject.java:596)
+	at api.test.UserTest.updateUser_shouldReturnValidResponseFieldTypes(UserTest.java:655)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -777,6 +1875,7 @@ Server: Jetty(9.2.9.v20150224)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[updateUser_shouldReturnCorrectContentTypeHeader got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
@@ -784,9 +1883,9 @@ Server: Jetty(9.2.9.v20150224)
 updateUser_shouldReturnValidResponseFieldTypes started executing.
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.073">
+  <testcase name="updateUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.094">
     <failure message="Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;io.restassured.response.ExtractableResponse.path(String, String[])&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "io.restassured.response.ExtractableResponse.path(String, String[])" is null
-	at api.test.UserTest.updateUser_shouldReturnCorrectFieldValues(UserTest.java:658)
+	at api.test.UserTest.updateUser_shouldReturnCorrectFieldValues(UserTest.java:694)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -822,6 +1921,7 @@ updateUser_shouldReturnValidResponseFieldTypes started executing.
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[updateUser_shouldReturnValidResponseFieldTypes got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
@@ -829,8 +1929,8 @@ updateUser_shouldReturnValidResponseFieldTypes started executing.
 updateUser_shouldReturnCorrectFieldValues started executing.
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.023">
-    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;error: object instance has properties which are not allowed by the schema: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;additionalProperties&quot;&#10;    unwanted: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]&#10;error: object has missing required properties ([&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]&#10;    missing: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]&#10;&#10;  Actual: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;1583772475&quot;}&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+  <testcase name="updateUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.068">
+    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;error: object instance has properties which are not allowed by the schema: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;additionalProperties&quot;&#10;    unwanted: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]&#10;error: object has missing required properties ([&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]&#10;    missing: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]&#10;&#10;  Actual: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;1777178337&quot;}&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Response body doesn't match expectation.
 Expected: The content to match the given JSON schema.
@@ -850,7 +1950,7 @@ error: object has missing required properties (["email","firstName","id","lastNa
     required: ["email","firstName","id","lastName","password","phone","userStatus","username"]
     missing: ["email","firstName","id","lastName","password","phone","userStatus","username"]
 
-  Actual: {"code":200,"type":"unknown","message":"1583772475"}
+  Actual: {"code":200,"type":"unknown","message":"1777178337"}
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -874,7 +1974,7 @@ error: object has missing required properties (["email","firstName","id","lastNa
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.UserTest.updateUser_shouldMatchJsonSchema(UserTest.java:697)
+	at api.test.UserTest.updateUser_shouldMatchJsonSchema(UserTest.java:733)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -910,13 +2010,14 @@ error: object has missing required properties (["email","firstName","id","lastNa
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></failure>
     <system-out><![CDATA[updateUser_shouldReturnCorrectFieldValues got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 updateUser_shouldMatchJsonSchema started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:49 GMT
+Date: Sat, 30 Nov 2024 13:59:28 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -928,19 +2029,44 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="updateUser_withInvalidUsername_shouldHandleGracefully" classname="api.test.UserTest" time="1.407">
+  <testcase name="updateUser_withInvalidUsername_shouldHandleGracefully" classname="api.test.UserTest" time="1.499">
     <system-out><![CDATA[updateUser_shouldMatchJsonSchema got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 updateUser_withInvalidUsername_shouldHandleGracefully started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X PUT 'https://petstore.swagger.io/v2/user/wrongUsername' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":1777178337,"username":"emanuel.roberts","firstName":"Freddie","lastName":"Raynor","email":"taryn.dare@example.com","password":"7rt12ktczcerb","phone":"1-854-939-1165","userStatus":0}'
+***************************************************************
+Response Status line: 
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:51 GMT
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1777178337"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:30 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+HTTP/1.1 200 OK
+Date: Sat, 30 Nov 2024 13:59:30 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -952,164 +2078,221 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="loginUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.38">
+  <testcase name="loginUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.413">
     <system-out><![CDATA[updateUser_withInvalidUsername_shouldHandleGracefully got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 loginUser_shouldReturn200StatusCode started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/login?api_key=special-key' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"password":"7rt12ktczcerb","username":"emanuel.roberts"}'
+***************************************************************
+Response Status line: 
+HTTP/1.1 200 OK
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "logged in user session:1732975172048"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:32 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=close
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+X-Expires-After=Sat Nov 30 14:59:32 UTC 2024
+X-Rate-Limit=5000
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
 HTTP/1.1 200 OK
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1729686532756"
+    "message": "logged in user session:1732975172048"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="loginUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.001">
+  <testcase name="loginUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[loginUser_shouldReturn200StatusCode got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 loginUser_shouldRespondWithinExpectedTime started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:52 GMT
+Date: Sat, 30 Nov 2024 13:59:32 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: close
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Wed Oct 23 13:28:52 UTC 2024
+X-Expires-After: Sat Nov 30 14:59:32 UTC 2024
 X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1729686532756"
+    "message": "logged in user session:1732975172048"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="loginUser_shouldReturnCorrectContentTypeHeader" classname="api.test.UserTest" time="0.0">
+  <testcase name="loginUser_shouldReturnCorrectContentTypeHeader" classname="api.test.UserTest" time="0.007">
     <system-out><![CDATA[loginUser_shouldRespondWithinExpectedTime got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 loginUser_shouldReturnCorrectContentTypeHeader started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:52 GMT
+Date: Sat, 30 Nov 2024 13:59:32 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: close
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Wed Oct 23 13:28:52 UTC 2024
+X-Expires-After: Sat Nov 30 14:59:32 UTC 2024
 X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1729686532756"
+    "message": "logged in user session:1732975172048"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="loginUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.001">
+  <testcase name="loginUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[loginUser_shouldReturnCorrectContentTypeHeader got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 loginUser_shouldReturnValidResponseFieldTypes started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:52 GMT
+Date: Sat, 30 Nov 2024 13:59:32 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: close
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Wed Oct 23 13:28:52 UTC 2024
+X-Expires-After: Sat Nov 30 14:59:32 UTC 2024
 X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1729686532756"
+    "message": "logged in user session:1732975172048"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="loginUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.023">
+  <testcase name="loginUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.042">
     <system-out><![CDATA[loginUser_shouldReturnValidResponseFieldTypes got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 loginUser_shouldReturnCorrectFieldValues started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:52 GMT
+Date: Sat, 30 Nov 2024 13:59:32 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: close
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Wed Oct 23 13:28:52 UTC 2024
+X-Expires-After: Sat Nov 30 14:59:32 UTC 2024
 X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1729686532756"
+    "message": "logged in user session:1732975172048"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="loginUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.011">
+  <testcase name="loginUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.06">
     <system-out><![CDATA[loginUser_shouldReturnCorrectFieldValues got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 loginUser_shouldMatchJsonSchema started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:52 GMT
+Date: Sat, 30 Nov 2024 13:59:32 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: close
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: GET, POST, DELETE, PUT
 Access-Control-Allow-Headers: Content-Type, api_key, Authorization
-X-Expires-After: Wed Oct 23 13:28:52 UTC 2024
+X-Expires-After: Sat Nov 30 14:59:32 UTC 2024
 X-Rate-Limit: 5000
 Server: Jetty(9.2.9.v20150224)
 
 {
     "code": 200,
     "type": "unknown",
-    "message": "logged in user session:1729686532756"
+    "message": "logged in user session:1732975172048"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="logoutUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.373">
+  <testcase name="logoutUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.501">
     <system-out><![CDATA[loginUser_shouldMatchJsonSchema got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 logoutUser_shouldReturn200StatusCode started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/logout' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:54 GMT
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:33 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+HTTP/1.1 200 OK
+Date: Sat, 30 Nov 2024 13:59:33 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1127,13 +2310,14 @@ Server: Jetty(9.2.9.v20150224)
   </testcase>
   <testcase name="logoutUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[logoutUser_shouldReturn200StatusCode got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 logoutUser_shouldRespondWithinExpectedTime started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:54 GMT
+Date: Sat, 30 Nov 2024 13:59:33 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1151,13 +2335,14 @@ Server: Jetty(9.2.9.v20150224)
   </testcase>
   <testcase name="logoutUser_shouldReturnCorrectContentTypeHeader" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[logoutUser_shouldRespondWithinExpectedTime got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 logoutUser_shouldReturnCorrectContentTypeHeader started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:54 GMT
+Date: Sat, 30 Nov 2024 13:59:33 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1175,13 +2360,14 @@ Server: Jetty(9.2.9.v20150224)
   </testcase>
   <testcase name="logoutUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[logoutUser_shouldReturnCorrectContentTypeHeader got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 logoutUser_shouldReturnValidResponseFieldTypes started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:54 GMT
+Date: Sat, 30 Nov 2024 13:59:33 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1197,15 +2383,16 @@ Server: Jetty(9.2.9.v20150224)
 }
 ]]></system-out>
   </testcase>
-  <testcase name="logoutUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.015">
+  <testcase name="logoutUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.024">
     <system-out><![CDATA[logoutUser_shouldReturnValidResponseFieldTypes got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 logoutUser_shouldReturnCorrectFieldValues started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:54 GMT
+Date: Sat, 30 Nov 2024 13:59:33 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1221,15 +2408,16 @@ Server: Jetty(9.2.9.v20150224)
 }
 ]]></system-out>
   </testcase>
-  <testcase name="logoutUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.014">
+  <testcase name="logoutUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.06">
     <system-out><![CDATA[logoutUser_shouldReturnCorrectFieldValues got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 logoutUser_shouldMatchJsonSchema started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:54 GMT
+Date: Sat, 30 Nov 2024 13:59:33 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1245,15 +2433,40 @@ Server: Jetty(9.2.9.v20150224)
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deleteUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.365">
+  <testcase name="deleteUser_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.466">
     <system-out><![CDATA[logoutUser_shouldMatchJsonSchema got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 deleteUser_shouldReturn200StatusCode started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X DELETE 'https://petstore.swagger.io/v2/user/emanuel.roberts' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:55 GMT
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "emanuel.roberts"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:35 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+HTTP/1.1 200 OK
+Date: Sat, 30 Nov 2024 13:59:35 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1265,19 +2478,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "masako.mclaughlin"
+    "message": "emanuel.roberts"
 }
 ]]></system-out>
   </testcase>
   <testcase name="deleteUser_shouldRespondWithinExpectedTime" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[deleteUser_shouldReturn200StatusCode got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 deleteUser_shouldRespondWithinExpectedTime started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:55 GMT
+Date: Sat, 30 Nov 2024 13:59:35 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1289,19 +2503,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "masako.mclaughlin"
+    "message": "emanuel.roberts"
 }
 ]]></system-out>
   </testcase>
   <testcase name="deleteUser_shouldReturnValidResponseFieldTypes" classname="api.test.UserTest" time="0.0">
     <system-out><![CDATA[deleteUser_shouldRespondWithinExpectedTime got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 deleteUser_shouldReturnValidResponseFieldTypes started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1313,19 +2528,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
   <testcase name="deleteUser_shouldReturnCorrectFieldValues" classname="api.test.UserTest" time="0.03">
     <system-out><![CDATA[deleteUser_shouldReturnValidResponseFieldTypes got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 deleteUser_shouldReturnCorrectFieldValues started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1337,19 +2553,20 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deleteUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.084">
+  <testcase name="deleteUser_shouldMatchJsonSchema" classname="api.test.UserTest" time="0.068">
     <system-out><![CDATA[deleteUser_shouldReturnCorrectFieldValues got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 deleteUser_shouldMatchJsonSchema started executing.
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:46 GMT
+Date: Sat, 30 Nov 2024 13:59:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1361,19 +2578,83 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "1583772475"
+    "message": "1777178337"
 }
 ]]></system-out>
   </testcase>
-  <testcase name="deletedUser_shouldNotBeFetched_shouldReturn404Error" classname="api.test.UserTest" time="1.359">
+  <testcase name="deletedUser_shouldNotBeFetched_shouldReturn404Error" classname="api.test.UserTest" time="4.499">
+    <failure message="Response time is outside the expected range (200-2000ms). expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at api.test.UserTest.deletedUser_shouldNotBeFetched_shouldReturn404Error(UserTest.java:1376)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
     <system-out><![CDATA[deleteUser_shouldMatchJsonSchema got successfully executed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 deletedUser_shouldNotBeFetched_shouldReturn404Error started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/emanuel.roberts' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+***************************************************************
+Response Status line: 
 HTTP/1.1 404 Not Found
-Date: Wed, 23 Oct 2024 12:28:57 GMT
+Response Body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:39 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+HTTP/1.1 404 Not Found
+Date: Sat, 30 Nov 2024 13:59:39 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -1389,15 +2670,40 @@ Server: Jetty(9.2.9.v20150224)
 }
 ]]></system-out>
   </testcase>
-  <testcase name="createUsersInBulk_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.481">
-    <system-out><![CDATA[deletedUser_shouldNotBeFetched_shouldReturn404Error got successfully executed.
+  <testcase name="createUsersInBulk_shouldReturn200StatusCode" classname="api.test.UserTest" time="1.504">
+    <system-out><![CDATA[deletedUser_shouldNotBeFetched_shouldReturn404Error got failed.
+RequestResponseFilter instantiated...
 ************************************
 ************************************
 
 
 createUsersInBulk_shouldReturn200StatusCode started executing.
+==================================================================
+==================================================================
+cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/user/createWithArray' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '[{"firstName":"sunt culpa tempor","lastName":"incididunt commodo","password":"in","userStatus":-2141155,"phone":"cillum","id":44560255,"email":"ut Lorem incididunt ullamco","username":"do aute"},{"firstName":"nostrud reprehenderit","lastName":"ut adipisicing","password":"reprehenderit deserunt anim","userStatus":25233742,"phone":"eu","id":97451113,"email":"id","username":"laboris labore officia nulla non"}]'
+***************************************************************
+Response Status line: 
 HTTP/1.1 200 OK
-Date: Wed, 23 Oct 2024 12:28:58 GMT
+Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+Response Headers: 
+Date=Sat, 30 Nov 2024 13:59:41 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+==================================================================
+==================================================================
+HTTP/1.1 200 OK
+Date: Sat, 30 Nov 2024 13:59:41 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive

@@ -5,15 +5,26 @@ import java.io.File;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.github.dzieciou.testing.curl.CurlRestAssuredConfigFactory;
+import com.github.dzieciou.testing.curl.Options;
 import com.github.javafaker.Faker;
 
 import api.endpoints.StoreEndpoints;
+import api.path.Routes;
 import api.payload.Store;
 import api.utilities.ExtentReportManager;
+import api.utilities.RequestResponseFilter;
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.config.HttpClientConfig;
+import io.restassured.config.RestAssuredConfig;
+import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
@@ -44,6 +55,33 @@ public class StoreTest {
 	
 	
 	
+	@BeforeMethod()
+	public void globalSetUP() 
+	{
+		RestAssured.baseURI=Routes.base_url;
+//		RestAssured.basePath = "/v2";
+		RestAssured.requestSpecification = new RequestSpecBuilder()
+				.setConfig(RestAssured.config()
+			    .httpClient(HttpClientConfig.httpClientConfig()
+                .setParam("http.connection.timeout", 5000)
+                .setParam("http.socket.timeout", 5000)))
+			    .setContentType(ContentType.JSON)
+			    .setAccept(ContentType.JSON)
+			    .build();
+		Options options = Options.builder().logStacktrace().build();
+		RestAssuredConfig config = CurlRestAssuredConfigFactory.createConfig(options);
+		 RestAssured.config = config;
+		RestAssured.filters(new RequestResponseFilter());
+	}
+	
+	
+	@AfterMethod()
+	public void tearDown() 
+	{
+		RestAssured.reset();
+	}
+
+	
 	@Test(priority = 1, description = "This test verifies the Post Store response for placing order of pet and validates the data")
 	public void testPostStoreResponse() 
 	{
@@ -55,40 +93,15 @@ public class StoreTest {
 	    logger.info("***** Starting testPostStoreResponse *****");
 	
 	    try {
-	        // Log the input payload data
-	        logger.info("Test Input Data: Store ID: {}, Pet ID: {}, Quantity: {}, Ship Date: {}, Status: {}, Complete: {}", 
-	                    storePayload.getId(), storePayload.getPetId(), storePayload.getQuantity(), storePayload.getShipDate(), 
-	                    storePayload.getStatus(), storePayload.isComplete());
-	
-	        ExtentReportManager.test.info(String.format(
-	                "Test Input Data: Store ID: %d, Pet ID: %d, Quantity: %d, Ship Date: %s, Status: %s, Complete: %b",
-	                storePayload.getId(), storePayload.getPetId(), storePayload.getQuantity(), storePayload.getShipDate(),
-	                storePayload.getStatus(), storePayload.isComplete()
-	        ));
-	
 	        // Send POST request to place order for a pet
 	        logger.info("Sending POST request to place an order for the pet.");
 	        ExtentReportManager.test.info("Sending POST request");
 	
 	        Response response = StoreEndpoints.placeOrderForPet(storePayload);
 	
-	        // Extract and log StatusCode, Headers, and JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-	
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
 	        // Assertions for response status code, headers, and response time
 	        logger.info("Asserting response status, headers, and time");
-	        Assert.assertEquals(statusCode, 200, "Expected status code is 200.");
+	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
 	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
 	        Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 12000, "Response time is outside the expected range (200-2000ms).");
 	        ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
@@ -157,23 +170,9 @@ public class StoreTest {
 	        ExtentReportManager.test.info("Sending GET request");
 	        Response response = StoreEndpoints.findPurchaseOrder(storePayload.getId());
 
-	        // Log the response details: Status Code, Headers, and JSON Body
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-
 	        // Assertions for the response status code, content type, and response time
 	        logger.info("Asserting response status, headers, and time");
-	        Assert.assertEquals(statusCode, 200, "Expected status code is 200.");
+	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
 	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
 	        Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 2000, "Response time is outside the expected range (200-2000ms).");
 	        ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
@@ -253,20 +252,6 @@ public class StoreTest {
 	        ExtentReportManager.test.info("Sending GET request");
 	        Response response = StoreEndpoints.returnPetInventories();
 
-	        // Log the response details: Status Code, Headers, and JSON Body
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	        
 	        // Assertions for the response status code and content type
 	        logger.info("Asserting response status code and content type");
 	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
@@ -292,7 +277,6 @@ public class StoreTest {
 	        logger.info("Validating response against the JSON schema located at: {}", jsonFilePath);
 	        response.then().body(JsonSchemaValidator.matchesJsonSchema(file));
 	        ExtentReportManager.test.pass("Response successfully validated against the JSON schema");
-
 	    } 
 	    catch (AssertionError e) 
 	    {
@@ -333,22 +317,8 @@ public class StoreTest {
 	        ExtentReportManager.test.info("Sending DELETE request for Order ID: " + storePayload.getId());
 	        Response response = StoreEndpoints.deletePutchaseOrder(storePayload.getId());
 
-	        // Log the response details: Status Code, Headers, and JSON Body
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-
 	        // Assertions for status code, headers, and response time
-	        Assert.assertEquals(statusCode, 200, "Expected status code is 200.");
+	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
 	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
 	        Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 2000, "Response time is outside the expected range (200-2000ms).");
 	        ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
@@ -392,7 +362,7 @@ public class StoreTest {
 	        logger.info("JSON response body: {}", jsonResponse$);
 	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse$ + "</span></pre></b>");
 
-	        Assert.assertEquals(statusCode, 200, "Expected status code is 200.");
+	        Assert.assertEquals(statusCode$, 200, "Expected status code is 200.");
 	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
 	        Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 2000, "Response time is outside the expected range (200-2000ms).");
 	        ExtentReportManager.test.pass("Assertions for status, headers, and time passed");

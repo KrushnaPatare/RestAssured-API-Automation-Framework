@@ -3,29 +3,45 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="api.test.StoreTest">
+      <class name="api.test.PetTest">
         <methods>
-          <include name="setUpData"/>
-          <include name="testGetStoreInventoriesResponse"/>
+          <include name="testFindPetByStatusGetResponse"/>
+          <include name="testUploadPetImagePostResponse"/>
+          <include name="deleberatlyFailTest"/>
+          <include name="globalSetUP"/>
+          <include name="testUpdatePetPostResponse"/>
+          <include name="tearDown"/>
+          <include name="deleberatlySkippedTest2"/>
+          <include name="testAddNewPetPostResponse" invocation-numbers="0"/>
+          <include name="testDeletePetDeleteResponse"/>
+          <include name="setUp"/>
+          <include name="deleberatlySkippedTest1"/>
+          <include name="testFindPetByPetIDGetResponse" invocation-numbers="2"/>
         </methods>
-      </class> <!-- api.test.StoreTest -->
+      </class> <!-- api.test.PetTest -->
       <class name="api.test.UserTest">
         <methods>
           <include name="updateUser_shouldMatchJsonSchema"/>
           <include name="updateUser_shouldReturnCorrectFieldValues"/>
+          <include name="deletedUser_shouldNotBeFetched_shouldReturn404Error"/>
+          <include name="globalSetUP"/>
           <include name="updateUser_shouldReturnValidResponseFieldTypes"/>
+          <include name="getUser_shouldRespondWithinExpectedTime"/>
+          <include name="tearDown"/>
           <include name="setUpData"/>
+          <include name="updateUser_shouldRespondWithinExpectedTime"/>
         </methods>
       </class> <!-- api.test.UserTest -->
-      <class name="api.test.PetTest">
+      <class name="api.test.StoreTest">
         <methods>
-          <include name="testUploadPetImagePostResponse"/>
-          <include name="deleberatlyFailTest"/>
-          <include name="deleberatlySkippedTest2"/>
-          <include name="setUp"/>
-          <include name="deleberatlySkippedTest1"/>
+          <include name="setUpData"/>
+          <include name="tearDown"/>
+          <include name="testGetStoreOrderResponse"/>
+          <include name="testGetStoreInventoriesResponse"/>
+          <include name="testDeleteStoreOrderResponse"/>
+          <include name="globalSetUP"/>
         </methods>
-      </class> <!-- api.test.PetTest -->
+      </class> <!-- api.test.StoreTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

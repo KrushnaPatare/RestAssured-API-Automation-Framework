@@ -1,0 +1,618 @@
+23:29:50.093  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:29:50.100  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:29:50.101  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+23:29:50.101  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 17:59:48 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:29:50.102  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:50.102  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:50.103  [main] INFO  api.test.UserTest - Sending logout request
+23:29:50.104  [main] INFO  api.test.UserTest - Logging response data
+23:29:50.107  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturn200StatusCode *****
+23:29:50.107  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.119  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.119  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldRespondWithinExpectedTime *****
+23:29:50.123  [main] INFO  api.test.UserTest - Response time: 1363
+23:29:50.123  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldRespondWithinExpectedTime *****
+23:29:50.123  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.148  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.148  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnCorrectContentTypeHeader *****
+23:29:50.150  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnCorrectContentTypeHeader *****
+23:29:50.150  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.160  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.160  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnValidResponseFieldTypes *****
+23:29:50.162  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnValidResponseFieldTypes *****
+23:29:50.162  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.172  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.172  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnCorrectFieldValues *****
+23:29:50.215  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnCorrectFieldValues *****
+23:29:50.216  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.245  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.248  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldMatchJsonSchema *****
+23:29:50.286  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldMatchJsonSchema *****
+23:29:50.288  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.326  [main] INFO  api.test.UserTest - ********************************************
+23:29:50.326  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturn200StatusCode *****
+23:29:50.349  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:50.349  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:50.359  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X DELETE 'https://petstore.swagger.io/v2/user/sharika.wiegand' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+23:29:51.707  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:29:51.709  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:29:51.710  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "sharika.wiegand"
+}
+23:29:51.710  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 17:59:49 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:29:51.710  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:51.710  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:51.711  [main] INFO  api.test.UserTest - Status Code: 200
+23:29:51.712  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturn200StatusCode *****
+23:29:51.712  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.732  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.732  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldRespondWithinExpectedTime *****
+23:29:51.734  [main] INFO  api.test.UserTest - Response Time: 1340
+23:29:51.734  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldRespondWithinExpectedTime *****
+23:29:51.734  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.746  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.746  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturnValidResponseFieldTypes *****
+23:29:51.747  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturnValidResponseFieldTypes *****
+23:29:51.748  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.764  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.765  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturnCorrectFieldValues *****
+23:29:51.801  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturnCorrectFieldValues *****
+23:29:51.801  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.811  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.812  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldMatchJsonSchema *****
+23:29:51.832  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldMatchJsonSchema *****
+23:29:51.832  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.851  [main] INFO  api.test.UserTest - ********************************************
+23:29:51.851  [main] INFO  api.test.UserTest - ***** Starting deletedUser_shouldNotBeFetched_shouldReturn404Error *****
+23:29:51.867  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:51.867  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:51.868  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/sharika.wiegand' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+23:29:53.238  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:29:53.240  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 404 Not Found
+23:29:53.241  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+23:29:53.241  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 17:59:51 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:29:53.242  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:53.242  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:53.292  [main] INFO  api.test.UserTest - ***** Finished deletedUser_shouldNotBeFetched_shouldReturn404Error *****
+23:29:53.292  [main] INFO  api.test.UserTest - ********************************************
+23:29:53.316  [main] INFO  api.test.UserTest - ********************************************
+23:29:53.316  [main] INFO  api.test.UserTest - ***** Starting createUsersInBulk_shouldReturn200StatusCode *****
+23:29:53.338  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:53.338  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:53.338  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/user/createWithArray' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '[{"firstName":"sunt culpa tempor","lastName":"incididunt commodo","password":"in","userStatus":-2141155,"phone":"cillum","id":44560255,"email":"ut Lorem incididunt ullamco","username":"do aute"},{"firstName":"nostrud reprehenderit","lastName":"ut adipisicing","password":"reprehenderit deserunt anim","userStatus":25233742,"phone":"eu","id":97451113,"email":"id","username":"laboris labore officia nulla non"}]'
+23:29:54.716  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:29:54.718  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:29:54.719  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+23:29:54.720  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 17:59:52 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:29:54.720  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:54.720  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:29:54.721  [main] INFO  api.test.UserTest - ***** Finished createUsersInBulk_shouldReturn200StatusCode *****
+23:29:54.721  [main] INFO  api.test.UserTest - ********************************************
+23:43:17.455  [main] INFO  api.test.UserTest - ****************************************************************
+23:43:17.460  [main] INFO  api.test.UserTest - *****<<<<<Starting createUser_shouldReturn200StatusCode>>>>>*****
+23:43:17.460  [main] INFO  api.test.UserTest - Sending POST request to create a new user
+23:43:18.554  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:18.555  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:18.556  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/user' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":1660451908,"username":"cleopatra.hoppe","firstName":"Neal","lastName":"White","email":"ahmed.macejkovic@example.com","password":"fgjopvr02ryf","phone":"980.821.7289","userStatus":0}'
+23:43:20.861  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:20.920  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:20.921  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1660451908"
+}
+23:43:20.921  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:18 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:20.922  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:20.922  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:20.937  [main] INFO  api.test.UserTest - StatusCode: 200
+23:43:20.940  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturn200StatusCode *****
+23:43:20.941  [main] INFO  api.test.UserTest - ********************************************
+23:43:20.957  [main] INFO  api.test.UserTest - ********************************************
+23:43:20.957  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldRespondWithinExpectedTime *****
+23:43:20.959  [main] INFO  api.test.UserTest - Response Time: 2291
+23:43:20.971  [main] ERROR api.test.UserTest - Test assertion failed: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+23:43:20.972  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldRespondWithinExpectedTime *****
+23:43:20.972  [main] INFO  api.test.UserTest - ********************************************
+23:43:20.993  [main] INFO  api.test.UserTest - ********************************************
+23:43:20.993  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnCorrectContentTypeHeader *****
+23:43:20.996  [main] INFO  api.test.UserTest - Content-Type Header: application/json
+23:43:20.997  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnCorrectContentTypeHeader *****
+23:43:20.997  [main] INFO  api.test.UserTest - ********************************************
+23:43:21.012  [main] INFO  api.test.UserTest - ********************************************
+23:43:21.012  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnValidResponseFieldTypes *****
+23:43:21.020  [main] INFO  api.test.UserTest - Asserting response field types
+23:43:21.021  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnValidResponseFieldTypes *****
+23:43:21.021  [main] INFO  api.test.UserTest - ********************************************
+23:43:21.037  [main] INFO  api.test.UserTest - ********************************************
+23:43:21.038  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnCorrectFieldValues *****
+23:43:21.951  [main] INFO  api.test.UserTest - Code: 200, Type: unknown
+23:43:21.952  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnCorrectFieldValues *****
+23:43:21.952  [main] INFO  api.test.UserTest - ********************************************
+23:43:21.977  [main] INFO  api.test.UserTest - ********************************************
+23:43:21.978  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldMatchJsonSchema *****
+23:43:22.426  [main] INFO  api.test.UserTest - JSON schema validation passed
+23:43:22.427  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldMatchJsonSchema *****
+23:43:22.427  [main] INFO  api.test.UserTest - ********************************************
+23:43:22.437  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturn200StatusCode *****
+23:43:22.458  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:22.458  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:22.460  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/cleopatra.hoppe' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+23:43:23.909  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:23.911  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:23.913  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "id": 1660451908,
+    "username": "cleopatra.hoppe",
+    "firstName": "Neal",
+    "lastName": "White",
+    "email": "ahmed.macejkovic@example.com",
+    "password": "fgjopvr02ryf",
+    "phone": "980.821.7289",
+    "userStatus": 0
+}
+23:43:23.913  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:21 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:23.913  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:23.913  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:23.914  [main] INFO  api.test.UserTest - GET response logged
+23:43:23.914  [main] INFO  api.test.UserTest - StatusCode: 200
+23:43:23.915  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturn200StatusCode *****
+23:43:23.936  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldRespondWithinExpectedTime *****
+23:43:23.940  [main] INFO  api.test.UserTest - Response time: 1440 ms
+23:43:23.940  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldRespondWithinExpectedTime *****
+23:43:23.960  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturnCorrectContentTypeHeader *****
+23:43:23.969  [main] INFO  api.test.UserTest - Content-Type: application/json
+23:43:23.969  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturnCorrectContentTypeHeader *****
+23:43:23.996  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturnValidResponseFieldTypes *****
+23:43:24.002  [main] INFO  api.test.UserTest - Asserting field types in the response body
+23:43:24.002  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturnValidResponseFieldTypes *****
+23:43:24.022  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturnCorrectFieldValues *****
+23:43:24.170  [main] INFO  api.test.UserTest - ***** Finished getUser_shouldReturnCorrectFieldValues *****
+23:43:24.193  [main] INFO  api.test.UserTest - ********************************************
+23:43:24.194  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturn200StatusCode *****
+23:43:24.196  [main] INFO  api.test.UserTest - Sending PUT request to update user.
+23:43:24.211  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:24.211  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:24.212  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X PUT 'https://petstore.swagger.io/v2/user/cleopatra.hoppe' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":1660451908,"username":"cleopatra.hoppe","firstName":"Antony","lastName":"Conn","email":"rufina.glover@example.com","password":"fgjopvr02ryf","phone":"980.821.7289","userStatus":0}'
+23:43:25.532  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:25.534  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:25.535  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1660451908"
+}
+23:43:25.535  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:23 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:25.535  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:25.535  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:25.536  [main] INFO  api.test.UserTest - StatusCode: 200
+23:43:25.537  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturn200StatusCode *****
+23:43:25.537  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.551  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.551  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldRespondWithinExpectedTime *****
+23:43:25.552  [main] INFO  api.test.UserTest - Response Time: 1313
+23:43:25.553  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldRespondWithinExpectedTime *****
+23:43:25.553  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.562  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.563  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturnCorrectContentTypeHeader *****
+23:43:25.564  [main] INFO  api.test.UserTest - Content-Type: application/json
+23:43:25.564  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturnCorrectContentTypeHeader *****
+23:43:25.565  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.574  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.574  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturnValidResponseFieldTypes *****
+23:43:25.575  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturnValidResponseFieldTypes *****
+23:43:25.575  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.605  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.607  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldReturnCorrectFieldValues *****
+23:43:25.720  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldReturnCorrectFieldValues *****
+23:43:25.720  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.746  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.746  [main] INFO  api.test.UserTest - ***** Starting updateUser_shouldMatchJsonSchema *****
+23:43:25.787  [main] ERROR api.test.UserTest - Test assertion failed: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object instance has properties which are not allowed by the schema: ["code","message","type"]
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "additionalProperties"
+    unwanted: ["code","message","type"]
+error: object has missing required properties (["email","firstName","id","lastName","password","phone","userStatus","username"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["email","firstName","id","lastName","password","phone","userStatus","username"]
+    missing: ["email","firstName","id","lastName","password","phone","userStatus","username"]
+
+  Actual: {"code":200,"type":"unknown","message":"1660451908"}
+
+23:43:25.788  [main] INFO  api.test.UserTest - ***** Finished updateUser_shouldMatchJsonSchema *****
+23:43:25.788  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.802  [main] INFO  api.test.UserTest - ********************************************
+23:43:25.802  [main] INFO  api.test.UserTest - ***** Starting updateUser_withInvalidUsername_shouldHandleGracefully *****
+23:43:25.803  [main] INFO  api.test.UserTest - Using invalid username: wrongUsername
+23:43:25.827  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:25.827  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:25.828  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X PUT 'https://petstore.swagger.io/v2/user/wrongUsername' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":1660451908,"username":"cleopatra.hoppe","firstName":"Antony","lastName":"Conn","email":"rufina.glover@example.com","password":"fgjopvr02ryf","phone":"980.821.7289","userStatus":0}'
+23:43:27.182  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:27.183  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:27.184  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1660451908"
+}
+23:43:27.184  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:25 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:27.184  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:27.184  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:27.212  [main] INFO  api.test.UserTest - ***** Finished updateUser_withInvalidUsername_shouldHandleGracefully *****
+23:43:27.212  [main] INFO  api.test.UserTest - ********************************************
+23:43:27.219  [main] INFO  api.test.UserTest - ********************************************
+23:43:27.219  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturn200StatusCode *****
+23:43:27.219  [main] INFO  api.test.UserTest - Sending login request for user: cleopatra.hoppe
+23:43:27.237  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:27.238  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:27.239  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/login?api_key=special-key' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"password":"fgjopvr02ryf","username":"cleopatra.hoppe"}'
+23:43:28.589  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:28.593  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:28.593  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "logged in user session:1732731206645"
+}
+23:43:28.594  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:26 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=close
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+X-Expires-After=Wed Nov 27 19:13:26 UTC 2024
+X-Rate-Limit=5000
+Server=Jetty(9.2.9.v20150224)
+23:43:28.594  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:28.594  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:28.597  [main] INFO  api.test.UserTest - Asserting that the status code is 200
+23:43:28.598  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturn200StatusCode *****
+23:43:28.598  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.605  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.605  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldRespondWithinExpectedTime *****
+23:43:28.606  [main] INFO  api.test.UserTest - Response time: 1348 ms
+23:43:28.606  [main] INFO  api.test.UserTest - Asserting that the response time is between 200ms and 1500ms
+23:43:28.607  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldRespondWithinExpectedTime *****
+23:43:28.607  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.612  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.613  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturnCorrectContentTypeHeader *****
+23:43:28.615  [main] INFO  api.test.UserTest - Asserting that the Content-Type is application/json
+23:43:28.615  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturnCorrectContentTypeHeader *****
+23:43:28.615  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.623  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.624  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturnValidResponseFieldTypes *****
+23:43:28.625  [main] INFO  api.test.UserTest - Asserting that 'code' is an Integer, 'type' is a String, and 'message' is a String
+23:43:28.625  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturnValidResponseFieldTypes *****
+23:43:28.625  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.696  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.696  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldReturnCorrectFieldValues *****
+23:43:28.746  [main] INFO  api.test.UserTest - Asserting that 'code' is 200, 'type' is 'unknown', and 'message' contains 'logged in'
+23:43:28.746  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldReturnCorrectFieldValues *****
+23:43:28.746  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.753  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.753  [main] INFO  api.test.UserTest - ***** Starting loginUser_shouldMatchJsonSchema *****
+23:43:28.755  [main] INFO  api.test.UserTest - Asserting that the response matches the JSON schema from F:\WorkSpace\RestAssuredPetStoreAutomation-main\testData\jsonSchemaFiles\getUserLoginSchema.json
+23:43:28.764  [main] INFO  api.test.UserTest - ***** Finished loginUser_shouldMatchJsonSchema *****
+23:43:28.764  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.771  [main] INFO  api.test.UserTest - ********************************************
+23:43:28.772  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturn200StatusCode *****
+23:43:28.780  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:28.780  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:28.781  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/logout' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+23:43:30.130  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:30.132  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:30.132  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+23:43:30.132  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:28 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:30.132  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:30.132  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:30.133  [main] INFO  api.test.UserTest - Sending logout request
+23:43:30.133  [main] INFO  api.test.UserTest - Logging response data
+23:43:30.134  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturn200StatusCode *****
+23:43:30.135  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.154  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.154  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldRespondWithinExpectedTime *****
+23:43:30.156  [main] INFO  api.test.UserTest - Response time: 1346
+23:43:30.158  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldRespondWithinExpectedTime *****
+23:43:30.158  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.170  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.170  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnCorrectContentTypeHeader *****
+23:43:30.174  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnCorrectContentTypeHeader *****
+23:43:30.174  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.183  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.183  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnValidResponseFieldTypes *****
+23:43:30.200  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnValidResponseFieldTypes *****
+23:43:30.203  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.245  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.254  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldReturnCorrectFieldValues *****
+23:43:30.302  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldReturnCorrectFieldValues *****
+23:43:30.302  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.309  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.309  [main] INFO  api.test.UserTest - ***** Starting logoutUser_shouldMatchJsonSchema *****
+23:43:30.322  [main] INFO  api.test.UserTest - ***** Finished logoutUser_shouldMatchJsonSchema *****
+23:43:30.322  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.333  [main] INFO  api.test.UserTest - ********************************************
+23:43:30.333  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturn200StatusCode *****
+23:43:30.340  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:30.341  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:30.341  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X DELETE 'https://petstore.swagger.io/v2/user/cleopatra.hoppe' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+23:43:31.722  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:31.724  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:31.724  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "cleopatra.hoppe"
+}
+23:43:31.724  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:29 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:31.725  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:31.725  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:31.726  [main] INFO  api.test.UserTest - Status Code: 200
+23:43:31.726  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturn200StatusCode *****
+23:43:31.727  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.741  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.741  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldRespondWithinExpectedTime *****
+23:43:31.742  [main] INFO  api.test.UserTest - Response Time: 1377
+23:43:31.742  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldRespondWithinExpectedTime *****
+23:43:31.743  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.757  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.758  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturnValidResponseFieldTypes *****
+23:43:31.759  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturnValidResponseFieldTypes *****
+23:43:31.760  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.765  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.765  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldReturnCorrectFieldValues *****
+23:43:31.832  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldReturnCorrectFieldValues *****
+23:43:31.833  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.847  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.848  [main] INFO  api.test.UserTest - ***** Starting deleteUser_shouldMatchJsonSchema *****
+23:43:31.860  [main] INFO  api.test.UserTest - ***** Finished deleteUser_shouldMatchJsonSchema *****
+23:43:31.860  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.870  [main] INFO  api.test.UserTest - ********************************************
+23:43:31.870  [main] INFO  api.test.UserTest - ***** Starting deletedUser_shouldNotBeFetched_shouldReturn404Error *****
+23:43:31.879  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:31.879  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:31.880  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X GET 'https://petstore.swagger.io/v2/user/cleopatra.hoppe' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json'
+23:43:33.288  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:33.290  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 404 Not Found
+23:43:33.291  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 1,
+    "type": "error",
+    "message": "User not found"
+}
+23:43:33.291  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:31 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:33.291  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:33.291  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:33.329  [main] INFO  api.test.UserTest - ***** Finished deletedUser_shouldNotBeFetched_shouldReturn404Error *****
+23:43:33.329  [main] INFO  api.test.UserTest - ********************************************
+23:43:33.336  [main] INFO  api.test.UserTest - ********************************************
+23:43:33.336  [main] INFO  api.test.UserTest - ***** Starting createUsersInBulk_shouldReturn200StatusCode *****
+23:43:33.346  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:33.346  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:33.346  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/user/createWithArray' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '[{"firstName":"sunt culpa tempor","lastName":"incididunt commodo","password":"in","userStatus":-2141155,"phone":"cillum","id":44560255,"email":"ut Lorem incididunt ullamco","username":"do aute"},{"firstName":"nostrud reprehenderit","lastName":"ut adipisicing","password":"reprehenderit deserunt anim","userStatus":25233742,"phone":"eu","id":97451113,"email":"id","username":"laboris labore officia nulla non"}]'
+23:43:34.782  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:43:34.784  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:43:34.784  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "ok"
+}
+23:43:34.784  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:13:32 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:43:34.785  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:34.785  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:43:34.786  [main] INFO  api.test.UserTest - ***** Finished createUsersInBulk_shouldReturn200StatusCode *****
+23:43:34.786  [main] INFO  api.test.UserTest - ********************************************
+23:49:08.917  [main] INFO  api.test.UserTest - ****************************************************************
+23:49:08.925  [main] INFO  api.test.UserTest - *****<<<<<Starting createUser_shouldReturn200StatusCode>>>>>*****
+23:49:08.926  [main] INFO  api.test.UserTest - Sending POST request to create a new user
+23:49:11.444  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:49:11.445  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:49:11.450  [main] INFO  api.utilities.RequestResponseFilter - cURL Command: 
+curl -X POST 'https://petstore.swagger.io/v2/user' -H 'Accept: application/json, application/javascript, text/javascript, text/json' -H 'Content-Type: application/json' --data '{"id":1470053518,"username":"londa.schinner","firstName":"Sun","lastName":"Leuschke","email":"shane.metz@example.com","password":"v4ofhy70epoq3q","phone":"946.398.1643","userStatus":0}'
+23:49:14.188  [main] INFO  api.utilities.RequestResponseFilter - ***************************************************************
+23:49:14.291  [main] INFO  api.utilities.RequestResponseFilter - Response Status line: 
+HTTP/1.1 200 OK
+23:49:14.297  [main] INFO  api.utilities.RequestResponseFilter - Response Body: 
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1470053518"
+}
+23:49:14.297  [main] INFO  api.utilities.RequestResponseFilter - Response Headers: 
+Date=Wed, 27 Nov 2024 18:19:12 GMT
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=GET, POST, DELETE, PUT
+Access-Control-Allow-Headers=Content-Type, api_key, Authorization
+Server=Jetty(9.2.9.v20150224)
+23:49:14.298  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:49:14.298  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================
+23:49:14.327  [main] INFO  api.test.UserTest - StatusCode: 200
+23:49:14.334  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturn200StatusCode *****
+23:49:14.334  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.372  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.373  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldRespondWithinExpectedTime *****
+23:49:14.378  [main] INFO  api.test.UserTest - Response Time: 2715
+23:49:14.391  [main] ERROR api.test.UserTest - Test assertion failed: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+23:49:14.391  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldRespondWithinExpectedTime *****
+23:49:14.392  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.445  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.445  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnCorrectContentTypeHeader *****
+23:49:14.451  [main] INFO  api.test.UserTest - Content-Type Header: application/json
+23:49:14.452  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnCorrectContentTypeHeader *****
+23:49:14.452  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.502  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.502  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnValidResponseFieldTypes *****
+23:49:14.520  [main] INFO  api.test.UserTest - Asserting response field types
+23:49:14.520  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnValidResponseFieldTypes *****
+23:49:14.520  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.580  [main] INFO  api.test.UserTest - ********************************************
+23:49:14.580  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldReturnCorrectFieldValues *****
+23:49:15.927  [main] INFO  api.test.UserTest - Code: 200, Type: unknown
+23:49:15.928  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldReturnCorrectFieldValues *****
+23:49:15.928  [main] INFO  api.test.UserTest - ********************************************
+23:49:15.966  [main] INFO  api.test.UserTest - ********************************************
+23:49:15.967  [main] INFO  api.test.UserTest - ***** Starting createUser_shouldMatchJsonSchema *****
+23:49:16.759  [main] INFO  api.test.UserTest - JSON schema validation passed
+23:49:16.759  [main] INFO  api.test.UserTest - ***** Finished createUser_shouldMatchJsonSchema *****
+23:49:16.759  [main] INFO  api.test.UserTest - ********************************************
+23:49:16.779  [main] INFO  api.test.UserTest - ***** Starting getUser_shouldReturn200StatusCode *****
+23:49:16.812  [main] INFO  api.utilities.RequestResponseFilter - ==================================================================

@@ -5,8 +5,10 @@
     <classes>
       <class name="api.test.PetTest">
         <methods>
+          <include name="globalSetUP"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testAddNewPetPostResponse" invocation-numbers="2"/>
+          <include name="testAddNewPetPostResponse" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- api.test.PetTest -->
     </classes>

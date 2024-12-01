@@ -2,23 +2,37 @@ package api.test;
 
 
 import java.io.File;
+import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.dzieciou.testing.curl.CurlRestAssuredConfigFactory;
+import com.github.dzieciou.testing.curl.Options;
 
 import api.endpoints.PetEndpoints;
+import api.path.Routes;
 import api.payload.Pet;
 import api.utilities.DataProviders;
 import api.utilities.ExtentReportManager;
 import api.utilities.PojoSetter;
+import api.utilities.RequestResponseFilter;
+import api.utilities.ResponseHandler;
+import api.utilities.TestContext;
+import api.utilities.XLUtility;
+import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.config.HttpClientConfig;
+import io.restassured.config.RestAssuredConfig;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
@@ -35,16 +49,41 @@ public class PetTest {
 	}
 	
 	
+	@BeforeMethod()
+	public void globalSetUP() 
+	{
+		RestAssured.baseURI=Routes.base_url;
+//		RestAssured.basePath = "/v2";
+		RestAssured.requestSpecification = new RequestSpecBuilder()
+				.setConfig(RestAssured.config()
+			    .httpClient(HttpClientConfig.httpClientConfig()
+                .setParams(TestContext.getTimeoutParam())))
+			    .addHeaders(TestContext.getAppJsonHeader())
+			    .build();
+		Options options = Options.builder().logStacktrace().build();
+		RestAssuredConfig config = CurlRestAssuredConfigFactory.createConfig(options);
+		 RestAssured.config = config;
+		RestAssured.filters(new RequestResponseFilter());
+	}
+	
+	
+	@AfterMethod()
+	public void tearDown() 
+	{
+		RestAssured.reset();
+	}
+	
+	
 	@Test(priority = 1,groups="Regression",dataProvider = "PetData", dataProviderClass = DataProviders.class, description = "This test verifies the Add New Pet POST response and validates the data")
 	public void testAddNewPetPostResponse(String petId, String categoryId, String categoryName, String petName, String petPhotoUrl1, String petPhotoUrl2, String tagId, String tagName, String petStatus) 
-			throws JsonProcessingException, NoSuchMethodException, SecurityException 
+			throws Exception 
 	{
 		
 		// Start the test and log the initial info
 		ExtentReportManager.test.info("Test for adding new pet started");
         
-        logger.info("********************************************");
-        logger.info("***** Starting testAddNewPetPostResponse *****");
+        logger.info("********************************************************");
+        logger.info("***** <<<<<Starting testAddNewPetPostResponse>>>>> *****");
 
         try {
             // Logging input data for clarity
@@ -65,21 +104,9 @@ public class PetTest {
             logger.info("Sending POST request to add a new pet.");
             ExtentReportManager.test.info("Sending POST request");
             Response response = PetEndpoints.addNewPet(petPayload);
-          
-            // Extract and log the StatusCode, Headers, JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
+	                    
             // Mapping JSON response to Pet object
-            ObjectMapper objMap = new ObjectMapper();
-            Pet petResponse = objMap.readValue(jsonResponse, Pet.class);
+            Pet petResponse = ResponseHandler.deserializedResponse(response, Pet.class);
             logger.info("Response mapped to Pet object");
             ExtentReportManager.test.pass("Response successfully mapped to Pet object");
 
@@ -91,9 +118,8 @@ public class PetTest {
             ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
 
             // Schema validation
-            String jsonFilePath = "F:\\WorkSpace\\RestAssuredPetStoreAutomation-main\\testData\\jsonSchemaFiles\\putPetSchema.json";
-    		File file = new File(jsonFilePath);
-    		response.then().body(JsonSchemaValidator.matchesJsonSchema(file));
+    		Map<String,String> excelDataMap = XLUtility.getData("addNewPet");
+    		response.then().body(JsonSchemaValidator.matchesJsonSchema(excelDataMap.get("responseSchema")));
             
             // Assertions for the pet object data
             logger.info("Asserting pet data between request and response");
@@ -134,8 +160,8 @@ public class PetTest {
         } 
         finally 
         {
-            logger.info("***** Finished testAddNewPetPostResponse *****");
-            logger.info("********************************************");
+            logger.info("***************<<<<<Finished testAddNewPetPostResponse>>>>>**********************");
+            logger.info("***************<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>**********************");
             ExtentReportManager.test.info("Test finished");
         }	
     }
@@ -152,15 +178,6 @@ public class PetTest {
 	    logger.info("***** Starting testUpdateExistingPetPutResponse *****");
 	
 	    try {
-	        // Logging input data for clarity
-	        logger.info("Test Input Data: Pet ID: {}, Category ID: {}, Category Name: {}, Pet Name: {}, Photo URLs: [{}, {}], Tag ID: {}, Tag Name: {}, Pet Status: {}", 
-	                    petId, categoryId, categoryName, petName, petPhotoUrl1, petPhotoUrl2, tagId, tagName, petStatus);
-	
-	        ExtentReportManager.test.info(String.format(
-	        	    "Test Input Data: Pet ID: %s, Category ID: %s, Category Name: %s, Pet Name: %s, Photo URLs: [%s, %s], Tag ID: %s, Tag Name: %s, Pet Status: %s",
-	        	    petId, categoryId, categoryName, petName, petPhotoUrl1, petPhotoUrl2, tagId, tagName, petStatus
-	        	));
-	
 	        // Create the Pet object using the updated data
 	        Pet pet1 = PojoSetter.updatePetData(petId, categoryId, categoryName, petName, petPhotoUrl1, petPhotoUrl2, tagId, tagName, petStatus);
 	        logger.info("Pet object created with updated data");
@@ -170,20 +187,9 @@ public class PetTest {
 	        logger.info("Sending PUT request to update the existing pet.");
 	        ExtentReportManager.test.info("Sending PUT request");
 	        Response response = PetEndpoints.updateExistingPet(pet1);
-	
-	        
-
-	        // Extract and log the StatusCode, Headers, JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
+		  
 	        String jsonResponse = response.asPrettyString();
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
+	       
 	        // Mapping JSON response to Pet object
 	        ObjectMapper objMap = new ObjectMapper();
 	        Pet pet2 = objMap.readValue(jsonResponse, Pet.class);
@@ -262,18 +268,7 @@ public class PetTest {
 	        logger.info("Sending GET request to find pets with status: {}", status);
 	        ExtentReportManager.test.info("Sending GET request for status: " + status);
 	        Response response = PetEndpoints.findPetByStatus(status);
-
-	        // Extract and log the StatusCode, Headers, JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
+	       
 	        // Convert response body to JSON array and validate pet data
 	        JSONArray jo = new JSONArray(response.body().asString());
 	        boolean nameFound = false;
@@ -373,18 +368,8 @@ public class PetTest {
 	
 	        // Sending GET request to find the pet by ID
 	        Response response = PetEndpoints.findPet(petId$);
-	
-	        // Extract and log the StatusCode, Headers, JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
+
+	        
 	        // Assertions for the pet ID in the response and other response details
 	        logger.info("Asserting response data for pet ID: {}", petId);
 	        Assert.assertEquals(response.then().extract().path("id").toString(), petId, "Pet ID mismatch.");
@@ -434,21 +419,8 @@ public class PetTest {
 	        String status = "pending";
 
 	        // Sending POST request to update the pet
-	        logger.info("Sending POST request to update pet with ID: {} to name: {} and status: {}", petId, petName);
-	        ExtentReportManager.test.info("Updating pet with ID: {petId},  Name: {petName},  Status: {status}");
 	        Response response = PetEndpoints.updatePet(petId, petName, status);
-
-	        // Extract and log the StatusCode, Headers, JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
+	       
 	        // Assertions for the response details
 	        long resTime = response.getTime();
 	        logger.info("Asserting response details for pet ID: {}", petId);
@@ -505,18 +477,7 @@ public class PetTest {
 	        logger.info("Sending POST request to upload image for pet ID: {} with metadata: {}", petId, additionalMetaData);
 	        ExtentReportManager.test.info("Uploading image for pet ID: {petId}  with additional metadata: { additionalMetaData}");
 	        Response response = PetEndpoints.uploadPetImage(petId, additionalMetaData, myFile);
-
-	        // Extract and log the StatusCode, Headers, JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
+	       
 	        // Assertions for the response details
 	        logger.info("Asserting response details for uploaded image of pet ID: {}", petId);
 	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
@@ -567,18 +528,7 @@ public class PetTest {
 	        logger.info("Sending DELETE request to remove pet with ID: {}", petId);
 	        ExtentReportManager.test.info("Sending DELETE request for pet ID: " + petId);
 	        Response response = PetEndpoints.deletePet(petId, api_key);
-	        
-	        // Extract and log the StatusCode, Headers, JSON response
-	        int statusCode = response.getStatusCode();
-	        String headers = response.getHeaders().toString();
-	        String jsonResponse = response.asPrettyString();
-	        logger.info("StatusCode: {}", statusCode);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>StatusCode: " + statusCode + "</span></pre></b>");
-	        logger.info("Headers: {}", headers);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>Headers: " + headers + "</span></pre></b>");
-	        logger.info("JSON response body: {}", jsonResponse);
-	        ExtentReportManager.test.info("<b><pre><span style='color:yellow;'>JSON response: " + jsonResponse + "</span></pre></b>");
-	
+	       
 	        // Assertions for the response status code and message
 	        logger.info("Asserting response status, time, and headers");
 	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");

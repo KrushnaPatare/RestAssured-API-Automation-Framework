@@ -4,9 +4,18 @@
   <artifactId>RestAssuredPestStoreAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
-  <properties>
+  <properties>		
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<cucumber.version>7.20.1</cucumber.version>
+		<poi.version>5.3.0</poi.version>
+		<rest-assured.version>5.5.0</rest-assured.version>
+		<logger.version>2.24.1</logger.version>
+	
   </properties>
+  
+  
   
   <build>
 	  <plugins>
@@ -32,6 +41,13 @@
   
   <dependencies>
   
+ 	 <!-- https://mvnrepository.com/artifact/com.github.dzieciou.testing/curl-logger -->
+		<dependency>
+			<groupId>com.github.dzieciou.testing</groupId>
+			<artifactId>curl-logger</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+		
 		  <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 		    <groupId>org.projectlombok</groupId>
@@ -44,24 +60,70 @@
 		<dependency>
 		    <groupId>io.rest-assured</groupId>
 		    <artifactId>rest-assured</artifactId>
-		    <version>5.3.1</version>
-		    <scope>test</scope>
+		    <version>${rest-assured.version}</version>
 		</dependency>
 
   		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
 		<dependency>  <!-- to validate jsonpath in code -->
 		    <groupId>io.rest-assured</groupId>
 		    <artifactId>json-path</artifactId>
-		    <version>5.3.1</version>
-		    <scope>test</scope>
+		    <version>${rest-assured.version}</version>
 		</dependency>
 
+    
+		 <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
+		<dependency>  <!-- to validation of jsonschema file in code -->
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>json-schema-validator</artifactId>
+		    <version>${rest-assured.version}</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency> <!-- to import exel sheet data to test -->
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>${poi.version}</version>
+		</dependency>
+
+  
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>  <!-- to import exel sheet data to test -->
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>${poi.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-api</artifactId>
+		    <version>${logger.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>${logger.version}</version>
+		</dependency>
+
+		  
+		 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-slf4j-impl</artifactId>
+		    <version>${logger.version}</version>
+		</dependency>
+
+  
   
 		 <!-- https://mvnrepository.com/artifact/org.json/json -->
 		<dependency>    <!-- to validate import of json file in code -->
 		    <groupId>org.json</groupId>
 		    <artifactId>json</artifactId>
-		    <version>20230618</version>
+		    <version>20240303</version>
 		</dependency>
 
   
@@ -70,7 +132,6 @@
 		    <groupId>org.testng</groupId>
 		    <artifactId>testng</artifactId>
 		    <version>7.8.0</version>
-		    <scope>test</scope>
 		</dependency>
 
   
@@ -79,18 +140,9 @@
 		    <groupId>com.github.scribejava</groupId>
 		    <artifactId>scribejava-apis</artifactId>
 		    <version>8.3.3</version>
-		    <scope>test</scope>
 		</dependency>
 		
-		  
-		 <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
-		<dependency>  <!-- to validation of jsonschema file in code -->
-		    <groupId>io.rest-assured</groupId>
-		    <artifactId>json-schema-validator</artifactId>
-		    <version>5.3.1</version>
-		    <scope>test</scope>
-		</dependency>
-
+		
 
 		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
 		<dependency>  <!-- to generate fake data fot testing -->
@@ -110,46 +162,6 @@
 
   
   
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-		<dependency> <!-- to import exel sheet data to test -->
-		    <groupId>org.apache.poi</groupId>
-		    <artifactId>poi</artifactId>
-		    <version>5.2.3</version>
-		</dependency>
-
-  
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-		<dependency>  <!-- to import exel sheet data to test -->
-		    <groupId>org.apache.poi</groupId>
-		    <artifactId>poi-ooxml</artifactId>
-		    <version>5.2.3</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
-		<dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-api</artifactId>
-		    <version>2.24.1</version>
-		</dependency>
-
-
-		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-		<dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-core</artifactId>
-		    <version>2.24.1</version>
-		</dependency>
-
-		  
-		 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
-		<dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-slf4j-impl</artifactId>
-		    <version>2.24.1</version>
-		    <scope>test</scope>
-		</dependency>
-
-  
+		
   </dependencies>
 </project>
