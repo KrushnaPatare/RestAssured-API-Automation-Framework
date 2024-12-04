@@ -1,193 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-01T14:35:59 IST" name="Default suite" finished-at="2024-12-01T14:36:14 IST" duration-ms="15234">
+  <suite started-at="2024-12-04T22:59:16 IST" name="Default suite" finished-at="2024-12-04T22:59:25 IST" duration-ms="8926">
     <groups>
-      <group name="Regression">
-        <method signature="PetTest.testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@40005471]" name="testAddNewPetPostResponse" class="api.test.PetTest"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-12-01T14:35:59 IST" name="Default test" finished-at="2024-12-01T14:36:14 IST" duration-ms="15234">
+    <test started-at="2024-12-04T22:59:16 IST" name="Default test" finished-at="2024-12-04T22:59:25 IST" duration-ms="8926">
       <class name="api.test.PetTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:35:59 IST" name="setUp" finished-at="2024-12-01T14:36:00 IST" duration-ms="803" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-04T22:59:17 IST" name="setUp" finished-at="2024-12-04T22:59:17 IST" duration-ms="738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:04 IST" name="globalSetUP" finished-at="2024-12-01T14:36:05 IST" duration-ms="1049" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-04T22:59:18 IST" name="globalSetUP" finished-at="2024-12-04T22:59:18 IST" duration-ms="717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:05 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-12-01T14:36:11 IST" duration-ms="5465" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Bird]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Sona]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[www.google.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[www.facebook.com]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[10]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Red]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[available]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testUpdatePetPuTResponse()[pri:6, instance:api.test.PetTest@40005471]" started-at="2024-12-04T22:59:18 IST" name="testUpdatePetPuTResponse" description="This test verifies the POST response for updating an existing pet." finished-at="2024-12-04T22:59:25 IST" duration-ms="6925" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewPetPostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:11 IST" name="tearDown" finished-at="2024-12-01T14:36:11 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:11 IST" name="globalSetUP" finished-at="2024-12-01T14:36:11 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:11 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-12-01T14:36:12 IST" duration-ms="1621" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Animal]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Lucky]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[www.google.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[www.facebook.com]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[20]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Black]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[pending]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewPetPostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:12 IST" name="tearDown" finished-at="2024-12-01T14:36:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:12 IST" name="globalSetUP" finished-at="2024-12-01T14:36:12 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:12 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-12-01T14:36:14 IST" duration-ms="1886" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[345]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Fish]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Goldy]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[www.google.com]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[www.facebook.com]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[30]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[Golden]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[sold]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewPetPostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-01T14:36:14 IST" name="tearDown" finished-at="2024-12-01T14:36:14 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- testUpdatePetPuTResponse -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@40005471]" started-at="2024-12-04T22:59:25 IST" name="tearDown" finished-at="2024-12-04T22:59:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

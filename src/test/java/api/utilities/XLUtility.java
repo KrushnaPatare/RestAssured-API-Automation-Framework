@@ -84,10 +84,10 @@ public class XLUtility {
 	
 	private static XSSFSheet excelSheet;
 	private static XSSFWorkbook excelWorkbook;
-	private static String sheetPath = PropertiesFile.getProperty("test.data.path")+PropertiesFile.getProperty("excel.name");
-	private static String sheetName = PropertiesFile.getProperty("sheet.name");
+//	private static String sheetPath = PropertiesFile.getProperty("test.data.path")+PropertiesFile.getProperty("excel.name");
+//	private static String sheetName = PropertiesFile.getProperty("sheet.name");
 
-	private static void setExcelFile() throws IOException {
+	private static void setExcelFile(String sheetPath, String sheetName) throws IOException {
 			LOG.info("Getting sheets from the workbook.");
 			FileInputStream excelFile = new FileInputStream(new File(sheetPath).getAbsolutePath());
 			excelWorkbook = new XSSFWorkbook(excelFile);
@@ -138,9 +138,9 @@ public class XLUtility {
 		}
 	}
 */
-	public static Map getData(String dataKey) throws Exception {
+	public static Map getData(String dataKey, String sheetPath, String sheetName) throws Exception {
 		Map<String, String> dataMap = new HashMap<String, String>();
-			setExcelFile();
+			setExcelFile(sheetPath, sheetName);
 			int dataRow = getDataRow(dataKey.trim(), 0);
 			LOG.info("Test Data Found in Row: "+dataRow);
 			if (dataRow == 0) {

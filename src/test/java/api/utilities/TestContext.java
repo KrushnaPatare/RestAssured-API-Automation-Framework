@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class TestContext {
 	
+	public static String petExelPath = "F:\\WorkSpace\\RestAssuredPetStoreAutomation-main\\testData\\excelDataFiles\\SchemaValidation.xlsx";
+	
 	public static Map<String, String> header = new HashMap<String, String>();
 	public static Map<String, String> getAppJsonHeader()
 	{

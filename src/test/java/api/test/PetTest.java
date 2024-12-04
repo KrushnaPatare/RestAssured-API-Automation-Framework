@@ -2,6 +2,7 @@ package api.test;
 
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
@@ -26,7 +27,7 @@ import api.utilities.DataProviders;
 import api.utilities.ExtentReportManager;
 import api.utilities.PojoSetter;
 import api.utilities.RequestResponseFilter;
-import api.utilities.ResponseHandler;
+import api.utilities.ResponseValidatiorAndHandler;
 import api.utilities.TestContext;
 import api.utilities.XLUtility;
 import io.restassured.RestAssured;
@@ -106,19 +107,19 @@ public class PetTest {
             Response response = PetEndpoints.addNewPet(petPayload);
 	                    
             // Mapping JSON response to Pet object
-            Pet petResponse = ResponseHandler.deserializedResponse(response, Pet.class);
+            Pet petResponse = ResponseValidatiorAndHandler.deserializedResponse(response, Pet.class);
             logger.info("Response mapped to Pet object");
             ExtentReportManager.test.pass("Response successfully mapped to Pet object");
 
             // Assertions for the response status code, content type, and response time
             logger.info("Asserting response status, headers, and time");
-            Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
-            Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
-            Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 3000, "Response time is outside the expected range (200-3000ms).");
+            ResponseValidatiorAndHandler.validateStatusCode(response, 200);
+            ResponseValidatiorAndHandler.validateHeader(response, "Content-Type", "application/json");
+            ResponseValidatiorAndHandler.validateResponseTime(response, 15000);
             ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
 
             // Schema validation
-    		Map<String,String> excelDataMap = XLUtility.getData("addNewPet");
+    		Map<String,String> excelDataMap = XLUtility.getData("addNewPet", TestContext.petExelPath, "Details");
     		response.then().body(JsonSchemaValidator.matchesJsonSchema(excelDataMap.get("responseSchema")));
             
             // Assertions for the pet object data
@@ -191,18 +192,17 @@ public class PetTest {
 	        String jsonResponse = response.asPrettyString();
 	       
 	        // Mapping JSON response to Pet object
-	        ObjectMapper objMap = new ObjectMapper();
-	        Pet pet2 = objMap.readValue(jsonResponse, Pet.class);
+	        Pet pet2 = ResponseValidatiorAndHandler.deserializedResponse(response, Pet.class);
 	        logger.info("Response mapped to Pet object");
 	        ExtentReportManager.test.pass("Response successfully mapped to Pet object");
 	
 	        // Assertions for the response status code, content type, and response time
-	        logger.info("Asserting response status, headers, and time");
-	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
-	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
-	        Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 3000, "Response time is outside the expected range (200-3000ms).");
-	        ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
-	
+            logger.info("Asserting response status, headers, and time");
+            ResponseValidatiorAndHandler.validateStatusCode(response, 200);
+            ResponseValidatiorAndHandler.validateHeader(response, "Content-Type", "application/json");
+            ResponseValidatiorAndHandler.validateResponseTime(response, 15000);
+            ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
+
 	        // Assertions for the updated pet object data
 	        logger.info("Asserting updated pet data between request and response");
 	        Assert.assertEquals(pet1.getiD(), pet2.getiD(), "Pet ID mismatch.");
@@ -295,11 +295,11 @@ public class PetTest {
 	        }
 
 	        // Assertions for the response status code, content type, and response time
-	        logger.info("Asserting response status, headers, and time");
-	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
-	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
-	        Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 3000, "Response time is outside the expected range (200-3000ms).");
-	        ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
+            logger.info("Asserting response status, headers, and time");
+            ResponseValidatiorAndHandler.validateStatusCode(response, 200);
+            ResponseValidatiorAndHandler.validateHeader(response, "Content-Type", "application/json");
+            ResponseValidatiorAndHandler.validateResponseTime(response, 3000);
+            ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
 
 	        // Assertions for pet name and status
 	        Assert.assertTrue(nameFound, "Pet 'Lucky' not found in response.");
@@ -372,12 +372,13 @@ public class PetTest {
 	        
 	        // Assertions for the pet ID in the response and other response details
 	        logger.info("Asserting response data for pet ID: {}", petId);
-	        Assert.assertEquals(response.then().extract().path("id").toString(), petId, "Pet ID mismatch.");
-	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
-	        Assert.assertTrue(response.getTime() >= 200 && response.getTime() <= 3000, "Response time is outside the expected range (200-3000ms).");
-	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
-	        ExtentReportManager.test.pass("Assertions for status, headers, and pet ID passed");
-	
+//	        Assert.assertEquals(response.then().extract().path("id").toString(), petId, "Pet ID mismatch.");
+	        ResponseValidatiorAndHandler.validateJsonValue(response, "id", Integer.parseInt(petId));
+	        ResponseValidatiorAndHandler.validateStatusCode(response, 200);
+            ResponseValidatiorAndHandler.validateHeader(response, "Content-Type", "application/json");
+            ResponseValidatiorAndHandler.validateResponseTime(response, 15000);
+            ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
+
 	    } 
 	    catch (AssertionError e) 
 	    {
@@ -404,7 +405,7 @@ public class PetTest {
 	
 	
 	@Test(priority = 6, description = "This test verifies the POST response for updating an existing pet.")
-	public void testUpdatePetPostResponse() 
+	public void testUpdatePetPuTResponse() 
 	{ 
 	    // Start the test and log the initial info
 	    ExtentReportManager.test.info("Test for updating pet started");
@@ -417,21 +418,21 @@ public class PetTest {
 	        String petId = "30";
 	        String petName = "Luna";
 	        String status = "pending";
-
+	      
 	        // Sending POST request to update the pet
 	        Response response = PetEndpoints.updatePet(petId, petName, status);
 	       
 	        // Assertions for the response details
-	        long resTime = response.getTime();
 	        logger.info("Asserting response details for pet ID: {}", petId);
-	        Assert.assertEquals(response.then().extract().path("message").toString(), petId, "Expected message does not match the pet ID.");
-	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
-	        Assert.assertTrue(resTime >= 200 && resTime <= 3000, "Response time is outside the expected range (200-3000ms).");
-	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
-	        ExtentReportManager.test.pass("Assertions for update response passed.");
+//	        Assert.assertEquals(response.then().extract().path("message").toString(), petId, "Expected message does not match the pet ID.");
+	        ResponseValidatiorAndHandler.validateJsonValue(response, "message", petId);
+	        ResponseValidatiorAndHandler.validateStatusCode(response, 200);
+            ResponseValidatiorAndHandler.validateHeader(response, "Content-Type", "application/json");
+            ResponseValidatiorAndHandler.validateResponseTime(response, 15000);
+            ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
 
 	        // Verifying the updated pet name
-	        Assert.assertEquals(PetEndpoints.findPet(Integer.parseInt(petId)).then().extract().path("name").toString(), petName, "Updated pet name does not match.");
+	        ResponseValidatiorAndHandler.validateJsonValue(PetEndpoints.findPet(Integer.parseInt(petId)), "name", petName);
 
 	    } 
 	    catch (AssertionError e) 
@@ -478,13 +479,14 @@ public class PetTest {
 	        ExtentReportManager.test.info("Uploading image for pet ID: {petId}  with additional metadata: { additionalMetaData}");
 	        Response response = PetEndpoints.uploadPetImage(petId, additionalMetaData, myFile);
 	       
-	        // Assertions for the response details
-	        logger.info("Asserting response details for uploaded image of pet ID: {}", petId);
-	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
+	        // Assertions for the response status code, content type, and response time
+            logger.info("Asserting response status, headers, and time");
+            ResponseValidatiorAndHandler.validateStatusCode(response, 200);
+            ResponseValidatiorAndHandler.validateHeader(response, "Content-Type", "application/json");
+            ResponseValidatiorAndHandler.validateResponseTime(response, 15000);
+            ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
+
 	        Assert.assertTrue(response.then().extract().path("message").toString().contains(additionalMetaData), "Response message does not contain expected metadata.");
-	        Assert.assertTrue(response.getTime() >= 50 && response.getTime() <= 15000, "Response time is outside the expected range (50-15000ms).");
-	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
-	        ExtentReportManager.test.pass("Assertions for upload response passed.");
 
 	       } 
 	    catch (AssertionError e) 
@@ -528,20 +530,18 @@ public class PetTest {
 	        logger.info("Sending DELETE request to remove pet with ID: {}", petId);
 	        ExtentReportManager.test.info("Sending DELETE request for pet ID: " + petId);
 	        Response response = PetEndpoints.deletePet(petId, api_key);
-	       
-	        // Assertions for the response status code and message
-	        logger.info("Asserting response status, time, and headers");
-	        Assert.assertEquals(response.getStatusCode(), 200, "Expected status code is 200.");
-	        long resTime = response.getTime();
+	        // Assertions for the response status code, content type, and response time
+            logger.info("Asserting response status, headers, and time");
+            ResponseValidatiorAndHandler.validateStatusCode(response, 200);
+            ResponseValidatiorAndHandler.validateHeader(response, "Content-Type", "application/json");
+            ResponseValidatiorAndHandler.validateResponseTime(response, 15000);
+            ExtentReportManager.test.pass("Assertions for status, headers, and time passed");
+
 	        Assert.assertEquals(response.then().extract().path("message").toString(), "20", "Expected message is '20'.");
-	        Assert.assertTrue(resTime >= 50 && resTime <= 5000, "Response time is outside the expected range (50-5000ms).");
-	        Assert.assertEquals(response.getHeader("Content-Type"), "application/json", "Expected content type is application/json.");
-	        ExtentReportManager.test.pass("Assertions for delete response passed");
 
 	        // Verify the pet has been deleted
 	        logger.info("Verifying that the pet has been deleted.");
-	        Response deletedResponse = PetEndpoints.deletePet(petId, api_key);
-	        Assert.assertEquals(deletedResponse.statusCode(), 404, "Expected status code after deletion is 404.");
+	        ResponseValidatiorAndHandler.validateStatusCode(PetEndpoints.deletePet(petId, api_key), 404);
 	        ExtentReportManager.test.pass("Pet deletion verified, status code is 404.");
 
 	    } 

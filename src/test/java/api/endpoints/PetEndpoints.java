@@ -36,6 +36,7 @@ public class PetEndpoints {
 	public static Response updatePet(String petId, String petName, String status)
 	{
 		Response response = RestAssured.given()
+				.header("Content-Type", "application/x-www-form-urlencoded") 
 		        .pathParam("petId", petId)
 		        .formParam("name", petName)
 		        .formParam("status", status)
