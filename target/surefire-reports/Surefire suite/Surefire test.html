@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>39/16/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>21/6/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 30 19:28:05 IST 2024</td>
+<td>Started on:</td><td>Fri Dec 06 10:41:50 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>96 seconds (96471 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56223 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.PetTest.testUploadPetImagePostResponse()'><b>testUploadPetImagePostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the POST response for uploading an image for an existing pet.</td>
+<td title='api.test.PetTest.deleberatlyFailTest()'><b>deleberatlyFailTest</b><br>Test class: api.test.PetTest</td>
 <td><div><pre>java.lang.AssertionError: null
-	at api.test.PetTest.testUploadPetImagePostResponse(PetTest.java:498)
+	at api.test.PetTest.deleberatlyFailTest(PetTest.java:575)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace114580948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace114580948'><pre>java.lang.AssertionError: null
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2060069278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2060069278'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.fail(Assert.java:116)
-	at api.test.PetTest.testUploadPetImagePostResponse(PetTest.java:498)
+	at api.test.PetTest.deleberatlyFailTest(PetTest.java:575)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,19 +119,22 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>15</td>
-<td>api.test.PetTest@5a63f509</td></tr>
+<td>0</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
 <td title='api.test.StoreTest.testGetStoreOrderResponse()'><b>testGetStoreOrderResponse</b><br>Test class: api.test.StoreTest<br>Test method: This test verifies the Get Store Order response for finding purchanse order by id and validates the data</td>
-<td><div><pre>java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
-	at api.test.StoreTest.testGetStoreOrderResponse(StoreTest.java:177)
+<td><div><pre>java.lang.AssertionError: Expected status code is 404 for invalid order ID. expected [404] but found [200]
+	at api.test.StoreTest.testGetStoreOrderResponse(StoreTest.java:212)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace247461277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace247461277'><pre>java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1667878940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1667878940'><pre>java.lang.AssertionError: Expected status code is 404 for invalid order ID. expected [404] but found [200]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at api.test.StoreTest.testGetStoreOrderResponse(StoreTest.java:177)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at api.test.StoreTest.testGetStoreOrderResponse(StoreTest.java:212)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,235 +169,19 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>6</td>
-<td>api.test.StoreTest@67a20f67</td></tr>
-<tr>
-<td title='api.test.PetTest.testAddNewPetPostResponse()'><b>testAddNewPetPostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Add New Pet POST response and validates the data<br>Parameters: 10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available</td>
-<td><div><pre>java.lang.AssertionError: Response time is outside the expected range (200-3000ms). expected [true] but found [false]
-	at api.test.PetTest.testAddNewPetPostResponse(PetTest.java:119)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1172379175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1172379175'><pre>java.lang.AssertionError: Response time is outside the expected range (200-3000ms). expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at api.test.PetTest.testAddNewPetPostResponse(PetTest.java:119)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>5</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.UserTest.deletedUser_shouldNotBeFetched_shouldReturn404Error()'><b>deletedUser_shouldNotBeFetched_shouldReturn404Error</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that a deleted user cannot be fetched and returns a 404 error</td>
-<td><div><pre>java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
-	at api.test.UserTest.deletedUser_shouldNotBeFetched_shouldReturn404Error(UserTest.java:1376)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1643219351", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1643219351'><pre>java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at api.test.UserTest.deletedUser_shouldNotBeFetched_shouldReturn404Error(UserTest.java:1376)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>4</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>3</td>
+<td>api.test.StoreTest@4a22f9e2</td></tr>
 <tr>
 <td title='api.test.UserTest.getUser_shouldRespondWithinExpectedTime()'><b>getUser_shouldRespondWithinExpectedTime</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that GET user response time is within the expected range</td>
 <td><div><pre>java.lang.AssertionError: Response time is outside the expected range. expected [true] but found [false]
-	at api.test.UserTest.getUser_shouldRespondWithinExpectedTime(UserTest.java:367)
+	at api.test.UserTest.getUser_shouldRespondWithinExpectedTime(UserTest.java:182)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace202501275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace202501275'><pre>java.lang.AssertionError: Response time is outside the expected range. expected [true] but found [false]
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1813403937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1813403937'><pre>java.lang.AssertionError: Response time is outside the expected range. expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at api.test.UserTest.getUser_shouldRespondWithinExpectedTime(UserTest.java:367)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.StoreTest.testGetStoreInventoriesResponse()'><b>testGetStoreInventoriesResponse</b><br>Test class: api.test.StoreTest<br>Test method: This test verifies the Get Store Inventories response returned by statuswise and validates the data</td>
-<td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Response body doesn&apos;t match expectation.
-Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: [&quot;array&quot;,&quot;capacitor&quot;,&quot;driver&quot;,&quot;feed&quot;,&quot;hard drive&quot;,&quot;not available&quot;,&quot;pending&quot;,&quot;program&quot;,&quot;send&quot;,&quot;transmitter&quot;,&quot;unavailable&quot;]
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;additionalProperties&quot;
-    unwanted: [&quot;array&quot;,&quot;capacitor&quot;,&quot;driver&quot;,&quot;feed&quot;,&quot;hard drive&quot;,&quot;not available&quot;,&quot;pending&quot;,&quot;program&quot;,&quot;send&quot;,&quot;transmitter&quot;,&quot;unavailable&quot;]
-error: object has missing required properties ([&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;])
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;required&quot;
-    required: [&quot;available&quot;,&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;sold&quot;,&quot;status&quot;,&quot;string&quot;]
-    missing: [&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;]
-
-  Actual: {&quot;sold&quot;:7,&quot;string&quot;:733,&quot;unavailable&quot;:2,&quot;pending&quot;:3,&quot;available&quot;:195,&quot;program&quot;:1,&quot;capacitor&quot;:3,&quot;feed&quot;:2,&quot;driver&quot;:1,&quot;array&quot;:1,&quot;not available&quot;:1,&quot;send&quot;:4,&quot;transmitter&quot;:1,&quot;hard drive&quot;:1}
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:278)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace849376493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace849376493'><pre>java.lang.AssertionError: 1 expectation failed.
-Response body doesn&apos;t match expectation.
-Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: [&quot;array&quot;,&quot;capacitor&quot;,&quot;driver&quot;,&quot;feed&quot;,&quot;hard drive&quot;,&quot;not available&quot;,&quot;pending&quot;,&quot;program&quot;,&quot;send&quot;,&quot;transmitter&quot;,&quot;unavailable&quot;]
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;additionalProperties&quot;
-    unwanted: [&quot;array&quot;,&quot;capacitor&quot;,&quot;driver&quot;,&quot;feed&quot;,&quot;hard drive&quot;,&quot;not available&quot;,&quot;pending&quot;,&quot;program&quot;,&quot;send&quot;,&quot;transmitter&quot;,&quot;unavailable&quot;]
-error: object has missing required properties ([&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;])
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
-    instance: {&quot;pointer&quot;:&quot;&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;required&quot;
-    required: [&quot;available&quot;,&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;sold&quot;,&quot;status&quot;,&quot;string&quot;]
-    missing: [&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;]
-
-  Actual: {&quot;sold&quot;:7,&quot;string&quot;:733,&quot;unavailable&quot;:2,&quot;pending&quot;:3,&quot;available&quot;:195,&quot;program&quot;:1,&quot;capacitor&quot;:3,&quot;feed&quot;:2,&quot;driver&quot;:1,&quot;array&quot;:1,&quot;not available&quot;:1,&quot;send&quot;:4,&quot;transmitter&quot;:1,&quot;hard drive&quot;:1}
-
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:278)
+	at api.test.UserTest.getUser_shouldRespondWithinExpectedTime(UserTest.java:182)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -430,240 +217,14 @@ error: object has missing required properties ([&quot;placed&quot;,&quot;ratvell
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>1</td>
-<td>api.test.StoreTest@67a20f67</td></tr>
-<tr>
-<td title='api.test.PetTest.testFindPetByStatusGetResponse()'><b>testFindPetByStatusGetResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Get Pet by Status response and checks for the presence of pet with name 'Lucky' and status 'pending'</td>
-<td><div><pre>org.json.JSONException: JSONObject[&quot;name&quot;] not found.
-	at org.json.JSONObject.get(JSONObject.java:596)
-	at api.test.PetTest.testFindPetByStatusGetResponse(PetTest.java:285)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace892626202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace892626202'><pre>org.json.JSONException: JSONObject[&quot;name&quot;] not found.
-	at org.json.JSONObject.get(JSONObject.java:596)
-	at api.test.PetTest.testFindPetByStatusGetResponse(PetTest.java:285)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>1</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.PetTest.testFindPetByPetIDGetResponse()'><b>testFindPetByPetIDGetResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the GET response for finding a pet by its ID.<br>Parameters: 30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold</td>
-<td><div><pre>java.lang.AssertionError: null
-	at api.test.PetTest.testFindPetByPetIDGetResponse(PetTest.java:390)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1061181070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1061181070'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at api.test.PetTest.testFindPetByPetIDGetResponse(PetTest.java:390)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>4</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.PetTest.testUpdatePetPostResponse()'><b>testUpdatePetPostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the POST response for updating an existing pet.</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.response.ExtractableResponse.path(String, String[])&quot; is null
-	at api.test.PetTest.testUpdatePetPostResponse(PetTest.java:430)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1495805382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1495805382'><pre>java.lang.NullPointerException: Cannot invoke &quot;Object.toString()&quot; because the return value of &quot;io.restassured.response.ExtractableResponse.path(String, String[])&quot; is null
-	at api.test.PetTest.testUpdatePetPostResponse(PetTest.java:430)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>2</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.PetTest.testDeletePetDeleteResponse()'><b>testDeletePetDeleteResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the DELETE response for removing a pet and checks the status after deletion.</td>
-<td><div><pre>java.lang.AssertionError: null
-	at api.test.PetTest.testDeletePetDeleteResponse(PetTest.java:556)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1198139417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1198139417'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at api.test.PetTest.testDeletePetDeleteResponse(PetTest.java:556)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>6</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.UserTest.updateUser_shouldReturnCorrectFieldValues()'><b>updateUser_shouldReturnCorrectFieldValues</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the field values returned in the update user response are correct</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;io.restassured.response.ExtractableResponse.path(String, String[])&quot; is null
-	at api.test.UserTest.updateUser_shouldReturnCorrectFieldValues(UserTest.java:694)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1805752626", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1805752626'><pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.Integer.intValue()&quot; because the return value of &quot;io.restassured.response.ExtractableResponse.path(String, String[])&quot; is null
-	at api.test.UserTest.updateUser_shouldReturnCorrectFieldValues(UserTest.java:694)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>api.test.UserTest@3c419631</td></tr>
 <tr>
 <td title='api.test.StoreTest.testDeleteStoreOrderResponse()'><b>testDeleteStoreOrderResponse</b><br>Test class: api.test.StoreTest<br>Test method: This test verifies the Delete Store Order DELETE response and validates the data</td>
 <td><div><pre>java.lang.AssertionError: Expected status code is 200. expected [200] but found [404]
 	at api.test.StoreTest.testDeleteStoreOrderResponse(StoreTest.java:365)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace172272947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace172272947'><pre>java.lang.AssertionError: Expected status code is 200. expected [200] but found [404]
+... Removed 38 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1299788688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1299788688'><pre>java.lang.AssertionError: Expected status code is 200. expected [200] but found [404]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -705,19 +266,18 @@ error: object has missing required properties ([&quot;placed&quot;,&quot;ratvell
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>2</td>
-<td>api.test.StoreTest@67a20f67</td></tr>
+<td>3</td>
+<td>api.test.StoreTest@4a22f9e2</td></tr>
 <tr>
-<td title='api.test.UserTest.updateUser_shouldRespondWithinExpectedTime()'><b>updateUser_shouldRespondWithinExpectedTime</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the update user request responds within the expected time frame</td>
-<td><div><pre>java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
-	at api.test.UserTest.updateUser_shouldRespondWithinExpectedTime(UserTest.java:593)
+<td title='api.test.UserTest.updateUser_shouldReturn200StatusCode()'><b>updateUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the successful update of a user and returns 200 status code</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;id&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:596)
+	at api.test.UserTest.updateUser_shouldReturn200StatusCode(UserTest.java:305)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1166501724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1166501724'><pre>java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at api.test.UserTest.updateUser_shouldRespondWithinExpectedTime(UserTest.java:593)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace944780041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace944780041'><pre>org.json.JSONException: JSONObject[&quot;id&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:596)
+	at api.test.UserTest.updateUser_shouldReturn200StatusCode(UserTest.java:305)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -752,32 +312,34 @@ error: object has missing required properties ([&quot;placed&quot;,&quot;ratvell
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>1</td>
+<td>api.test.UserTest@3c419631</td></tr>
 <tr>
-<td title='api.test.UserTest.updateUser_shouldMatchJsonSchema()'><b>updateUser_shouldMatchJsonSchema</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the update user response matches the expected JSON schema</td>
+<td title='api.test.StoreTest.testGetStoreInventoriesResponse()'><b>testGetStoreInventoriesResponse</b><br>Test class: api.test.StoreTest<br>Test method: This test verifies the Get Store Inventories response returned by statuswise and validates the data</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
 Response body doesn&apos;t match expectation.
 Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]
+error: object instance has properties which are not allowed by the schema: [&quot;05.12.2024&quot;,&quot;Avilable&quot;,&quot;The Best Dog of World&quot;,&quot;not available&quot;,&quot;pending&quot;]
     level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
     instance: {&quot;pointer&quot;:&quot;&quot;}
     domain: &quot;validation&quot;
     keyword: &quot;additionalProperties&quot;
-    unwanted: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]
-error: object has missing required properties ([&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;])
+    unwanted: [&quot;05.12.2024&quot;,&quot;Avilable&quot;,&quot;The Best Dog of World&quot;,&quot;not available&quot;,&quot;pending&quot;]
+error: object has missing required properties ([&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;])
     level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
     instance: {&quot;pointer&quot;:&quot;&quot;}
     domain: &quot;validation&quot;
     keyword: &quot;required&quot;
-    required: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]
-    missing: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]
+    required: [&quot;available&quot;,&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;sold&quot;,&quot;status&quot;,&quot;string&quot;]
+    missing: [&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;]
 
-  Actual: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;1777178337&quot;}
+  Actual: {&quot;sold&quot;:18,&quot;The Best Dog of World&quot;:1,&quot;string&quot;:743,&quot;pending&quot;:6,&quot;available&quot;:216,&quot;not available&quot;:1,&quot;Avilable&quot;:1,&quot;05.12.2024&quot;:1}
 
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
@@ -789,29 +351,29 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.UserTest.updateUser_shouldMatchJsonSchema(UserTest.java:733)
+	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:278)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace250677261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace250677261'><pre>java.lang.AssertionError: 1 expectation failed.
+... Removed 42 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace206169140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace206169140'><pre>java.lang.AssertionError: 1 expectation failed.
 Response body doesn&apos;t match expectation.
 Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]
+error: object instance has properties which are not allowed by the schema: [&quot;05.12.2024&quot;,&quot;Avilable&quot;,&quot;The Best Dog of World&quot;,&quot;not available&quot;,&quot;pending&quot;]
     level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
     instance: {&quot;pointer&quot;:&quot;&quot;}
     domain: &quot;validation&quot;
     keyword: &quot;additionalProperties&quot;
-    unwanted: [&quot;code&quot;,&quot;message&quot;,&quot;type&quot;]
-error: object has missing required properties ([&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;])
+    unwanted: [&quot;05.12.2024&quot;,&quot;Avilable&quot;,&quot;The Best Dog of World&quot;,&quot;not available&quot;,&quot;pending&quot;]
+error: object has missing required properties ([&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;])
     level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome2&quot;}
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/definitions/Welcome8&quot;}
     instance: {&quot;pointer&quot;:&quot;&quot;}
     domain: &quot;validation&quot;
     keyword: &quot;required&quot;
-    required: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]
-    missing: [&quot;email&quot;,&quot;firstName&quot;,&quot;id&quot;,&quot;lastName&quot;,&quot;password&quot;,&quot;phone&quot;,&quot;userStatus&quot;,&quot;username&quot;]
+    required: [&quot;available&quot;,&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;sold&quot;,&quot;status&quot;,&quot;string&quot;]
+    missing: [&quot;placed&quot;,&quot;ratvelleg&quot;,&quot;status&quot;]
 
-  Actual: {&quot;code&quot;:200,&quot;type&quot;:&quot;unknown&quot;,&quot;message&quot;:&quot;1777178337&quot;}
+  Actual: {&quot;sold&quot;:18,&quot;The Best Dog of World&quot;:1,&quot;string&quot;:743,&quot;pending&quot;:6,&quot;available&quot;:216,&quot;not available&quot;:1,&quot;Avilable&quot;:1,&quot;05.12.2024&quot;:1}
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -820,6 +382,8 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
 	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
@@ -835,7 +399,7 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at api.test.UserTest.updateUser_shouldMatchJsonSchema(UserTest.java:733)
+	at api.test.StoreTest.testGetStoreInventoriesResponse(StoreTest.java:278)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -870,100 +434,8 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.PetTest.deleberatlyFailTest()'><b>deleberatlyFailTest</b><br>Test class: api.test.PetTest</td>
-<td><div><pre>java.lang.AssertionError: null
-	at api.test.PetTest.deleberatlyFailTest(PetTest.java:578)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1319941841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1319941841'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at api.test.PetTest.deleberatlyFailTest(PetTest.java:578)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.UserTest.updateUser_shouldReturnValidResponseFieldTypes()'><b>updateUser_shouldReturnValidResponseFieldTypes</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the types of fields in the update user response</td>
-<td><div><pre>org.json.JSONException: JSONObject[&quot;id&quot;] not found.
-	at org.json.JSONObject.get(JSONObject.java:596)
-	at api.test.UserTest.updateUser_shouldReturnValidResponseFieldTypes(UserTest.java:655)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace399902409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace399902409'><pre>org.json.JSONException: JSONObject[&quot;id&quot;] not found.
-	at org.json.JSONObject.get(JSONObject.java:596)
-	at api.test.UserTest.updateUser_shouldReturnValidResponseFieldTypes(UserTest.java:655)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-</pre></div></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>1</td>
+<td>api.test.StoreTest@4a22f9e2</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -974,200 +446,110 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UserTest.createUser_shouldRespondWithinExpectedTime()'><b>createUser_shouldRespondWithinExpectedTime</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the Create User response time</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.loginUser_shouldMatchJsonSchema()'><b>loginUser_shouldMatchJsonSchema</b><br>Test class: api.test.UserTest<br>Test method: This test validates the login response against a predefined JSON schema</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.logoutUser_shouldMatchJsonSchema()'><b>logoutUser_shouldMatchJsonSchema</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the logout response against a JSON schema</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.deleteUser_shouldReturnCorrectFieldValues()'><b>deleteUser_shouldReturnCorrectFieldValues</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the field values in the DELETE request response</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.PetTest.testUpdateExistingPetPutResponse()'><b>testUpdateExistingPetPutResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Update Existing Pet PUT response and validates the updated data<br>Parameters: 10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available</td>
-<td></td>
-<td>1</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.UserTest.createUsersInBulk_shouldReturn200StatusCode()'><b>createUsersInBulk_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the bulk user creation returns a 200 status code</td>
-<td></td>
-<td>1</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.loginUser_shouldRespondWithinExpectedTime()'><b>loginUser_shouldRespondWithinExpectedTime</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that login user response is within the expected time range</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.getUser_shouldReturn200StatusCode()'><b>getUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that GET user returns 200 status code</td>
-<td></td>
-<td>1</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.deleteUser_shouldReturnValidResponseFieldTypes()'><b>deleteUser_shouldReturnValidResponseFieldTypes</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the field types in the DELETE request response</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.PetTest.testAddNewPetPostResponse()'><b>testAddNewPetPostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Add New Pet POST response and validates the data<br>Parameters: 20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending</td>
-<td></td>
-<td>2</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.UserTest.updateUser_shouldReturn200StatusCode()'><b>updateUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the successful update of a user and returns 200 status code</td>
-<td></td>
-<td>6</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.logoutUser_shouldReturn200StatusCode()'><b>logoutUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the logout response returns a 200 status code</td>
-<td></td>
-<td>1</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
 <td title='api.test.PetTest.testFindPetByPetIDGetResponse()'><b>testFindPetByPetIDGetResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the GET response for finding a pet by its ID.<br>Parameters: 20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending</td>
 <td></td>
 <td>1</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.UserTest.createUser_shouldReturnValidResponseFieldTypes()'><b>createUser_shouldReturnValidResponseFieldTypes</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the field types of the Create User response</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.deleteUser_shouldMatchJsonSchema()'><b>deleteUser_shouldMatchJsonSchema</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the DELETE request response matches the expected JSON schema</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.deleteUser_shouldReturn200StatusCode()'><b>deleteUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the DELETE request for a user returns a 200 status code</td>
-<td></td>
-<td>1</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.getUser_shouldReturnCorrectFieldValues()'><b>getUser_shouldReturnCorrectFieldValues</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the GET user response contains correct field values</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.loginUser_shouldReturn200StatusCode()'><b>loginUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that logging in a user returns a 200 status code</td>
-<td></td>
-<td>1</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.PetTest.testFindPetByPetIDGetResponse()'><b>testFindPetByPetIDGetResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the GET response for finding a pet by its ID.<br>Parameters: 10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available</td>
-<td></td>
-<td>3</td>
-<td>api.test.PetTest@5a63f509</td></tr>
-<tr>
-<td title='api.test.UserTest.updateUser_shouldReturnCorrectContentTypeHeader()'><b>updateUser_shouldReturnCorrectContentTypeHeader</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the Content-Type header in the update user response</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
 <td title='api.test.UserTest.updateUser_withInvalidUsername_shouldHandleGracefully()'><b>updateUser_withInvalidUsername_shouldHandleGracefully</b><br>Test class: api.test.UserTest<br>Test method: This test verifies how the system handles an update request with an invalid username</td>
 <td></td>
 <td>1</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.logoutUser_shouldReturnValidResponseFieldTypes()'><b>logoutUser_shouldReturnValidResponseFieldTypes</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the field types in the logout response</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.createUser_shouldMatchJsonSchema()'><b>createUser_shouldMatchJsonSchema</b><br>Test class: api.test.UserTest<br>Test method: This test validates the Create User response against a JSON schema</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.PetTest.testUpdateExistingPetPutResponse()'><b>testUpdateExistingPetPutResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Update Existing Pet PUT response and validates the updated data<br>Parameters: 20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending</td>
-<td></td>
-<td>1</td>
-<td>api.test.PetTest@5a63f509</td></tr>
+<td>api.test.UserTest@3c419631</td></tr>
 <tr>
 <td title='api.test.PetTest.testUpdateExistingPetPutResponse()'><b>testUpdateExistingPetPutResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Update Existing Pet PUT response and validates the updated data<br>Parameters: 30, 345, Fish555, Goldy, www.google.com, www.facebook.com, 33, Golden, sold</td>
 <td></td>
 <td>1</td>
-<td>api.test.PetTest@5a63f509</td></tr>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.UserTest.getUser_shouldReturnCorrectContentTypeHeader()'><b>getUser_shouldReturnCorrectContentTypeHeader</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the GET user response contains the correct Content-Type header</td>
+<td title='api.test.PetTest.testUploadPetImagePostResponse()'><b>testUploadPetImagePostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the POST response for uploading an image for an existing pet.</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>3</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.StoreTest.testPostStoreResponse()'><b>testPostStoreResponse</b><br>Test class: api.test.StoreTest<br>Test method: This test verifies the Post Store response for placing order of pet and validates the data</td>
+<td title='api.test.UserTest.deleteUser_shouldReturn200StatusCode()'><b>deleteUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the DELETE request for a user returns a 200 status code</td>
 <td></td>
-<td>6</td>
-<td>api.test.StoreTest@67a20f67</td></tr>
-<tr>
-<td title='api.test.UserTest.createUser_shouldReturnCorrectFieldValues()'><b>createUser_shouldReturnCorrectFieldValues</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the field values of the Create User response</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.logoutUser_shouldRespondWithinExpectedTime()'><b>logoutUser_shouldRespondWithinExpectedTime</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the response time for user logout</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
-<tr>
-<td title='api.test.UserTest.loginUser_shouldReturnCorrectFieldValues()'><b>loginUser_shouldReturnCorrectFieldValues</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the login response fields contain the correct values</td>
-<td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>1</td>
+<td>api.test.UserTest@3c419631</td></tr>
 <tr>
 <td title='api.test.UserTest.createUser_shouldReturn200StatusCode()'><b>createUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the Create User POST response status code</td>
 <td></td>
 <td>1</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>api.test.UserTest@3c419631</td></tr>
 <tr>
-<td title='api.test.UserTest.logoutUser_shouldReturnCorrectFieldValues()'><b>logoutUser_shouldReturnCorrectFieldValues</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the field values in the logout response</td>
+<td title='api.test.PetTest.testAddNewPetPostResponse()'><b>testAddNewPetPostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Add New Pet POST response and validates the data<br>Parameters: 10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>3</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.UserTest.loginUser_shouldReturnCorrectContentTypeHeader()'><b>loginUser_shouldReturnCorrectContentTypeHeader</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the login response has the correct Content-Type header</td>
+<td title='api.test.StoreTest.testPostStoreResponse()'><b>testPostStoreResponse</b><br>Test class: api.test.StoreTest<br>Test method: This test verifies the Post Store response for placing order of pet and validates the data</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>1</td>
+<td>api.test.StoreTest@4a22f9e2</td></tr>
+<tr>
+<td title='api.test.PetTest.testUpdateExistingPetPutResponse()'><b>testUpdateExistingPetPutResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Update Existing Pet PUT response and validates the updated data<br>Parameters: 20, 234, Animal555, Lucky, www.google.com, www.facebook.com, 22, Black, pending</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
+<tr>
+<td title='api.test.UserTest.deletedUser_shouldNotBeFetched_shouldReturn404Error()'><b>deletedUser_shouldNotBeFetched_shouldReturn404Error</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that a deleted user cannot be fetched and returns a 404 error</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@3c419631</td></tr>
+<tr>
+<td title='api.test.PetTest.testUpdatePetPuTResponse()'><b>testUpdatePetPuTResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the POST response for updating an existing pet.</td>
+<td></td>
+<td>2</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
 <td title='api.test.PetTest.testAddNewPetPostResponse()'><b>testAddNewPetPostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Add New Pet POST response and validates the data<br>Parameters: 30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold</td>
 <td></td>
 <td>1</td>
-<td>api.test.PetTest@5a63f509</td></tr>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.UserTest.deleteUser_shouldRespondWithinExpectedTime()'><b>deleteUser_shouldRespondWithinExpectedTime</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the DELETE request response is within the expected time</td>
+<td title='api.test.PetTest.testAddNewPetPostResponse()'><b>testAddNewPetPostResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Add New Pet POST response and validates the data<br>Parameters: 20, 234, Animal, Lucky, www.google.com, www.facebook.com, 20, Black, pending</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>1</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.UserTest.getUser_shouldReturnValidResponseFieldTypes()'><b>getUser_shouldReturnValidResponseFieldTypes</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the GET user response has valid field types</td>
+<td title='api.test.PetTest.testFindPetByStatusGetResponse()'><b>testFindPetByStatusGetResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Get Pet by Status response and checks for the presence of pet with name 'Lucky' and status 'pending'</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>1</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.UserTest.logoutUser_shouldReturnCorrectContentTypeHeader()'><b>logoutUser_shouldReturnCorrectContentTypeHeader</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the content type of the logout response</td>
+<td title='api.test.PetTest.testFindPetByPetIDGetResponse()'><b>testFindPetByPetIDGetResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the GET response for finding a pet by its ID.<br>Parameters: 30, 345, Fish, Goldy, www.google.com, www.facebook.com, 30, Golden, sold</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>1</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.UserTest.createUser_shouldReturnCorrectContentTypeHeader()'><b>createUser_shouldReturnCorrectContentTypeHeader</b><br>Test class: api.test.UserTest<br>Test method: This test verifies the Content-Type header of the Create User response</td>
+<td title='api.test.PetTest.testDeletePetDeleteResponse()'><b>testDeletePetDeleteResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the DELETE response for removing a pet and checks the status after deletion.</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>2</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
-<td title='api.test.UserTest.loginUser_shouldReturnValidResponseFieldTypes()'><b>loginUser_shouldReturnValidResponseFieldTypes</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the login response fields have the correct types</td>
+<td title='api.test.PetTest.testFindPetByPetIDGetResponse()'><b>testFindPetByPetIDGetResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the GET response for finding a pet by its ID.<br>Parameters: 10, 123, Bird, Sona, www.google.com, www.facebook.com, 10, Red, available</td>
 <td></td>
-<td>0</td>
-<td>api.test.UserTest@57c758ac</td></tr>
+<td>2</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
+<tr>
+<td title='api.test.PetTest.testUpdateExistingPetPutResponse()'><b>testUpdateExistingPetPutResponse</b><br>Test class: api.test.PetTest<br>Test method: This test verifies the Update Existing Pet PUT response and validates the updated data<br>Parameters: 10, 123, Bird555, Sona, www.google.com, www.facebook.com, 11, Red, available</td>
+<td></td>
+<td>1</td>
+<td>api.test.PetTest@4c9f8c13</td></tr>
+<tr>
+<td title='api.test.UserTest.logoutUser_shouldReturn200StatusCode()'><b>logoutUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the logout response returns a 200 status code</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@3c419631</td></tr>
+<tr>
+<td title='api.test.UserTest.createUsersInBulk_shouldReturn200StatusCode()'><b>createUsersInBulk_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that the bulk user creation returns a 200 status code</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@3c419631</td></tr>
+<tr>
+<td title='api.test.UserTest.loginUser_shouldReturn200StatusCode()'><b>loginUser_shouldReturn200StatusCode</b><br>Test class: api.test.UserTest<br>Test method: This test verifies that logging in a user returns a 200 status code</td>
+<td></td>
+<td>1</td>
+<td>api.test.UserTest@3c419631</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -1179,12 +561,12 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 </tr>
 <tr>
 <td title='api.test.PetTest.deleberatlySkippedTest1()'><b>deleberatlySkippedTest1</b><br>Test class: api.test.PetTest</td>
-<td><div><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]
+<td><div><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace675475202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace675475202'><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1900380536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1900380536'><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -1211,15 +593,15 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>api.test.PetTest@5a63f509</td></tr>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 <tr>
 <td title='api.test.PetTest.deleberatlySkippedTest2()'><b>deleberatlySkippedTest2</b><br>Test class: api.test.PetTest</td>
-<td><div><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]
+<td><div><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace583765599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace583765599'><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1688786293", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1688786293'><pre>java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -1246,7 +628,7 @@ error: object has missing required properties ([&quot;email&quot;,&quot;firstNam
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>0</td>
-<td>api.test.PetTest@5a63f509</td></tr>
+<td>api.test.PetTest@4c9f8c13</td></tr>
 </table><p>
 </body>
 </html>

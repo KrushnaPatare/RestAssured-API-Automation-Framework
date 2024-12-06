@@ -180,9 +180,13 @@ To ensure a clear and organized project structure, we've adopted the following c
 
 The framework generates a comprehensive **Extent Report** that visually presents the test results. Below is a sample screenshot from the report:
 
-![Extent Report Screenshot](https://github.com/KrushnaPatare/RestAssured-API-Automation-Framework/blob/main/screenshots/Screenshot%202024-10-23%20190452.png)
+![Extent Report Screenshot]()
 
-![Extent Report Screenshot](https://github.com/KrushnaPatare/RestAssured-API-Automation-Framework/blob/main/screenshots/Screenshot%202024-10-23%20190024.png)
+![Extent Report Screenshot]()
+
+![Extent Report Screenshot]()
+
+![Extent Report Screenshot]()
 
 For additional reports and logs, please check the `logs` and `reports` folder.
 

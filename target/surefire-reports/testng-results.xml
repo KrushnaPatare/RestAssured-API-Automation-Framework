@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="57" passed="39" failed="16" skipped="2">
+<testng-results ignored="0" total="29" passed="21" failed="6" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-30T19:28:05 IST" name="Surefire suite" finished-at="2024-11-30T19:29:41 IST" duration-ms="96471">
+  <suite started-at="2024-12-06T10:41:50 IST" name="Surefire suite" finished-at="2024-12-06T10:42:46 IST" duration-ms="56223">
     <groups>
       <group name="Regression">
-        <method signature="PetTest.testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@5a63f509]" name="testAddNewPetPostResponse" class="api.test.PetTest"/>
+        <method signature="PetTest.testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@4c9f8c13]" name="testAddNewPetPostResponse" class="api.test.PetTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-11-30T19:28:05 IST" name="Surefire test" finished-at="2024-11-30T19:29:41 IST" duration-ms="96471">
+    <test started-at="2024-12-06T10:41:50 IST" name="Surefire test" finished-at="2024-12-06T10:42:46 IST" duration-ms="56223">
       <class name="api.test.PetTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:05 IST" name="setUp" finished-at="2024-11-30T19:28:06 IST" duration-ms="720" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:50 IST" name="setUp" finished-at="2024-12-06T10:41:51 IST" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:08 IST" name="globalSetUP" finished-at="2024-11-30T19:28:09 IST" duration-ms="928" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:53 IST" name="globalSetUP" finished-at="2024-12-06T10:41:54 IST" duration-ms="817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:09 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-11-30T19:28:14 IST" duration-ms="5067" status="FAIL">
+        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:54 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-12-06T10:41:58 IST" duration-ms="3967" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,64 +66,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Response time is outside the expected range (200-3000ms). expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-3000ms). expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at api.test.PetTest.testAddNewPetPostResponse(PetTest.java:119)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewPetPostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:14 IST" name="tearDown" finished-at="2024-11-30T19:28:14 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:58 IST" name="tearDown" finished-at="2024-12-06T10:41:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:14 IST" name="globalSetUP" finished-at="2024-11-30T19:28:14 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:58 IST" name="globalSetUP" finished-at="2024-12-06T10:41:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:14 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-11-30T19:28:17 IST" duration-ms="2087" status="PASS">
+        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:58 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-12-06T10:41:59 IST" duration-ms="1310" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,15 +128,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewPetPostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:17 IST" name="tearDown" finished-at="2024-11-30T19:28:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:59 IST" name="tearDown" finished-at="2024-12-06T10:41:59 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:17 IST" name="globalSetUP" finished-at="2024-11-30T19:28:17 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:59 IST" name="globalSetUP" finished-at="2024-12-06T10:41:59 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:17 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-11-30T19:28:18 IST" duration-ms="1517" status="PASS">
+        <test-method signature="testAddNewPetPostResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:41:59 IST" name="testAddNewPetPostResponse" description="This test verifies the Add New Pet POST response and validates the data" data-provider="PetData" finished-at="2024-12-06T10:42:01 IST" duration-ms="1732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -233,15 +187,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewPetPostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:18 IST" name="tearDown" finished-at="2024-11-30T19:28:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:01 IST" name="tearDown" finished-at="2024-12-06T10:42:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:19 IST" name="globalSetUP" finished-at="2024-11-30T19:28:19 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:02 IST" name="globalSetUP" finished-at="2024-12-06T10:42:02 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testUpdateExistingPetPutResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:19 IST" name="testUpdateExistingPetPutResponse" description="This test verifies the Update Existing Pet PUT response and validates the updated data" data-provider="UpdatedPetData" finished-at="2024-11-30T19:28:20 IST" duration-ms="1469" status="PASS">
+        <test-method signature="testUpdateExistingPetPutResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:02 IST" name="testUpdateExistingPetPutResponse" description="This test verifies the Update Existing Pet PUT response and validates the updated data" data-provider="UpdatedPetData" finished-at="2024-12-06T10:42:03 IST" duration-ms="1295" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -292,15 +246,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateExistingPetPutResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:20 IST" name="tearDown" finished-at="2024-11-30T19:28:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:03 IST" name="tearDown" finished-at="2024-12-06T10:42:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:20 IST" name="globalSetUP" finished-at="2024-11-30T19:28:20 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:03 IST" name="globalSetUP" finished-at="2024-12-06T10:42:03 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testUpdateExistingPetPutResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:20 IST" name="testUpdateExistingPetPutResponse" description="This test verifies the Update Existing Pet PUT response and validates the updated data" data-provider="UpdatedPetData" finished-at="2024-11-30T19:28:22 IST" duration-ms="1385" status="PASS">
+        <test-method signature="testUpdateExistingPetPutResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:03 IST" name="testUpdateExistingPetPutResponse" description="This test verifies the Update Existing Pet PUT response and validates the updated data" data-provider="UpdatedPetData" finished-at="2024-12-06T10:42:05 IST" duration-ms="1373" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -351,15 +305,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateExistingPetPutResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:22 IST" name="tearDown" finished-at="2024-11-30T19:28:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:05 IST" name="tearDown" finished-at="2024-12-06T10:42:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:22 IST" name="globalSetUP" finished-at="2024-11-30T19:28:22 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:05 IST" name="globalSetUP" finished-at="2024-12-06T10:42:05 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testUpdateExistingPetPutResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:22 IST" name="testUpdateExistingPetPutResponse" description="This test verifies the Update Existing Pet PUT response and validates the updated data" data-provider="UpdatedPetData" finished-at="2024-11-30T19:28:23 IST" duration-ms="1405" status="PASS">
+        <test-method signature="testUpdateExistingPetPutResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:05 IST" name="testUpdateExistingPetPutResponse" description="This test verifies the Update Existing Pet PUT response and validates the updated data" data-provider="UpdatedPetData" finished-at="2024-12-06T10:42:06 IST" duration-ms="1621" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -410,71 +364,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateExistingPetPutResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:23 IST" name="tearDown" finished-at="2024-11-30T19:28:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:06 IST" name="tearDown" finished-at="2024-12-06T10:42:06 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:23 IST" name="globalSetUP" finished-at="2024-11-30T19:28:23 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:06 IST" name="globalSetUP" finished-at="2024-12-06T10:42:06 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testFindPetByStatusGetResponse()[pri:3, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:23 IST" name="testFindPetByStatusGetResponse" description="This test verifies the Get Pet by Status response and checks for the presence of pet with name &#039;Lucky&#039; and status &#039;pending&#039;" finished-at="2024-11-30T19:28:25 IST" duration-ms="1521" status="FAIL">
-          <exception class="org.json.JSONException">
-            <message>
-              <![CDATA[JSONObject["name"] not found.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.json.JSONException: JSONObject["name"] not found.
-at org.json.JSONObject.get(JSONObject.java:596)
-at api.test.PetTest.testFindPetByStatusGetResponse(PetTest.java:285)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.json.JSONException -->
+        <test-method signature="testFindPetByStatusGetResponse()[pri:3, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:06 IST" name="testFindPetByStatusGetResponse" description="This test verifies the Get Pet by Status response and checks for the presence of pet with name &#039;Lucky&#039; and status &#039;pending&#039;" finished-at="2024-12-06T10:42:08 IST" duration-ms="1358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFindPetByStatusGetResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:25 IST" name="tearDown" finished-at="2024-11-30T19:28:25 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:08 IST" name="tearDown" finished-at="2024-12-06T10:42:08 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:26 IST" name="globalSetUP" finished-at="2024-11-30T19:28:26 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:08 IST" name="globalSetUP" finished-at="2024-12-06T10:42:08 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testFindPetByPetIDGetResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:26 IST" name="testFindPetByPetIDGetResponse" description="This test verifies the GET response for finding a pet by its ID." data-provider="PetData" finished-at="2024-11-30T19:28:29 IST" duration-ms="3473" status="PASS">
+        <test-method signature="testFindPetByPetIDGetResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:08 IST" name="testFindPetByPetIDGetResponse" description="This test verifies the GET response for finding a pet by its ID." data-provider="PetData" finished-at="2024-12-06T10:42:11 IST" duration-ms="2761" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -525,15 +435,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFindPetByPetIDGetResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:29 IST" name="tearDown" finished-at="2024-11-30T19:28:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:11 IST" name="tearDown" finished-at="2024-12-06T10:42:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:29 IST" name="globalSetUP" finished-at="2024-11-30T19:28:29 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:11 IST" name="globalSetUP" finished-at="2024-12-06T10:42:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testFindPetByPetIDGetResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:29 IST" name="testFindPetByPetIDGetResponse" description="This test verifies the GET response for finding a pet by its ID." data-provider="PetData" finished-at="2024-11-30T19:28:31 IST" duration-ms="1531" status="PASS">
+        <test-method signature="testFindPetByPetIDGetResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:11 IST" name="testFindPetByPetIDGetResponse" description="This test verifies the GET response for finding a pet by its ID." data-provider="PetData" finished-at="2024-12-06T10:42:13 IST" duration-ms="1818" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -584,15 +494,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFindPetByPetIDGetResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:31 IST" name="tearDown" finished-at="2024-11-30T19:28:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:13 IST" name="tearDown" finished-at="2024-12-06T10:42:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:31 IST" name="globalSetUP" finished-at="2024-11-30T19:28:31 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:13 IST" name="globalSetUP" finished-at="2024-12-06T10:42:13 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testFindPetByPetIDGetResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:31 IST" name="testFindPetByPetIDGetResponse" description="This test verifies the GET response for finding a pet by its ID." data-provider="PetData" finished-at="2024-11-30T19:28:35 IST" duration-ms="4194" status="FAIL">
+        <test-method signature="testFindPetByPetIDGetResponse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:13 IST" name="testFindPetByPetIDGetResponse" description="This test verifies the GET response for finding a pet by its ID." data-provider="PetData" finished-at="2024-12-06T10:42:14 IST" duration-ms="1388" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -640,232 +550,54 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at api.test.PetTest.testFindPetByPetIDGetResponse(PetTest.java:390)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFindPetByPetIDGetResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:35 IST" name="tearDown" finished-at="2024-11-30T19:28:35 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:14 IST" name="tearDown" finished-at="2024-12-06T10:42:14 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:35 IST" name="globalSetUP" finished-at="2024-11-30T19:28:35 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:14 IST" name="globalSetUP" finished-at="2024-12-06T10:42:14 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testUpdatePetPostResponse()[pri:6, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:35 IST" name="testUpdatePetPostResponse" description="This test verifies the POST response for updating an existing pet." finished-at="2024-11-30T19:28:38 IST" duration-ms="2910" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "Object.toString()" because the return value of "io.restassured.response.ExtractableResponse.path(String, String[])" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Object.toString()" because the return value of "io.restassured.response.ExtractableResponse.path(String, String[])" is null
-at api.test.PetTest.testUpdatePetPostResponse(PetTest.java:430)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="testUpdatePetPuTResponse()[pri:6, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:14 IST" name="testUpdatePetPuTResponse" description="This test verifies the POST response for updating an existing pet." finished-at="2024-12-06T10:42:17 IST" duration-ms="2940" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUpdatePetPostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:38 IST" name="tearDown" finished-at="2024-11-30T19:28:38 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testUpdatePetPuTResponse -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:17 IST" name="tearDown" finished-at="2024-12-06T10:42:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:38 IST" name="globalSetUP" finished-at="2024-11-30T19:28:38 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:17 IST" name="globalSetUP" finished-at="2024-12-06T10:42:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testUploadPetImagePostResponse()[pri:7, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:38 IST" name="testUploadPetImagePostResponse" description="This test verifies the POST response for uploading an image for an existing pet." finished-at="2024-11-30T19:28:53 IST" duration-ms="15663" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at api.test.PetTest.testUploadPetImagePostResponse(PetTest.java:498)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testUploadPetImagePostResponse()[pri:7, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:17 IST" name="testUploadPetImagePostResponse" description="This test verifies the POST response for uploading an image for an existing pet." finished-at="2024-12-06T10:42:20 IST" duration-ms="3026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUploadPetImagePostResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:53 IST" name="tearDown" finished-at="2024-11-30T19:28:53 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:20 IST" name="tearDown" finished-at="2024-12-06T10:42:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:53 IST" name="globalSetUP" finished-at="2024-11-30T19:28:53 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:20 IST" name="globalSetUP" finished-at="2024-12-06T10:42:20 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testDeletePetDeleteResponse()[pri:8, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:28:53 IST" name="testDeletePetDeleteResponse" description="This test verifies the DELETE response for removing a pet and checks the status after deletion." finished-at="2024-11-30T19:29:00 IST" duration-ms="6478" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.fail(Assert.java:116)
-at api.test.PetTest.testDeletePetDeleteResponse(PetTest.java:556)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="testDeletePetDeleteResponse()[pri:8, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:20 IST" name="testDeletePetDeleteResponse" description="This test verifies the DELETE response for removing a pet and checks the status after deletion." finished-at="2024-12-06T10:42:23 IST" duration-ms="2962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeletePetDeleteResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:29:00 IST" name="tearDown" finished-at="2024-11-30T19:29:00 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:23 IST" name="tearDown" finished-at="2024-12-06T10:42:23 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:29:00 IST" name="globalSetUP" finished-at="2024-11-30T19:29:00 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:23 IST" name="globalSetUP" finished-at="2024-12-06T10:42:23 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="deleberatlyFailTest()[pri:9, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:29:00 IST" name="deleberatlyFailTest" finished-at="2024-11-30T19:29:00 IST" duration-ms="1" status="FAIL">
+        <test-method signature="deleberatlyFailTest()[pri:9, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:23 IST" name="deleberatlyFailTest" finished-at="2024-12-06T10:42:23 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -874,7 +606,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.fail(Assert.java:116)
-at api.test.PetTest.deleberatlyFailTest(PetTest.java:578)
+at api.test.PetTest.deleberatlyFailTest(PetTest.java:575)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -914,19 +646,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleberatlyFailTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:29:00 IST" name="tearDown" finished-at="2024-11-30T19:29:00 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:23 IST" name="tearDown" finished-at="2024-12-06T10:42:23 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="deleberatlySkippedTest1()[pri:10, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:29:00 IST" name="deleberatlySkippedTest1" finished-at="2024-11-30T19:29:00 IST" depends-on-methods="api.test.PetTest.deleberatlyFailTest" duration-ms="0" status="SKIP">
+        <test-method signature="deleberatlySkippedTest1()[pri:10, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:23 IST" name="deleberatlySkippedTest1" finished-at="2024-12-06T10:42:23 IST" depends-on-methods="api.test.PetTest.deleberatlyFailTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]]]>
+              <![CDATA[Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]
+              <![CDATA[java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest1() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -957,15 +689,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleberatlySkippedTest1 -->
-        <test-method signature="deleberatlySkippedTest2()[pri:11, instance:api.test.PetTest@5a63f509]" started-at="2024-11-30T19:29:00 IST" name="deleberatlySkippedTest2" finished-at="2024-11-30T19:29:00 IST" depends-on-methods="api.test.PetTest.deleberatlyFailTest" duration-ms="0" status="SKIP">
+        <test-method signature="deleberatlySkippedTest2()[pri:11, instance:api.test.PetTest@4c9f8c13]" started-at="2024-12-06T10:42:23 IST" name="deleberatlySkippedTest2" finished-at="2024-12-06T10:42:23 IST" depends-on-methods="api.test.PetTest.deleberatlyFailTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]]]>
+              <![CDATA[Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@5a63f509 depends on not successfully finished methods 
-[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@5a63f509]
+              <![CDATA[java.lang.Throwable: Method api.test.PetTest.deleberatlySkippedTest2() on instance api.test.PetTest@4c9f8c13 depends on not successfully finished methods 
+[api.test.PetTest.deleberatlyFailTest() on instance api.test.PetTest@4c9f8c13]
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -998,99 +730,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
         </test-method> <!-- deleberatlySkippedTest2 -->
       </class> <!-- api.test.PetTest -->
       <class name="api.test.UserTest">
-        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:18 IST" name="setUpData" finished-at="2024-11-30T19:29:18 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:33 IST" name="setUpData" finished-at="2024-12-06T10:42:33 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpData -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:18 IST" name="globalSetUP" finished-at="2024-11-30T19:29:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:33 IST" name="globalSetUP" finished-at="2024-12-06T10:42:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="createUser_shouldReturn200StatusCode()[pri:1, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:18 IST" name="createUser_shouldReturn200StatusCode" description="This test verifies the Create User POST response status code" finished-at="2024-11-30T19:29:20 IST" duration-ms="1481" status="PASS">
+        <test-method signature="createUser_shouldReturn200StatusCode()[pri:1, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:33 IST" name="createUser_shouldReturn200StatusCode" description="This test verifies the Create User POST response status code" finished-at="2024-12-06T10:42:35 IST" duration-ms="1798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUser_shouldReturn200StatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="tearDown" finished-at="2024-11-30T19:29:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:35 IST" name="tearDown" finished-at="2024-12-06T10:42:35 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="globalSetUP" finished-at="2024-11-30T19:29:20 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:35 IST" name="globalSetUP" finished-at="2024-12-06T10:42:35 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="createUser_shouldRespondWithinExpectedTime()[pri:2, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="createUser_shouldRespondWithinExpectedTime" description="This test verifies the Create User response time" finished-at="2024-11-30T19:29:20 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_shouldRespondWithinExpectedTime -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="tearDown" finished-at="2024-11-30T19:29:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="globalSetUP" finished-at="2024-11-30T19:29:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="createUser_shouldReturnCorrectContentTypeHeader()[pri:3, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="createUser_shouldReturnCorrectContentTypeHeader" description="This test verifies the Content-Type header of the Create User response" finished-at="2024-11-30T19:29:20 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_shouldReturnCorrectContentTypeHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="tearDown" finished-at="2024-11-30T19:29:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="globalSetUP" finished-at="2024-11-30T19:29:20 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="createUser_shouldReturnValidResponseFieldTypes()[pri:4, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="createUser_shouldReturnValidResponseFieldTypes" description="This test verifies the field types of the Create User response" finished-at="2024-11-30T19:29:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_shouldReturnValidResponseFieldTypes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="tearDown" finished-at="2024-11-30T19:29:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="globalSetUP" finished-at="2024-11-30T19:29:20 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="createUser_shouldReturnCorrectFieldValues()[pri:5, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="createUser_shouldReturnCorrectFieldValues" description="This test verifies the field values of the Create User response" finished-at="2024-11-30T19:29:20 IST" duration-ms="59" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_shouldReturnCorrectFieldValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="tearDown" finished-at="2024-11-30T19:29:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="globalSetUP" finished-at="2024-11-30T19:29:20 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="createUser_shouldMatchJsonSchema()[pri:6, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="createUser_shouldMatchJsonSchema" description="This test validates the Create User response against a JSON schema" finished-at="2024-11-30T19:29:20 IST" duration-ms="84" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createUser_shouldMatchJsonSchema -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="tearDown" finished-at="2024-11-30T19:29:20 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="globalSetUP" finished-at="2024-11-30T19:29:20 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="getUser_shouldReturn200StatusCode()[pri:7, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:20 IST" name="getUser_shouldReturn200StatusCode" description="This test verifies that GET user returns 200 status code" finished-at="2024-11-30T19:29:22 IST" duration-ms="1988" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUser_shouldReturn200StatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="tearDown" finished-at="2024-11-30T19:29:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="globalSetUP" finished-at="2024-11-30T19:29:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="getUser_shouldRespondWithinExpectedTime()[pri:8, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="getUser_shouldRespondWithinExpectedTime" description="This test verifies that GET user response time is within the expected range" finished-at="2024-11-30T19:29:22 IST" duration-ms="1" status="FAIL">
+        <test-method signature="getUser_shouldRespondWithinExpectedTime()[pri:2, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:35 IST" name="getUser_shouldRespondWithinExpectedTime" description="This test verifies that GET user response time is within the expected range" finished-at="2024-12-06T10:42:36 IST" duration-ms="1573" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Response time is outside the expected range. expected [true] but found [false]]]>
@@ -1100,7 +760,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertTrue(Assert.java:57)
-at api.test.UserTest.getUser_shouldRespondWithinExpectedTime(UserTest.java:367)
+at api.test.UserTest.getUser_shouldRespondWithinExpectedTime(UserTest.java:182)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1140,133 +800,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUser_shouldRespondWithinExpectedTime -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="tearDown" finished-at="2024-11-30T19:29:22 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:36 IST" name="tearDown" finished-at="2024-12-06T10:42:36 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="globalSetUP" finished-at="2024-11-30T19:29:22 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:36 IST" name="globalSetUP" finished-at="2024-12-06T10:42:36 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="getUser_shouldReturnCorrectContentTypeHeader()[pri:9, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="getUser_shouldReturnCorrectContentTypeHeader" description="This test verifies that the GET user response contains the correct Content-Type header" finished-at="2024-11-30T19:29:22 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUser_shouldReturnCorrectContentTypeHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="tearDown" finished-at="2024-11-30T19:29:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="globalSetUP" finished-at="2024-11-30T19:29:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="getUser_shouldReturnValidResponseFieldTypes()[pri:10, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="getUser_shouldReturnValidResponseFieldTypes" description="This test verifies that the GET user response has valid field types" finished-at="2024-11-30T19:29:22 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUser_shouldReturnValidResponseFieldTypes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="tearDown" finished-at="2024-11-30T19:29:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="globalSetUP" finished-at="2024-11-30T19:29:22 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="getUser_shouldReturnCorrectFieldValues()[pri:11, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="getUser_shouldReturnCorrectFieldValues" description="This test verifies that the GET user response contains correct field values" finished-at="2024-11-30T19:29:22 IST" duration-ms="132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getUser_shouldReturnCorrectFieldValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="tearDown" finished-at="2024-11-30T19:29:22 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="globalSetUP" finished-at="2024-11-30T19:29:22 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="updateUser_shouldReturn200StatusCode()[pri:13, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:22 IST" name="updateUser_shouldReturn200StatusCode" description="This test verifies the successful update of a user and returns 200 status code" finished-at="2024-11-30T19:29:29 IST" duration-ms="6471" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser_shouldReturn200StatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="tearDown" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="globalSetUP" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="updateUser_shouldRespondWithinExpectedTime()[pri:14, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="updateUser_shouldRespondWithinExpectedTime" description="This test verifies that the update user request responds within the expected time frame" finished-at="2024-11-30T19:29:29 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Response time is outside the expected range (200-2000ms). expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at api.test.UserTest.updateUser_shouldRespondWithinExpectedTime(UserTest.java:593)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser_shouldRespondWithinExpectedTime -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="tearDown" finished-at="2024-11-30T19:29:29 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="globalSetUP" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="updateUser_shouldReturnCorrectContentTypeHeader()[pri:15, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="updateUser_shouldReturnCorrectContentTypeHeader" description="This test verifies the Content-Type header in the update user response" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser_shouldReturnCorrectContentTypeHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="tearDown" finished-at="2024-11-30T19:29:29 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="globalSetUP" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="updateUser_shouldReturnValidResponseFieldTypes()[pri:16, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="updateUser_shouldReturnValidResponseFieldTypes" description="This test verifies the types of fields in the update user response" finished-at="2024-11-30T19:29:29 IST" duration-ms="2" status="FAIL">
+        <test-method signature="updateUser_shouldReturn200StatusCode()[pri:3, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:36 IST" name="updateUser_shouldReturn200StatusCode" description="This test verifies the successful update of a user and returns 200 status code" finished-at="2024-12-06T10:42:38 IST" duration-ms="1594" status="FAIL">
           <exception class="org.json.JSONException">
             <message>
               <![CDATA[JSONObject["id"] not found.]]>
@@ -1274,7 +816,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
             <full-stacktrace>
               <![CDATA[org.json.JSONException: JSONObject["id"] not found.
 at org.json.JSONObject.get(JSONObject.java:596)
-at api.test.UserTest.updateUser_shouldReturnValidResponseFieldTypes(UserTest.java:655)
+at api.test.UserTest.updateUser_shouldReturn200StatusCode(UserTest.java:305)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1313,502 +855,119 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           </exception> <!-- org.json.JSONException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- updateUser_shouldReturnValidResponseFieldTypes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="tearDown" finished-at="2024-11-30T19:29:29 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- updateUser_shouldReturn200StatusCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:38 IST" name="tearDown" finished-at="2024-12-06T10:42:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="globalSetUP" finished-at="2024-11-30T19:29:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:38 IST" name="globalSetUP" finished-at="2024-12-06T10:42:38 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="updateUser_shouldReturnCorrectFieldValues()[pri:17, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="updateUser_shouldReturnCorrectFieldValues" description="This test verifies that the field values returned in the update user response are correct" finished-at="2024-11-30T19:29:29 IST" duration-ms="95" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "java.lang.Integer.intValue()" because the return value of "io.restassured.response.ExtractableResponse.path(String, String[])" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "io.restassured.response.ExtractableResponse.path(String, String[])" is null
-at api.test.UserTest.updateUser_shouldReturnCorrectFieldValues(UserTest.java:694)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser_shouldReturnCorrectFieldValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="tearDown" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="globalSetUP" finished-at="2024-11-30T19:29:29 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="updateUser_shouldMatchJsonSchema()[pri:18, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="updateUser_shouldMatchJsonSchema" description="This test verifies that the update user response matches the expected JSON schema" finished-at="2024-11-30T19:29:29 IST" duration-ms="70" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[1 expectation failed.
-Response body doesn't match expectation.
-Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: ["code","message","type"]
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
-    instance: {"pointer":""}
-    domain: "validation"
-    keyword: "additionalProperties"
-    unwanted: ["code","message","type"]
-error: object has missing required properties (["email","firstName","id","lastName","password","phone","userStatus","username"])
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
-    instance: {"pointer":""}
-    domain: "validation"
-    keyword: "required"
-    required: ["email","firstName","id","lastName","password","phone","userStatus","username"]
-    missing: ["email","firstName","id","lastName","password","phone","userStatus","username"]
-
-  Actual: {"code":200,"type":"unknown","message":"1777178337"}
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Response body doesn't match expectation.
-Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: ["code","message","type"]
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
-    instance: {"pointer":""}
-    domain: "validation"
-    keyword: "additionalProperties"
-    unwanted: ["code","message","type"]
-error: object has missing required properties (["email","firstName","id","lastName","password","phone","userStatus","username"])
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/definitions/Welcome2"}
-    instance: {"pointer":""}
-    domain: "validation"
-    keyword: "required"
-    required: ["email","firstName","id","lastName","password","phone","userStatus","username"]
-    missing: ["email","firstName","id","lastName","password","phone","userStatus","username"]
-
-  Actual: {"code":200,"type":"unknown","message":"1777178337"}
-
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
-at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-at api.test.UserTest.updateUser_shouldMatchJsonSchema(UserTest.java:733)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser_shouldMatchJsonSchema -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="tearDown" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="globalSetUP" finished-at="2024-11-30T19:29:29 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="updateUser_withInvalidUsername_shouldHandleGracefully()[pri:19, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:29 IST" name="updateUser_withInvalidUsername_shouldHandleGracefully" description="This test verifies how the system handles an update request with an invalid username" finished-at="2024-11-30T19:29:30 IST" duration-ms="1501" status="PASS">
+        <test-method signature="updateUser_withInvalidUsername_shouldHandleGracefully()[pri:4, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:38 IST" name="updateUser_withInvalidUsername_shouldHandleGracefully" description="This test verifies how the system handles an update request with an invalid username" finished-at="2024-12-06T10:42:39 IST" duration-ms="1277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUser_withInvalidUsername_shouldHandleGracefully -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:30 IST" name="tearDown" finished-at="2024-11-30T19:29:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:39 IST" name="tearDown" finished-at="2024-12-06T10:42:39 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:30 IST" name="globalSetUP" finished-at="2024-11-30T19:29:30 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:39 IST" name="globalSetUP" finished-at="2024-12-06T10:42:39 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="loginUser_shouldReturn200StatusCode()[pri:20, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:30 IST" name="loginUser_shouldReturn200StatusCode" description="This test verifies that logging in a user returns a 200 status code" finished-at="2024-11-30T19:29:32 IST" duration-ms="1412" status="PASS">
+        <test-method signature="loginUser_shouldReturn200StatusCode()[pri:5, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:39 IST" name="loginUser_shouldReturn200StatusCode" description="This test verifies that logging in a user returns a 200 status code" finished-at="2024-12-06T10:42:41 IST" duration-ms="1417" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUser_shouldReturn200StatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="tearDown" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:41 IST" name="tearDown" finished-at="2024-12-06T10:42:41 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="globalSetUP" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:41 IST" name="globalSetUP" finished-at="2024-12-06T10:42:41 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="loginUser_shouldRespondWithinExpectedTime()[pri:21, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="loginUser_shouldRespondWithinExpectedTime" description="This test verifies that login user response is within the expected time range" finished-at="2024-11-30T19:29:32 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUser_shouldRespondWithinExpectedTime -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="tearDown" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="globalSetUP" finished-at="2024-11-30T19:29:32 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="loginUser_shouldReturnCorrectContentTypeHeader()[pri:22, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="loginUser_shouldReturnCorrectContentTypeHeader" description="This test verifies that the login response has the correct Content-Type header" finished-at="2024-11-30T19:29:32 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUser_shouldReturnCorrectContentTypeHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="tearDown" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="globalSetUP" finished-at="2024-11-30T19:29:32 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="loginUser_shouldReturnValidResponseFieldTypes()[pri:23, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="loginUser_shouldReturnValidResponseFieldTypes" description="This test verifies that the login response fields have the correct types" finished-at="2024-11-30T19:29:32 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUser_shouldReturnValidResponseFieldTypes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="tearDown" finished-at="2024-11-30T19:29:32 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="globalSetUP" finished-at="2024-11-30T19:29:32 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="loginUser_shouldReturnCorrectFieldValues()[pri:24, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="loginUser_shouldReturnCorrectFieldValues" description="This test verifies that the login response fields contain the correct values" finished-at="2024-11-30T19:29:32 IST" duration-ms="45" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUser_shouldReturnCorrectFieldValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="tearDown" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="globalSetUP" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="loginUser_shouldMatchJsonSchema()[pri:25, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="loginUser_shouldMatchJsonSchema" description="This test validates the login response against a predefined JSON schema" finished-at="2024-11-30T19:29:32 IST" duration-ms="62" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginUser_shouldMatchJsonSchema -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="tearDown" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="globalSetUP" finished-at="2024-11-30T19:29:32 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="logoutUser_shouldReturn200StatusCode()[pri:26, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:32 IST" name="logoutUser_shouldReturn200StatusCode" description="This test verifies that the logout response returns a 200 status code" finished-at="2024-11-30T19:29:33 IST" duration-ms="1504" status="PASS">
+        <test-method signature="logoutUser_shouldReturn200StatusCode()[pri:6, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:41 IST" name="logoutUser_shouldReturn200StatusCode" description="This test verifies that the logout response returns a 200 status code" finished-at="2024-12-06T10:42:42 IST" duration-ms="1397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutUser_shouldReturn200StatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="tearDown" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:42 IST" name="tearDown" finished-at="2024-12-06T10:42:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="globalSetUP" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:42 IST" name="globalSetUP" finished-at="2024-12-06T10:42:42 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="logoutUser_shouldRespondWithinExpectedTime()[pri:27, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="logoutUser_shouldRespondWithinExpectedTime" description="This test verifies the response time for user logout" finished-at="2024-11-30T19:29:33 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutUser_shouldRespondWithinExpectedTime -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="tearDown" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="globalSetUP" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="logoutUser_shouldReturnCorrectContentTypeHeader()[pri:28, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="logoutUser_shouldReturnCorrectContentTypeHeader" description="This test verifies the content type of the logout response" finished-at="2024-11-30T19:29:33 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutUser_shouldReturnCorrectContentTypeHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="tearDown" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="globalSetUP" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="logoutUser_shouldReturnValidResponseFieldTypes()[pri:29, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="logoutUser_shouldReturnValidResponseFieldTypes" description="This test verifies the field types in the logout response" finished-at="2024-11-30T19:29:33 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutUser_shouldReturnValidResponseFieldTypes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="tearDown" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="globalSetUP" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="logoutUser_shouldReturnCorrectFieldValues()[pri:30, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="logoutUser_shouldReturnCorrectFieldValues" description="This test verifies the field values in the logout response" finished-at="2024-11-30T19:29:33 IST" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutUser_shouldReturnCorrectFieldValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="tearDown" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="globalSetUP" finished-at="2024-11-30T19:29:33 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="logoutUser_shouldMatchJsonSchema()[pri:31, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="logoutUser_shouldMatchJsonSchema" description="This test verifies the logout response against a JSON schema" finished-at="2024-11-30T19:29:33 IST" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutUser_shouldMatchJsonSchema -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="tearDown" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="globalSetUP" finished-at="2024-11-30T19:29:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="deleteUser_shouldReturn200StatusCode()[pri:32, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:33 IST" name="deleteUser_shouldReturn200StatusCode" description="This test verifies that the DELETE request for a user returns a 200 status code" finished-at="2024-11-30T19:29:35 IST" duration-ms="1466" status="PASS">
+        <test-method signature="deleteUser_shouldReturn200StatusCode()[pri:7, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:42 IST" name="deleteUser_shouldReturn200StatusCode" description="This test verifies that the DELETE request for a user returns a 200 status code" finished-at="2024-12-06T10:42:43 IST" duration-ms="1284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUser_shouldReturn200StatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="tearDown" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:43 IST" name="tearDown" finished-at="2024-12-06T10:42:43 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="globalSetUP" finished-at="2024-11-30T19:29:35 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:43 IST" name="globalSetUP" finished-at="2024-12-06T10:42:43 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="deleteUser_shouldRespondWithinExpectedTime()[pri:33, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="deleteUser_shouldRespondWithinExpectedTime" description="This test verifies that the DELETE request response is within the expected time" finished-at="2024-11-30T19:29:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser_shouldRespondWithinExpectedTime -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="tearDown" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="globalSetUP" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="deleteUser_shouldReturnValidResponseFieldTypes()[pri:34, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="deleteUser_shouldReturnValidResponseFieldTypes" description="This test verifies the field types in the DELETE request response" finished-at="2024-11-30T19:29:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser_shouldReturnValidResponseFieldTypes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="tearDown" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="globalSetUP" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="deleteUser_shouldReturnCorrectFieldValues()[pri:35, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="deleteUser_shouldReturnCorrectFieldValues" description="This test verifies the field values in the DELETE request response" finished-at="2024-11-30T19:29:35 IST" duration-ms="31" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser_shouldReturnCorrectFieldValues -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="tearDown" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="globalSetUP" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="deleteUser_shouldMatchJsonSchema()[pri:36, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="deleteUser_shouldMatchJsonSchema" description="This test verifies the DELETE request response matches the expected JSON schema" finished-at="2024-11-30T19:29:35 IST" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser_shouldMatchJsonSchema -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="tearDown" finished-at="2024-11-30T19:29:35 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="globalSetUP" finished-at="2024-11-30T19:29:35 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- globalSetUP -->
-        <test-method signature="deletedUser_shouldNotBeFetched_shouldReturn404Error()[pri:37, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:35 IST" name="deletedUser_shouldNotBeFetched_shouldReturn404Error" description="This test verifies that a deleted user cannot be fetched and returns a 404 error" finished-at="2024-11-30T19:29:40 IST" duration-ms="4519" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Response time is outside the expected range (200-2000ms). expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at api.test.UserTest.deletedUser_shouldNotBeFetched_shouldReturn404Error(UserTest.java:1376)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="deletedUser_shouldNotBeFetched_shouldReturn404Error()[pri:8, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:43 IST" name="deletedUser_shouldNotBeFetched_shouldReturn404Error" description="This test verifies that a deleted user cannot be fetched and returns a 404 error" finished-at="2024-12-06T10:42:45 IST" duration-ms="1325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletedUser_shouldNotBeFetched_shouldReturn404Error -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:40 IST" name="tearDown" finished-at="2024-11-30T19:29:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:45 IST" name="tearDown" finished-at="2024-12-06T10:42:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:40 IST" name="globalSetUP" finished-at="2024-11-30T19:29:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:45 IST" name="globalSetUP" finished-at="2024-12-06T10:42:45 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="createUsersInBulk_shouldReturn200StatusCode()[pri:38, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:40 IST" name="createUsersInBulk_shouldReturn200StatusCode" description="This test verifies that the bulk user creation returns a 200 status code" finished-at="2024-11-30T19:29:41 IST" duration-ms="1506" status="PASS">
+        <test-method signature="createUsersInBulk_shouldReturn200StatusCode()[pri:38, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:45 IST" name="createUsersInBulk_shouldReturn200StatusCode" description="This test verifies that the bulk user creation returns a 200 status code" finished-at="2024-12-06T10:42:46 IST" duration-ms="1369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createUsersInBulk_shouldReturn200StatusCode -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@57c758ac]" started-at="2024-11-30T19:29:41 IST" name="tearDown" finished-at="2024-11-30T19:29:41 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.UserTest@3c419631]" started-at="2024-12-06T10:42:46 IST" name="tearDown" finished-at="2024-12-06T10:42:46 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- api.test.UserTest -->
       <class name="api.test.StoreTest">
-        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:00 IST" name="setUpData" finished-at="2024-11-30T19:29:00 IST" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="setUpData()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:23 IST" name="setUpData" finished-at="2024-12-06T10:42:23 IST" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpData -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:00 IST" name="globalSetUP" finished-at="2024-11-30T19:29:00 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:23 IST" name="globalSetUP" finished-at="2024-12-06T10:42:23 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testPostStoreResponse()[pri:1, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:00 IST" name="testPostStoreResponse" description="This test verifies the Post Store response for placing order of pet and validates the data" finished-at="2024-11-30T19:29:07 IST" duration-ms="6661" status="PASS">
+        <test-method signature="testPostStoreResponse()[pri:1, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:23 IST" name="testPostStoreResponse" description="This test verifies the Post Store response for placing order of pet and validates the data" finished-at="2024-12-06T10:42:24 IST" duration-ms="1355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostStoreResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:07 IST" name="tearDown" finished-at="2024-11-30T19:29:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:24 IST" name="tearDown" finished-at="2024-12-06T10:42:24 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:07 IST" name="globalSetUP" finished-at="2024-11-30T19:29:07 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:24 IST" name="globalSetUP" finished-at="2024-12-06T10:42:24 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testGetStoreOrderResponse()[pri:2, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:07 IST" name="testGetStoreOrderResponse" description="This test verifies the Get Store Order response for finding purchanse order by id and validates the data" finished-at="2024-11-30T19:29:13 IST" duration-ms="6417" status="FAIL">
+        <test-method signature="testGetStoreOrderResponse()[pri:2, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:24 IST" name="testGetStoreOrderResponse" description="This test verifies the Get Store Order response for finding purchanse order by id and validates the data" finished-at="2024-12-06T10:42:28 IST" duration-ms="3420" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Response time is outside the expected range (200-2000ms). expected [true] but found [false]]]>
+              <![CDATA[Expected status code is 404 for invalid order ID. expected [404] but found [200]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Response time is outside the expected range (200-2000ms). expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Expected status code is 404 for invalid order ID. expected [404] but found [200]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at api.test.StoreTest.testGetStoreOrderResponse(StoreTest.java:177)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at api.test.StoreTest.testGetStoreOrderResponse(StoreTest.java:212)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1848,27 +1007,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetStoreOrderResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:13 IST" name="tearDown" finished-at="2024-11-30T19:29:13 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:28 IST" name="tearDown" finished-at="2024-12-06T10:42:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:13 IST" name="globalSetUP" finished-at="2024-11-30T19:29:13 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:28 IST" name="globalSetUP" finished-at="2024-12-06T10:42:28 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testGetStoreInventoriesResponse()[pri:13, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:13 IST" name="testGetStoreInventoriesResponse" description="This test verifies the Get Store Inventories response returned by statuswise and validates the data" finished-at="2024-11-30T19:29:15 IST" duration-ms="1953" status="FAIL">
+        <test-method signature="testGetStoreInventoriesResponse()[pri:3, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:28 IST" name="testGetStoreInventoriesResponse" description="This test verifies the Get Store Inventories response returned by statuswise and validates the data" finished-at="2024-12-06T10:42:30 IST" duration-ms="1683" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
 Response body doesn't match expectation.
 Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: ["array","capacitor","driver","feed","hard drive","not available","pending","program","send","transmitter","unavailable"]
+error: object instance has properties which are not allowed by the schema: ["05.12.2024","Avilable","The Best Dog of World","not available","pending"]
     level: "error"
     schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
     instance: {"pointer":""}
     domain: "validation"
     keyword: "additionalProperties"
-    unwanted: ["array","capacitor","driver","feed","hard drive","not available","pending","program","send","transmitter","unavailable"]
+    unwanted: ["05.12.2024","Avilable","The Best Dog of World","not available","pending"]
 error: object has missing required properties (["placed","ratvelleg","status"])
     level: "error"
     schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
@@ -1878,20 +1037,20 @@ error: object has missing required properties (["placed","ratvelleg","status"])
     required: ["available","placed","ratvelleg","sold","status","string"]
     missing: ["placed","ratvelleg","status"]
 
-  Actual: {"sold":7,"string":733,"unavailable":2,"pending":3,"available":195,"program":1,"capacitor":3,"feed":2,"driver":1,"array":1,"not available":1,"send":4,"transmitter":1,"hard drive":1}
+  Actual: {"sold":18,"The Best Dog of World":1,"string":743,"pending":6,"available":216,"not available":1,"Avilable":1,"05.12.2024":1}
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
 Response body doesn't match expectation.
 Expected: The content to match the given JSON schema.
-error: object instance has properties which are not allowed by the schema: ["array","capacitor","driver","feed","hard drive","not available","pending","program","send","transmitter","unavailable"]
+error: object instance has properties which are not allowed by the schema: ["05.12.2024","Avilable","The Best Dog of World","not available","pending"]
     level: "error"
     schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
     instance: {"pointer":""}
     domain: "validation"
     keyword: "additionalProperties"
-    unwanted: ["array","capacitor","driver","feed","hard drive","not available","pending","program","send","transmitter","unavailable"]
+    unwanted: ["05.12.2024","Avilable","The Best Dog of World","not available","pending"]
 error: object has missing required properties (["placed","ratvelleg","status"])
     level: "error"
     schema: {"loadingURI":"#","pointer":"/definitions/Welcome8"}
@@ -1901,7 +1060,7 @@ error: object has missing required properties (["placed","ratvelleg","status"])
     required: ["available","placed","ratvelleg","sold","status","string"]
     missing: ["placed","ratvelleg","status"]
 
-  Actual: {"sold":7,"string":733,"unavailable":2,"pending":3,"available":195,"program":1,"capacitor":3,"feed":2,"driver":1,"array":1,"not available":1,"send":4,"transmitter":1,"hard drive":1}
+  Actual: {"sold":18,"The Best Dog of World":1,"string":743,"pending":6,"available":216,"not available":1,"Avilable":1,"05.12.2024":1}
 
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
@@ -1967,15 +1126,15 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetStoreInventoriesResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:15 IST" name="tearDown" finished-at="2024-11-30T19:29:15 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:30 IST" name="tearDown" finished-at="2024-12-06T10:42:30 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:15 IST" name="globalSetUP" finished-at="2024-11-30T19:29:15 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="globalSetUP()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:30 IST" name="globalSetUP" finished-at="2024-12-06T10:42:30 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- globalSetUP -->
-        <test-method signature="testDeleteStoreOrderResponse()[pri:19, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:15 IST" name="testDeleteStoreOrderResponse" description="This test verifies the Delete Store Order DELETE response and validates the data" finished-at="2024-11-30T19:29:18 IST" duration-ms="2850" status="FAIL">
+        <test-method signature="testDeleteStoreOrderResponse()[pri:4, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:30 IST" name="testDeleteStoreOrderResponse" description="This test verifies the Delete Store Order DELETE response and validates the data" finished-at="2024-12-06T10:42:33 IST" duration-ms="3019" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected status code is 200. expected [200] but found [404]]]>
@@ -2028,7 +1187,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteStoreOrderResponse -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@67a20f67]" started-at="2024-11-30T19:29:18 IST" name="tearDown" finished-at="2024-11-30T19:29:18 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:api.test.StoreTest@4a22f9e2]" started-at="2024-12-06T10:42:33 IST" name="tearDown" finished-at="2024-12-06T10:42:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

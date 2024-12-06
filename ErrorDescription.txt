@@ -1,4 +1,4 @@
 *ClassPath error - Adjust TestNG dependency version
 *Properties file - do not give double quotation mark to a value of a key 
-*Excel File - Do not delete data from sheet the colums will be counted.
+*Excel File - Do not delete data from sheet the columns, rows will be counted.
 Cut data then make new sheet not by coping and paste data in it.

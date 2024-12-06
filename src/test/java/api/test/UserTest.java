@@ -163,7 +163,7 @@ public class UserTest {
 	
 		
 	//Get user api	
-	@Test(priority = 8, description = "This test verifies that GET user response time is within the expected range")
+	@Test(priority = 2, description = "This test verifies that GET user response time is within the expected range")
 	public void getUser_shouldRespondWithinExpectedTime() 
 	{
 	    logger.info("***** Starting getUser_shouldRespondWithinExpectedTime *****");
@@ -272,7 +272,7 @@ public class UserTest {
 	//Put user api	
 		 		
         		
-	@Test(priority = 13, description = "This test verifies the successful update of a user and returns 200 status code")
+	@Test(priority = 3, description = "This test verifies the successful update of a user and returns 200 status code")
 	public void updateUser_shouldReturn200StatusCode() 
 	{
 	    // Start the test and log the initial info
@@ -355,7 +355,7 @@ public class UserTest {
 	
 		
 	
-	@Test(priority = 19, description = "This test verifies how the system handles an update request with an invalid username")
+	@Test(priority = 4, description = "This test verifies how the system handles an update request with an invalid username")
 	public void updateUser_withInvalidUsername_shouldHandleGracefully() 
 	{
 	    // Log and start the test
@@ -405,7 +405,7 @@ public class UserTest {
 	
 //Login user api	
 	
-	@Test(priority = 20, description = "This test verifies that logging in a user returns a 200 status code")
+	@Test(priority = 5, description = "This test verifies that logging in a user returns a 200 status code")
 	public void loginUser_shouldReturn200StatusCode() {
 	    logger.info("********************************************");
 	    logger.info("***** Starting loginUser_shouldReturn200StatusCode *****");
@@ -465,7 +465,7 @@ public class UserTest {
 	
 	
 //Logout user api	
-	@Test(priority = 26, description = "This test verifies that the logout response returns a 200 status code")
+	@Test(priority = 6, description = "This test verifies that the logout response returns a 200 status code")
 	public void logoutUser_shouldReturn200StatusCode() 
 	{
 	    logger.info("********************************************");
@@ -524,7 +524,7 @@ public class UserTest {
 	
 //Delete user api	
 	
-	@Test(priority = 32, description = "This test verifies that the DELETE request for a user returns a 200 status code")
+	@Test(priority = 7, description = "This test verifies that the DELETE request for a user returns a 200 status code")
 	public void deleteUser_shouldReturn200StatusCode() {
 	    // Logging and starting test
 	    logger.info("********************************************");
@@ -581,7 +581,7 @@ public class UserTest {
 	
 
 	
-	@Test(priority = 37, description = "This test verifies that a deleted user cannot be fetched and returns a 404 error")
+	@Test(priority = 8, description = "This test verifies that a deleted user cannot be fetched and returns a 404 error")
 	public void deletedUser_shouldNotBeFetched_shouldReturn404Error() {
 	    // Logging and starting test
 	    logger.info("********************************************");

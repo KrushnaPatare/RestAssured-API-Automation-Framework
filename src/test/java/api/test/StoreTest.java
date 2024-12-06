@@ -237,7 +237,7 @@ public class StoreTest {
 	
 	
 	//authorization needed for this request = API key authentication
-	@Test(priority = 13, description = "This test verifies the Get Store Inventories response returned by statuswise and validates the data")
+	@Test(priority = 3, description = "This test verifies the Get Store Inventories response returned by statuswise and validates the data")
 	public void testGetStoreInventoriesResponse() 
 	{	
 	    // Start the test and log the initial info
@@ -302,7 +302,7 @@ public class StoreTest {
 
 	
 	
-	@Test(priority = 19, description = "This test verifies the Delete Store Order DELETE response and validates the data")
+	@Test(priority = 4, description = "This test verifies the Delete Store Order DELETE response and validates the data")
 	public void testDeleteStoreOrderResponse() 
 	{
 	    // Start the test and log the initial info

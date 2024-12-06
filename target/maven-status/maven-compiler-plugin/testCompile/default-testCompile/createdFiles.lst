@@ -1,6 +1,7 @@
 api\endpoints\PetEndpoints.class
 api\payload\Pet.class
 api\test\StoreTest.class
+api\utilities\DynamicDTO.class
 api\utilities\ExtentReportManager.class
 api\utilities\DataProviders.class
 api\payload\User.class
@@ -8,12 +9,11 @@ api\test\PetTest.class
 api\utilities\TestContext.class
 api\utilities\PropertiesFile.class
 api\endpoints\StoreEndpoints.class
-api\test\CreateBookingStepdefinition.class
 api\utilities\RequestResponseFilter.class
+api\utilities\ResponseValidatiorAndHandler.class
 api\endpoints\UserEndpoints.class
 api\test\UserTest.class
 api\payloadManager\Tag.class
-api\utilities\APIClient.class
 api\utilities\PojoSetter.class
 api\payload\Store.class
 api\path\Routes.class

@@ -5,31 +5,21 @@
     <classes>
       <class name="api.test.PetTest">
         <methods>
-          <include name="testFindPetByStatusGetResponse"/>
-          <include name="testUploadPetImagePostResponse"/>
           <include name="deleberatlyFailTest"/>
           <include name="globalSetUP"/>
-          <include name="testUpdatePetPostResponse"/>
           <include name="tearDown"/>
           <include name="deleberatlySkippedTest2"/>
-          <include name="testAddNewPetPostResponse" invocation-numbers="0"/>
-          <include name="testDeletePetDeleteResponse"/>
           <include name="setUp"/>
           <include name="deleberatlySkippedTest1"/>
-          <include name="testFindPetByPetIDGetResponse" invocation-numbers="2"/>
         </methods>
       </class> <!-- api.test.PetTest -->
       <class name="api.test.UserTest">
         <methods>
-          <include name="updateUser_shouldMatchJsonSchema"/>
-          <include name="updateUser_shouldReturnCorrectFieldValues"/>
-          <include name="deletedUser_shouldNotBeFetched_shouldReturn404Error"/>
+          <include name="updateUser_shouldReturn200StatusCode"/>
           <include name="globalSetUP"/>
-          <include name="updateUser_shouldReturnValidResponseFieldTypes"/>
           <include name="getUser_shouldRespondWithinExpectedTime"/>
           <include name="tearDown"/>
           <include name="setUpData"/>
-          <include name="updateUser_shouldRespondWithinExpectedTime"/>
         </methods>
       </class> <!-- api.test.UserTest -->
       <class name="api.test.StoreTest">
